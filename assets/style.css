@@ -1,0 +1,623 @@
+/*
+Theme Name: Adam Custom
+Theme URI: http://a-laughlin.com
+Author: Adam Laughlin
+Author URI: http://a-laughlin.com
+Description: The 2013 theme for WordPress, cleaned out and updated
+Version: 1.0
+License: Copyright Adam Laughlin
+License URI: http://a-laughlin.com
+Tags: none
+Text Domain: adam-custom
+*/
+
+/* @@@@@@@@
+Table of contents:
+1. Reset (via normalize.css v2.1.2 | MIT License | git.io/normalize)
+2. Normalize the box model (via http://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+3. Base styles
+@@@@@@@@ */
+
+
+
+
+/* @@@@@@@@
+1. Reset via normalize.css v2.1.2 | MIT License | git.io/normalize
+@@@@@@@@ */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* @@@@@@@@
+2. Apply box-sizing:border-box; to everything
+@@@@@@@@ */
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+
+/* @@@@@@@@@@
+3. Base styles
+@@@@@@@@@@ */
+
+
+
+
+body {background:#0f0f0f url(http://media.1button.org/bg.png) repeat-x;}
+#content {opacity:.85;filter:alpha(opacity=85);background-color: #fff;padding:166px 20px 0}
+a:link, a:visited {
+    color: #DDDDDD;
+}
+#content H1 {font-size:1.8em}
+#content H2 {font-size:1.5em}
+#content H3 {font-size:1.2em}
+#content H4 {}
+#content H5 {}
+#content H6 {}
+#content H1 a{}
+#content H2 a{}
+#content H3 a{}
+#content H4 a{}
+#content H5 a{}
+#content H6 a{}
+#content a{color: #999}
+#content .entry-content a {color: #46B;text-decoration: none}
+/*.entry-content a:link {}*/
+.entry-content a:visited {color: #84B}
+.entry-content a:active,.entry-content a:hover{text-decoration:underline}
+
+/*#content .entry-title a:link,#content .entry-title a:visited,#content .entry-title a:active,#content .entry-title a:hover{color:#999}
+#content .entry-title a{color: #999;font-size: 21px;font-weight: bold;line-height: 1.3em;margin-bottom: 0;text-decoration: none}*/
+#footer {clear: both;width: 100%;margin:0}
+
+#menu-pages,#menu-pages li,#branding,#boulders,#island,#boat,#pads,#search-2,#rss,#github-projects,#recent-posts-2,#recent-posts-2 H3,#recent-posts-2 ul,#text-4{position: absolute;}
+#branding {right: 10px;top: 20px;}
+#site-title {font-size: 30px;line-height: 36px;margin:10px 30px 0}
+#site-title a {color: #AAA;font-family:"Comic Sans MS",sans-serif;text-decoration: none}
+#site-description {font-size: 14px; font-style: italic; margin: 82px 0 0 0;width: 236px;text-align: center; color:#333;font-family:georgia,serif;}
+
+
+#boat {width:280px; height:345px; opacity:.9; filter:alpha(opacity=90); background-image:url(http://media.1button.org/boat_background.gif);left:0;top:0;z-index:-5}
+#island {width:107px; height:178px; opacity:.25; filter:alpha(opacity=25); background-image:url(http://media.1button.org/island.gif);right:80px;top:60px;z-index:-5}
+#boulders {width:200px; height:250px; opacity:.8; filter:alpha(opacity=80); background-image:url(http://media.1button.org/boulders.png);left:0;bottom:0;z-index:-10;background-repeat: no-repeat;}
+#pads {width:307px; height:263px; background-image:url(http://media.1button.org/pads.gif);right:0;bottom:50px;z-index:-5}
+
+#menu-pages {bottom:0;left:0;margin:0;padding:0;width:200px;z-index:5}
+.menu-about{bottom: 205px;left: 60px}
+.menu-about a:link, .menu-about a:visited {color: #BBB;font-size:1.4em}
+.menu-hire{bottom: 160px;left: 20px}
+.menu-hire a:link, .menu-hire a:visited {color: #DDD}
+.menu-contact{ bottom: 160px;left: 5px;font-size:1.7em;}
+.menu-contact a:link, .menu-contact a:visited {color: #DDD}
+.menu-goals{display:none}
+.menu-goals a:link, .menu-goals a:visited {color: #BBB}
+#rss{left:65px;bottom:10px;color:#DDD}
+#github-projects{left:80px;bottom:70px;color:#EEE;font-size:2em;white-space: nowrap;}
+
+.widget-container{margin:0}
+
+#primary * {z-index:5;margin:0;margin:0;font-weight: 400;}
+#text-4{bottom:80px;left: 20px;z-index:5}
+#search-2{left:15px;bottom:270px;opacity:.05; filter:alpha(opacity=5);width:200px}
+#recent-posts-2{bottom:0;left: 10px}
+#recent-posts-2 * {color:#FFF;width:120px;}
+#recent-posts-2 H3 {bottom: 90px;left: 20px;}
+#recent-posts-2 ul{bottom:0;height:90px}
+#content ol > li{list-style-type: decimal;margin-left: 20px}
+#content ol > li > li {list-style-type: decimal;margin-left: 20px}
+#content ul > li{list-style-type: disc;margin-left: 20px}
+#content pre {white-space:pre-wrap;word-break:break-word;padding:1em 0 1em .2em}
+
+
+/*all posts*/
+div.post pre{clear:both}
+
+/*link indicators*/
+#content a.ext-right{background:transparent url(//static.1button.org/external-transp.gif) no-repeat right;padding-right:1em}
+#content a.pdf-right{background:transparent url(//static.1button.org/pdf-thumbnail.gif) no-repeat right;padding-right:20px}
+
+/*GA+GWO example*/
+#trans-box .item,#trans-items,#trans-id {clear:both}
+#trans-items span {width:15%;display:block;float:left}
+#trans-id span {display:block;float:left;margin-right:20px}
+
+
+
+/*Google maps example*/
+.clear-none {clear:none}
+.content-right-column {border:1px solid #CCC; margin-left:20px;float:right;clear:none;width:500px}
+.content-right-column dl, .content-right-column H3, .content-right-column figcaption{padding-left:20px;}
+.content-right-column * {clear:none}
+.content-left-column * {clear:none}
+.content-right-column #chicago-theft-yrs {width:490px; height:800px;margin:0 0 1em 5px}
+.content-right-column #thefts-map-legend dt, .content-right-column #thefts-map-legend dd{display:inline}
+
+/*slideshow tutorial*/
+.post-323 #slideshow{height:187px;width:167px;overflow:hidden;}
+
+/*fisheye*/
+.post-601 .fisheye-grid{height:490px;width:650px}
+.post-601 .kitten-grid{height:310px;width:410px}
+.post-601 .kitten-grid img{height:100%;width:100%}
+.post-601 .date-bar{background-color:#880;margin:2px;text-align:right;font-weight:700;color:white}
+.post-601 .fisheye-row {width:100%;clear:both}
+.post-601 .fisheye-cell {margin:1px;background-color:#DDD;float:left;clear:none}
+
+/*fisheye spine example */
+
+/*Grid styling.  Currently required for the fisheye plugin.*/
+.post-645 .campaign-grid { width:610px; height:460px }
+.post-645 .fisheye-row { clear: both; width: 100% }
+.post-645 .fisheye-cell { background-color: #DDDDDD; clear: none; float: right; margin: 1px; cursor: cell }
+.post-645 .fisheye-cell div { display:inline }
+.post-645 .adgroup-row {padding-top:10px}
+
+
+.post-645 #campaign-grid0 img.cell-sparkChart{display:block; float:right;clear:none;margin:2px 2px 0 0}
+
+
+.post-645 .cell-chart1,
+.post-645 img.cell-sparkChart,
+.post-645 #campaign-grid0.expanded img.cell-sparkChart,
+.post-645 #campaign-grid0.shrink img.cell-sparkChart,
+.post-645 .span-keyword,
+.post-645 .span-ctr,
+.post-645 div.cell-red-toggle,
+.post-645 .activeColGrowing img,
+.post-645 .activeRowGrowing img,
+.post-645 .activeColShrinking img,
+.post-645 .activeRowShrinking img,
+.post-645 .maxHeightLock.maxWidthLock .cell-sparkChart {display:none}
+
+.post-645 .cell-campaign {background-color: #CAADA4;}
+.post-645 .cell-adgroup  {background-color: #AC97DA;}
+.post-645 .cell-keyword {background-color: #BFD3A1;}
+
+
+
+
+
+
+.post-645 .expanded .fisheye-cell {font-size:80%;}
+.post-645 .maxHeightLock.maxWidthLock > * {display:block;font-size:200%;clear:none;margin:5px}
+.post-645 .maxHeightLock.maxWidthLock.cell-keyword span  {display:inline}
+
+.post-645 .maxHeightLock.maxWidthLock > .cell-chart1 {display:block;float:right;clear:none;}
+
+.post-645 .span-red{cursor:pointer;border-bottom: 1px dashed #000;}
+.post-645 .redColor {color:#D00;}
+
+
+/*Shoestring 0.3 Overview*/
+
+
+/*smaller screen sizes*/
+@media all and (max-width: 999px){
+  #island {z-index:8}
+  #branding {z-index:10}
+  #wrapper {margin-right:0}
+  #pads{display:none}
+  #content {padding-top:266px}
+
+}
+
+/* Main sidebars */
+
+
+/*#primary {left:15px;bottom:350px;z-index:2;}*/
+
+#secondary {}
+
+/* Footer widget areas */
+#footer-widget-area {}
+
+
+/*** end a-laughlin.com insert ***/
+
