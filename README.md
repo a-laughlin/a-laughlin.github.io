@@ -1,2 +1,0 @@
-a-laughlin.github.io
-====================
