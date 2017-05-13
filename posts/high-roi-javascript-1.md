@@ -10,51 +10,86 @@
 * Summary
 
 ## Costs
-One company I worked at was founded by a couple of great guys who learned javascript (Angular 1) in order to get a prototype product off the ground.  They learned how to program as part of launching the business, so they had neither experience nor formal education.  Yet they were smart and focused and used Angular to produce features at an incredible rate over their first 1.5 years.  The knowledge and experience gaps cranked out technical debt at an equal rate - a normal outcome for new programmers.  As technical debt increased, mean cost per change increased alongside it.  Paying it down makes leadership nervous so cost metrics are important.
+One company I worked at was founded by a couple of great guys who learned javascript (Angular 1) in order to get a prototype product off the ground.  They learned how to program as part of launching the business, so they had neither experience nor formal education.  Yet they were smart and focused and used Angular to produce features at an incredible rate over their first 1.5 years.  The knowledge and experience gaps cranked out technical debt at an equal rate - a normal outcome for new programmers.  They started adding developers.
 
 Assume 80k per year per developer, add 50k for all the benefits, overhead, taxes, etc, for a total of 130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.
 
-The code was initially short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  Rough cost per change ~$20.
+As technical debt increased, mean cost per change increased alongside it.  The code was initially short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  Rough cost per change ~$20.
 
-Eventually the page code grew to be 2500 lines.  I started with the company.  Bugs abounded in that and our other pages.  Unexpected things broke.  Myself and others spent significant time fixing them.  Tests were flaky.  Error prevention processes expanded from a quick functionality test to code reviews, manual testing, better change communication, pre-release team testing sessions, and dedicated QA staffing.
+By the time I started with the company, the page code had grown to 2500 lines. Bugs abounded in that page and others.  Unexpected things broke.  We spent a lot of time fixing them.  Tests were flaky.  Error prevention processes expanded from a quick functionality test to code reviews, manual testing, better change communication, pre-release team testing sessions, and dedicated QA staffing.
 
-I got curious.  Querying Git showed 500 changes to that page in the last year.  Estimating 3 hours per change.  A couple changes per workday.  Cost per change $187.50.  Multiply by 500 changes per year, and that one page cost 94k/yr to maintain.  That excludes the cost of unhappy customers reporting those bugs.  And QA staff.  And the other 140 pages with similar issues.  Metrics are your friend.
+I got curious.  Querying Git showed 500 changes to that page in the last year.  Our current processes placed men time per change ~3 hours of staff time (conservatively).   Cost per change now $187.50.  500 changes per year... That one page cost us 94k/yr to maintain.  That excludes the cost of unhappy customers reporting those bugs, and other staff time, and we had 140 other pages with similar issues.
 
-One page.  1500 hours / $94,000 per year to maintain.  Coupling will waste your life.
+One page.  1500 hours / $94,000 per year to maintain.  Low-ROI JavaScript practices will your money and your life.
 
-It also has psychological costs.  Many of its forms increase non-deterministic system behaviors, which increase uncertainty (a universal human stressor).  Those are more difficult to quantify, but equally important.  Coupling adds stress for you, your team, and your users.
-
-## What actually caused the problem?
-Many things.
-A ~1500 line controller function
-A ~1300 line logic-filled template.
-Duplication
-Coupling
-Lack of unit tests
-
+It also has psychological costs.  For example, coupling to changeable (mutable) objects often increases unexpected behaviors (non-determinism).  Unexpected behaviors increase uncertainty, a universal human stressor.  JavaScript technical debt often adds stress for you, your team, and your users.
 
 ## How did we get there?
 Developer fault?  No.  All devs I've met generally do the best they can given their experience.
 
 Here's what happens when you start to learn JavaScript:
-- If you come from an Object-oriented background, you follow OO examples and use OO libraries because they make sense to you.
-- If you come from a functional background, you follow functional examples and use functional libraries because they make sense to you.
-- If your background is not programming, no articles make sense yet.  You try to follow guidelines from all articles because they're written by more experienced developers.  Unfortunately, articles often have conflicting paradigm goals and ambiguous terminology. It likely progresses something like this:
+- If you come from an Object-oriented background, you follow OO examples and use OO libraries because they make sense to you.  You find workarounds for JavaScript's OO quirks.
+- If you come from a functional background, you follow functional examples and use functional libraries because they make sense to you.  You find workarounds for JavaScript's functional quirks.
+- If your background is not programming, no articles make sense yet.  You try to follow guidelines from all articles because they're written by more experienced developers.  You don't know that JavaScript has quirks.  The path to getting stuff done looks something like this:
 
 Article 1: (jQuery) Submit your form with `$('.loginForm').submit()`;
-Article 2: (OO) Separate concerns is good - do it with modules, classes, and objects with data and functions
-Article 3: (functional) Separate concerns is good - do it with modules, and objects with data, and functions
-Article 4: (jQuery) Separate concerns is good - separate your data and functions from others' data and functions by namespacing them in an object.
+Article 2: (jQuery) Separate concerns is good - separate your data and functions from others' data and functions by namespacing them in an object.  Hmm.  Yes.  Separate concerns.  That sounds worth reading more about.
+Article 3: (OO) Separate concerns is good - do it with modules, classes, and objects with data and functions
+Article 4: (functional) Separate concerns is good - do it with modules, and objects with data, and functions
 
 A few days later Frankenstein's monster emerges into the web.
 
-What happened?  Well, different meanings of "Concerns" and "object" to start.
+What happened?  Well, to start, modules, classes, objects, and concerns worth separating probably meant different things in each of them.
 
-Inexperienced devs are trying to learn "good" code practices in a quirky language that supports different paradigms with ambiguous labels and conflicting strategies, using decades of variable-accuracy articles written by variable-experience developers.
+Inexperienced devs learn coding concepts through decades of variable-accuracy articles written by variable-experience developers who come from different paradigms that use ambiguous labels to describe often-conflicting "good" practices, in order to produce quality software in a language that provides its own interpretation of those labels in an effort to support all those paradigms.
 
-Is it possible to define clear, paradigm-agnostic JS practices with highest ROI/ROE?  This article is my attempt.  The answers aren't new, but they're specific, and as much as possible include specific JS examples.
+Language is messy.
 
-We're going to need some clear quality goals.
+
+Okay.  Not developer fault.  What is the problem?
+
+To start, I'm struggling to even define the problem without using ambiguous labels.
+
+Let's start at the outcome we want, trying to use the simplest language possible.
+Providing People (customers and company staff)
+High Return (desires satisfied)
+With Low Investment (Time, Energy, Money)
+
+What is necessary for software to provide high return with low investment?
+
+To describe the problem, we need a clear language. One that pulls the highest-roi concepts from the various paradigms, without depending on the paradigm's constructs themselves.
+
+AFTERWARD ... REVISIT THE PROBLEM WITH OUR DEFINITIONS
+
+Return:
+People Goals (Customer And Company Staff)
+Met with high-quality sofware (usable, reliable)
+Produced within constraints (Time, Cost, Scope)
+
+Let's focus on that last part.  I don't have metrics to know what a change can cost, but 50k/file/year seems high.
+Through System Quality Attributes(Reliable, Changeable)
+Achieved through Principles (No Repetition, No Couples)
+Achieved through separating and combining:
+Values (instances of a data type)
+and
+Patterns (two or more values and/or patterns colocated\** for a single purpose).
+**(in objects, functions, statements, expressions)
+
+Many things.
+A ~1500 line controller function
+A ~1300 line logic-filled template
+Duplication
+Coupling
+Zero unit tests.
+Low cohesion.
+Low modularity.
+Tight coupling.
+Lots of coupling.
+
+The problem again, is that many of those mean similar things.
+Thinking in pages vs components (creating massive duplication as whole pages were copy pasted)
+PHP controllers that often had data specifically formatted for each "page".  When the data came back, it would often overwrite preexisting user data, sometimes with differently formatted data.
+Migrating our data schema and back-end code to ruby, despite a back-end schema with schema Maintining An effort to move our functional tests to Ruby from JavaScript, which dismantled our that was never really completed.
 
 ## Quality
 The classic project tension is between time, cost, and quality.  Time and cost are relatively straightforward.  It's important to define what quality means, otherwise it's easy to waste time and cost optimizing for not-yet-necessary quality attributes.  Here are some [common](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [quality](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) (pdf) [attributes](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) (huge pdf).   What quality attributes are the highest ROI to focus on?
@@ -75,7 +110,8 @@ Here are my top 3 for JavaScript, in order of priority.
 - One Purpose
 - Zero Repetition
 - Zero Couples
-
+Is the purpose, or any part of the purpose, repeated anywhere else in the system?
+Is the structure, or any part of the purpose, repeated anywhere else in the system?
 Zero Repetition and One Purpose are achievable, though increasingly difficult as teams grow. "Zero Couples" is an unrealistic but useful ideal.  Its purpose is to establish a precise definition of coupling in JavaScript, in order to combat JavaScript's implicit, and usually abundant, coupling.
 
 ## Summary
