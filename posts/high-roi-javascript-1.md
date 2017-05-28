@@ -1,21 +1,15 @@
-# High-Value, Low-Debt JavaScript
+# High Value JavaScript
 
-# TOC
-* Costs, a story
-* Cost breakdown - what's behind them?
-* Three rules
-  * Zero Repetition
-  * Zero Couples
-* Summary
+Startup.  Three years in.  Funds running low.  Our JavaScript is sphaghetti.  One page cost $94k per year to maintain.  There are 140 pages.  Shit.  How did we get here?
 
-## Costs
-One company I worked at was founded by a couple of great guys who learned javascript (Angular 1) in order to get a prototype product off the ground.  They learned how to program as part of launching the business, so they had neither experience nor formal education.  Yet they were smart and focused and used Angular to produce features at an incredible rate over their first 1.5 years.  The knowledge and experience gaps cranked out technical debt at an equal rate - a normal outcome for new programmers.
+## Costs.  A Story.
+A company I worked at was founded by a couple of great guys who learned javascript (Angular 1) in order to get a prototype product off the ground.  They learned how to program as part of launching the business, so they had neither experience nor formal education.  Yet they were smart and focused and used Angular to produce features at an incredible rate over their first 1.5 years.  The knowledge and experience gaps cranked out technical debt at an equal rate - a normal outcome for new programmers.
 
-As technical debt increased, mean cost per change increased alongside it.  The code was initially short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.
+As technical debt increased, mean cost per change increased alongside it.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  The code was initially short.
 
-They added developers as their customer base increased.  By the time I started with the company, one page's code had grown to 2500 lines.  Bugs abounded in that page and others.  Unexpected things broke.  We spent a lot of time fixing them.  Tests were flaky.  Error prevention processes expanded from a quick functionality tests, to code reviews, manual testing, more extensive change communication, pre-release team testing sessions, and dedicated QA staffing.
+They added developers as their customer base increased.  By the time I started with the company, one page's code had grown to 2500 lines.  Bugs abounded in that page and others.  Unexpected things broke.  We spent a lot of time fixing them.  Tests were flaky.  Error prevention processes expanded from a quick functionality tests, to code reviews, manual testing, more extensive change communication, whole-team pre-release team testing sessions, and dedicated QA staffing.
 
-I got curious.  Querying Git showed 500 changes to that page in the last year.  Our current processes placed mean time per change ~3 hours of staff time (conservatively).  500 changes per year meant 1500 hours spent maintaining that one page each year.  We had 140 other pages with similar issues.
+I got curious.  Querying Git showed 500 changes to that page in the last year.  Our current processes placed mean time per change ~3 hours of staff time (conservatively).  500 changes per year meant 1500 hours spent maintaining it.  Each year.  We had 140 other pages with similar issues.
 
 One page.  1500 hours per year.  Most of those 1500 hours went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.
 
@@ -23,7 +17,7 @@ In terms of financial investment assume 80k per year per developer, add 50k for 
 
 [Outcomes](https://hbr.org/2012/11/its-not-just-semantics-managing-outcomes) extend further.  Good experiences produce delight and pleasant interactions among users, staff, their teams, and beyond.  Bad experiences create stress and sour interactions.  Unexpected behaviors produce confusion, frustration, and stress.  Delays produce frustration.  Low reliability adds to stress through uncertainty and perceived lack of control, while decreasing sales staff confidence and company reputation.  Ripple effects spread the impacts into other areas of life, like the impact of carrying increased stress home.
 
-1500 hours, $94k, bad experiences.  Low-qualitiy, high-debt JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
+1500 hours, $94k, bad experiences.  Low-qualitiy JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
 
 ## How did we get there?
 Developer fault?  No.  All devs I've met generally do the best they can given their experience.  Producing high quality code is not easy.
@@ -44,7 +38,7 @@ What happened?  Well, to start, modules, objects, and separate concerns probably
 
 The problems arise because new devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood philosophies to describe often-misunderstood, sometimes-conflicting "good" principles.  Then new devs attempt to write high-quality code in a new language with its own special label interpretations and philosophy implementations, using frameworks that often add even more ambiguous labels and interpretations (e.g., angular 1's expressions & services).
 
-The problem - ambiguity, misunderstandings, complexity, and and sheer information involved in learning, make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  To combat that, a simple heuristic develops - "whatever code works".  The result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.  For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial.  Given enough changes, the accumulated costs per change can exceed the value produced, and a downward spiral begins.  A spiral that no one wants to enter, with an entrance no one can clearly detect, and an exit no one can exit without significant investments of engineering time, energy, and/or finances.
+The problem - ambiguity, misunderstandings, complexity, and and sheer information involved in learning, make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  To combat that, a simple heuristic develops - "whatever code works".  The result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.  For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  Given enough changes, the accumulated costs per change can exceed the value produced, and a downward spiral begins.  A spiral that no one wants to enter, with an entrance no one can clearly detect, and an exit no one can exit without significant investments of engineering time, energy, and/or finances.
 
 Think of it like this, with "customer interest in product" where it says "customer responsiveness":
 ![technical debt impact on customer interest over time](/Users/adam/Dropbox/repos/a-laughlin.github.io/assets/technical_debt_slide.jpg)
