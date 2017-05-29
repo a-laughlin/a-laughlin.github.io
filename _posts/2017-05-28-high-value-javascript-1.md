@@ -1,3 +1,8 @@
+---
+layout: post
+title: High Value JavaScript (Part 1)
+---
+
 # High Value JavaScript
 
 Startup.  Three years in.  Funds running low.  Our JavaScript is sphaghetti.  One page cost $94k per year to maintain.  There are 140 pages.  Shit.  How did we get here?
