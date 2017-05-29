@@ -70,24 +70,28 @@ Terms:
 Accumulations of low-quality JavaScript are called [Technical Debt](https://en.wikipedia.org/wiki/Technical_debt).
 Replacing some low quality code with higher-quality code is called refactoring
 Replacing all low quality code with higher-quality code is called rewriting/rearchitecting.
-Quality Code: (Code that produces value per change well above its costs per change.)
+Value: People's desires satisfied.
+Quality:  How well code can satisfies peoples' desires (i.e., its value produceability).
+High Quality Code: Code that can produce value per change well above its costs per change.
+Low Quality Code: Code that can costs more to change than the value it can produce.
 
-## Quality > Value?
-(make these more concrete)
-What is Value?  Value is people's desires satisfied.
-What is Quality?  Quality is how well code can satisfies peoples' desires (i.e., its value produceability).
-[racing baton slide]
+## Quality?
+You might have heard terms like "flexibility", "reliability", and "usability" before.  These are system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
 
-There are [many](https://www.infoq.com/articles/atam-quality-attributes) [system](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [software](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) (pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  Different quality attributes satisfy different desires.  For example, we desire our planes to stay in the air, so reliability is critically important quality attribute in airplane software.  To stay competitive, businesses often desire to adapt quickly to changing conditions, so changeability is a critically important quality attribute in many businesses.
+Different quality attributes satisfy different desires.  For example, we desire our planes to stay in the air, so reliability is critically important quality attribute in airplane software.  To stay competitive, businesses often desire to adapt quickly, so changeability is a critically important quality attribute in many businesses.
 
-**Ambiguity Alert**  You'll chase your tail if you try to meet them all.  There are tradeoffs.  Definitions also overlap.  For example, optimizing a search algorithm for the "efficiency" attribute often decreases its "understandability" attribute.  However, optimizing for changeability also increases understandability (developers can change code faster if they understand it faster).  You won't find changeability in those lists.  It comes from "modifiability" in the first list, but two fewer syllables make "changeable" easier to say and remember.
+Things to be aware of:
+- Some quality attributes have overlapping meanings
+- Different articles use different words for the same or similar quality attributes
+- There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability"
 
-A good place to start is picking 1-3 attributes whose definitions seem most critical to your organization, and focus on those.  Let's go with changeability to start.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions.  Most businesses will be okay if their wings fall off.
+Quality is a good thing, but you'll chase your tail if you try to satisfy all attributes.  A good place to start is picking 1-3 attributes whose definitions seem most critical to your organization, and focus on those.  For the purpose of this article, we'll focus on changeability.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions.  Most businesses will be okay if their wings occasionally break.  Changeability's error-free aspect also gives us decent reliability.
 
-  - **Changeability** - How fast can you or others make error-free code changes that produce the desired value?
+**Changeability** - How fast you or others can make error-free code changes to produce the desired behaviors
 
+To recap, quality (changeability) increases value.  What increases changeability?  Great question!
 
-Great.  We'll increase value by increasing quality.  We'll increase quality by increasing the changeability attribute.  We'll increase changeability by.... reading the next few posts when they come out!
+To be Continued!
 
 [Code]() The basics, for examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
 [Philosophies, Principles, and Practices]() Simple ways to think about them in JavaScript, for Context (includes composition, inheritance)
