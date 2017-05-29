@@ -40,7 +40,7 @@ A few days later Frankenstein's monster emerges into the web.
 
 What happened?  Well, to start, modules, objects, and separate concerns probably meant different things in each of them.
 
-New devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood philosophies to describe often-misunderstood, sometimes-conflicting "good" coding principles.  Then they attempt to write high-quality code in a language with its own label interpretations and philosophy implementations, using frameworks that often add even more ambiguous labels and interpretations (e.g., angular 1's expressions & services).
+Problems arise when new devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood philosophies to describe often-misunderstood, sometimes-conflicting "good" coding principles.  Then they attempt to write high-quality code in a new language with its own label interpretations and philosophy implementations, using frameworks that often add even more ambiguous labels and interpretations (e.g., angular 1's expressions & services).
 
 The problem - ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  To combat that, a simple heuristic develops - "whatever code works".  The result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.  For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  Given enough changes, the accumulated costs per change can exceed the value produced, and a downward spiral begins.  A spiral that no one wants to enter, with an entrance no one can clearly detect, and an exit no one can leave without significant investments of engineering time, energy, and/or finances.
 
@@ -60,11 +60,11 @@ This article's purpose is to help you, as a new JavaScript developer, produce si
 ## Connecting Code to Quality
 
 Let's start by removing some ambiguity.  Here are the basic connections between "Whatever Works" code and Value.
-Code > **ambiguity** > Quality (low)
+Code > **ambiguity** > Quality (low) > Value (low)
 
 Here are the connections with ambiguity replaced:
 
-Code > Practices + Principles + Philosophies  > Quality (high)
+Code > Practices + Principles + Philosophies  > Quality (high)  > Value (high)
 
 Terms:
 Accumulations of low-quality JavaScript are called [Technical Debt](https://en.wikipedia.org/wiki/Technical_debt).
@@ -83,15 +83,20 @@ Different quality attributes satisfy different desires.  For example, we desire 
 Things to be aware of:
 - Some quality attributes have overlapping meanings
 - Different articles use different words for the same or similar quality attributes
-- There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability"
+- You'll chase your tail if you try to satisfy all attributes.  There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability"
 
-Quality is a good thing, but you'll chase your tail if you try to satisfy all attributes.  A good place to start is picking 1-3 attributes whose definitions seem most critical to your organization, and focus on those.  For the purpose of this article, we'll focus on changeability.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions.  Most businesses will be okay if their wings occasionally break.  Changeability's error-free aspect also gives us decent reliability.
+A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  This series of articles will focus on changeability.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions. Focusing on changeability often results in other attributes like modularity, flexibility, testability, and reliability.
 
 **Changeability** - How fast you or others can make error-free code changes to produce the desired behaviors
 
-To recap, quality (changeability) increases value.  What increases changeability?  Great question!
 
-To be Continued!
+## Summary
+
+Code > Practices + Principles + Philosophies  > Quality (high)  > Value (high)
+
+  - Increase value by increasing quality attributes (e.g., changeability)
+  - Increase quality attributes (changeability) through...
+  - To be Continued!
 
 [Code]() The basics, for examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
 [Philosophies, Principles, and Practices]() Simple ways to think about them in JavaScript, for Context (includes composition, inheritance)
