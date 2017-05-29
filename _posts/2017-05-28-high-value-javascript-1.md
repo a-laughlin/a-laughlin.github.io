@@ -60,13 +60,14 @@ This article's purpose is to help you, as a new JavaScript developer, produce si
 ## Connecting Code to Quality
 
 Let's start by removing some ambiguity.  Here are the basic connections between "Whatever Works" code and Value.
-Code > **ambiguity** > Quality (low) > Value (low)
+
+`Code > **ambiguity** > Quality > Value`
 
 Here are the connections with ambiguity replaced:
 
-Code > Practices + Principles + Philosophies  > Quality (high)  > Value (high)
+`Code > Practices + Principles + Philosophies  > Quality  > Value`
 
-Terms:
+Terms: (clean these up, add pic of cycles)
 Accumulations of low-quality JavaScript are called [Technical Debt](https://en.wikipedia.org/wiki/Technical_debt).
 Replacing some low quality code with higher-quality code is called refactoring
 Replacing all low quality code with higher-quality code is called rewriting/rearchitecting.
