@@ -3,22 +3,20 @@ layout: post
 title: High Value JavaScript (Part 1)
 ---
 
-# High Value JavaScript
-
-Startup.  Three years in.  Funds running low.  Our JavaScript is sphaghetti.  One page cost $94k per year to maintain.  There are 140 pages.  Shit.  How did we get here?
+Startup SaaS Company.  Three years in.  Funds running low.  Our JavaScript is sphaghetti.  One page cost $94k per year to maintain.  140 pages.  Shit.  How did we get here?  How can you do better?
 
 ## Costs.  A Story.
-A company I worked at was founded by a couple of great guys who learned javascript (Angular 1) in order to get a prototype product off the ground.  They learned how to program as part of launching the business, so they had neither experience nor formal education.  Yet they were smart and focused and used Angular to produce features at an incredible rate over their first 1.5 years.  The knowledge and experience gaps cranked out technical debt at an equal rate - a normal outcome for new programmers.
+A company I worked at was founded by a couple of great guys who learned javascript (Angular 1) in order to get a prototype product off the ground.  They learned how to program as part of launching the business.  They had neither experience nor formal education.  Yet they were smart and focused and used Angular to produce features at an incredible rate over their first 1.5 years.  Code quality was low.  Technical debt growth exploded.  Mean cost per change increased alongside it.
 
-As technical debt increased, mean cost per change increased alongside it.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  The code was initially short.
+The code was initially short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  They added developers as they added customers.
 
-They added developers as their customer base increased.  By the time I started with the company, one page's code had grown to 2500 lines.  Bugs abounded in that page and others.  Unexpected things broke.  We spent a lot of time fixing them.  Tests were flaky.  Error prevention processes expanded from a quick functionality tests, to code reviews, manual testing, more extensive change communication, whole-team pre-release team testing sessions, and dedicated QA staffing.
+By the time I started with the company, our most troublesome page's code had grown to 2500 lines.  Leadership prioritized a back-end migration first.  The JavaScript spaghetti stagnated.  Bugs abounded in that page and others.  Global variables littered the code.  Unexpected things often broke.  Tests were flaky or non-existent.  Error prevention processes expanded from a quick functionality tests, to code reviews, manual testing, more extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
 
-I got curious.  Querying Git showed 500 changes to that page in the last year.  Our current processes placed mean time per change ~3 hours of staff time (conservatively).  500 changes per year meant 1500 hours spent maintaining it.  Each year.  We had 140 other pages with similar issues.
+I got curious.  Querying Git showed 500 changes to that page in the last year.  500 changes per year meant 1500 hours spent maintaining it.  Most of those 1500 hours went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  We had 140 other pages with similar issues.
 
-One page.  1500 hours per year.  Most of those 1500 hours went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.
+One page.  1500 hours per year.  Mostly new and repeat bugs
 
-In terms of financial investment assume 80k per year per developer, add 50k for all the benefits, overhead, taxes, etc, for a total of 130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.  Multiply 1500 hours by $62.5/hr, and that page required $94,000 per year to maintain.
+Financially speaking, assume 80k per year per developer, add 50k for benefits, overhead, taxes, etc.  Total 130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.  Multiply 1500 hours by $62.5/hr, and that page required $94,000 per year to maintain.
 
 [Outcomes](https://hbr.org/2012/11/its-not-just-semantics-managing-outcomes) extend further.  Good experiences produce delight and pleasant interactions among users, staff, their teams, and beyond.  Bad experiences create stress and sour interactions.  Unexpected behaviors produce confusion, frustration, and stress.  Delays produce frustration.  Low reliability adds to stress through uncertainty and perceived lack of control, while decreasing sales staff confidence and company reputation.  Ripple effects spread the impacts into other areas of life, like the impact of carrying increased stress home.
 
