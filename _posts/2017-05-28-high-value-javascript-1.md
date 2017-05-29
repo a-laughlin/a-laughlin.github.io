@@ -46,7 +46,7 @@ The problem - ambiguity, misunderstandings, complexity, and information overload
 
 Think of it like this, but replace "customer responsiveness" with "customer interest in product":
 
-![technical debt impact on customer interest over time](/Users/adam/Dropbox/repos/a-laughlin.github.io/assets/technical_debt_slide.jpg)
+![technical debt impact on customer interest over time](../assets/technical_debt_slide.jpg)
 
 ## How do we get out?
 We can never achieve all high quality code.  Deposits of low quality code continually form due to deadlines and inexperience.  Eventually costs per change threaten value produced per change, and investments of time, energy, and finances go into removing them and increasing overall code quality.  Then the cycle repeats.
