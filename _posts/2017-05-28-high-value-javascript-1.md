@@ -3,16 +3,16 @@ layout: post
 title: High Value JavaScript (Part 1)
 ---
 
-Startup SaaS Company.  Two years in.  Funds running low.  Our JavaScript is sphaghetti.  One page costs $94k per year to maintain.  140 pages.  Shit.  How did we get here?
+Startup SaaS Company.  Two years in.  Funds running low.  Our JavaScript is a ball of mud.  One page costs $94k per year to maintain.  140 pages.  Shit.  How did we get here?
 
 ## Backstory
 A couple of great guys learned javascript (Angular 1) to launch a SaaS business.  They had neither coding experience nor formal education.  Still, they were smart and focused and used Angular to produce features at an incredible rate.
 
 Code quality was low.  It wasn't a problem.  The code was short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  They added customers.  They added developers.
 
-When I started 1.5 years in, our most troublesome page's code had grown to 2500 lines.  New technical leadership prioritized a back-end migration first.  The JavaScript spaghetti stagnated.  Bugs abounded in that page and others.  Global variables littered the code.  Unexpected things often broke.  Customers complained.  Tests were flaky or non-existent.  Error prevention processes expanded from a quick functionality tests, to code reviews, manual testing, extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
+When I started 1.5 years in, our most troublesome page's code had grown to 2500 lines.  New technical leadership prioritized a back-end rewrite first.  Bugs abounded in that page and others.  I stabilized things as much as I could.  Months of whack-a-mole bug squashing while the back-end code changed.  Mud can only get so clean.  Global variables littered the code.  Unexpected things often broke.  Customers complained.  Tests were flaky or non-existent.  Error prevention processes expanded from a quick functionality checks, to multi-person code reviews, multi-person manual tests, extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
 
-I got curious.  Estimated time per change was now around 3 hours.  Most changes went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  Git showed 500 changes to that page in the last year.  1500 hours spent maintaining one page.  We had 140 other pages with similar issues.
+Estimated time per change grew to around 3 hours.  I got curious.  Most changes went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  Git showed 500 changes to that page in the last year.  1500 hours spent maintaining one page.  We had 140 other pages with similar issues.  Not good.
 
 ## Costs
 Financially speaking, assume 80k per year per developer, add 50k for benefits, overhead, taxes, etc.  Total 130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.  Multiply 1500 hours by $62.5/hr, and that page required $94,000 per year to maintain.
@@ -21,8 +21,8 @@ Financially speaking, assume 80k per year per developer, add 50k for benefits, o
 
 1500 hours, $94k, bad experiences.  Low-qualitiy JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
 
-## How did we get there?
-Developer fault?  No.  All devs I've met generally do the best they can given their experience.  Producing high quality code is not easy.
+## Developer fault?
+No.  All devs I've met generally do the best they can given their experience.  Producing high quality code is not easy.
 
 When you start to learn JavaScript, and your programming background is:
   - Classical Object-oriented, you follow OO examples and use OO libraries because they make sense to you. You work around JavaScript's OO quirks.
