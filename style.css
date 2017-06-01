@@ -622,29 +622,6 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 .post-645 .redColor {color:#D00;}
 
 
-.masthead{margin:0 auto;width:100%;text-align:center;}
-.site-title { position: relative; top: 20px; text-align: right; right: 50px; }
-.site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;top:95px}
-.tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
-.tagline-upper{position:absolute;left:200px;text-align:left;color:#999;}
-.tagline-split{position:absolute;top:25px;left:56.5%;text-align:center;color:#aaa;}
-.tagline-lower{position:absolute;right:200px;top:50px;text-align:right;color:#fff}
-#content-wrap {
-  padding: 2% 5%;
-  top:210px;
-  margin: 0 20% 0 20%;
-  width:75%;
-  min-width:400px;
-  height: auto;
-  background-color: #fff;
-  opacity: .9;
-  filter: alpha(opacity=90);
-  position: absolute;
-  z-index: 10;
-}
-#content { width:100%; background-color: #fff; }
-nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
-
 /*smaller screen sizes*/
 @media all and (max-width: 899px){
   #content-wrap {width:90%;margin:0 5%;}
