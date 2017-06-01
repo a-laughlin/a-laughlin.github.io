@@ -488,7 +488,7 @@ a:link, a:visited {
 #content .entry-title a{color: #999;font-size: 21px;font-weight: bold;line-height: 1.3em;margin-bottom: 0;text-decoration: none}*/
 #footer {clear: both;width: 100%;margin:0}
 
-#content-wrap nav, #branding,#boulders,#island,
+nav.main-nav, #branding,#boulders,#island,
 #boat,#pads,#search,#rss,#github-projects,#recent-posts,
 #recent-posts H3,#recent-posts ul,#text-4{position: absolute;}
 #branding {right: 10px;top: 20px;}
@@ -503,7 +503,7 @@ a:link, a:visited {
 #pads {width:307px; height:263px; background-image:url(assets/pads.gif);right:0;bottom:50px;z-index:-5}
 
 
-#content-wrap nav {bottom:0;left:0;margin:0;padding:0;width:200px;z-index:5}
+nav.main-nav {bottom:0;left:0;margin:0;padding:0;width:200px;z-index:5}
 .menu-about{bottom: 205px;left: 60px}
 .menu-about a:link, .menu-about a:visited {color: #BBB;font-size:1.4em}
 .menu-hire{bottom: 160px;left: 20px}
@@ -619,7 +619,7 @@ a:link, a:visited {
   #wrapper {margin-right:0}
   #pads{}
   #content-wrap {}
-  #content-wrap nav {position:relative;}
+  nav.main-nav {position:relative;}
   #content {}
   #content .entry {}
 }
@@ -630,7 +630,7 @@ a:link, a:visited {
   #pads{display:none}
   #content {}
   #content-wrap {}
-  #content-wrap nav {}
+  nav.main-nav {}
 
 }
 
