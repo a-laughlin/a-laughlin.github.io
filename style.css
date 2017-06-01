@@ -450,7 +450,7 @@ table {
 
 
 
-body {background:#0f0f0f url(http://media.1button.org/bg.png) repeat-x;}
+body {background:#0f0f0f url(assets/bg.png) repeat-x;}
 #content {opacity:.85;filter:alpha(opacity=85);background-color: #fff;padding:166px 20px 0}
 a:link, a:visited {
     color: #DDDDDD;
@@ -477,17 +477,19 @@ a:link, a:visited {
 #content .entry-title a{color: #999;font-size: 21px;font-weight: bold;line-height: 1.3em;margin-bottom: 0;text-decoration: none}*/
 #footer {clear: both;width: 100%;margin:0}
 
-#menu-pages,#menu-pages li,#branding,#boulders,#island,#boat,#pads,#search-2,#rss,#github-projects,#recent-posts-2,#recent-posts-2 H3,#recent-posts-2 ul,#text-4{position: absolute;}
+#menu-pages,#menu-pages li,#branding,#boulders,#island,
+#boat,#pads,#search-2,#rss,#github-projects,#recent-posts-2,
+#recent-posts-2 H3,#recent-posts-2 ul,#text-4{position: absolute;}
 #branding {right: 10px;top: 20px;}
 #site-title {font-size: 30px;line-height: 36px;margin:10px 30px 0}
 #site-title a {color: #AAA;font-family:"Comic Sans MS",sans-serif;text-decoration: none}
 #site-description {font-size: 14px; font-style: italic; margin: 82px 0 0 0;width: 236px;text-align: center; color:#333;font-family:georgia,serif;}
 
 
-#boat {width:280px; height:345px; opacity:.9; filter:alpha(opacity=90); background-image:url(http://media.1button.org/boat_background.gif);left:0;top:0;z-index:-5}
-#island {width:107px; height:178px; opacity:.25; filter:alpha(opacity=25); background-image:url(http://media.1button.org/island.gif);right:80px;top:60px;z-index:-5}
-#boulders {width:200px; height:250px; opacity:.8; filter:alpha(opacity=80); background-image:url(http://media.1button.org/boulders.png);left:0;bottom:0;z-index:-10;background-repeat: no-repeat;}
-#pads {width:307px; height:263px; background-image:url(http://media.1button.org/pads.gif);right:0;bottom:50px;z-index:-5}
+#boat {width:280px; height:345px; opacity:.9; filter:alpha(opacity=90); background-image:url(assets/boat_background.gif);left:0;top:0;z-index:-5}
+#island {width:107px; height:178px; opacity:.25; filter:alpha(opacity=25); background-image:url(assets/island.gif);right:80px;top:60px;z-index:-5}
+#boulders {width:200px; height:250px; opacity:.8; filter:alpha(opacity=80); background-image:url(assets/boulders.png);left:0;bottom:0;z-index:-10;background-repeat: no-repeat;}
+#pads {width:307px; height:263px; background-image:url(assets/pads.gif);right:0;bottom:50px;z-index:-5}
 
 #menu-pages {bottom:0;left:0;margin:0;padding:0;width:200px;z-index:5}
 .menu-about{bottom: 205px;left: 60px}
@@ -620,4 +622,3 @@ div.post pre{clear:both}
 
 
 /*** end a-laughlin.com insert ***/
-
