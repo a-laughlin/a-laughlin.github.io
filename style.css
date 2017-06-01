@@ -623,9 +623,8 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 .site-title{position:relative;top:30px;text-align:center;}
 .site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;top:95px}
 .tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
-.tagline-upper{position:absolute;left:200px;text-align:left;color:#999}
-.tagline-split{position:absolute;top:25px;text-align:center;color:#999}
-.tagline-lower:before{content:"&";display:block;color:#777;text-align:left;margin-left:-5px;}
+.tagline-upper{position:absolute;left:200px;text-align:left;color:#999;}
+.tagline-split{position:absolute;top:25px;left:56.5%;text-align:center;color:#aaa;}
 .tagline-lower{position:absolute;right:200px;top:50px;text-align:right;color:#fff}
 #content-wrap {
   padding: 2% 5%;
