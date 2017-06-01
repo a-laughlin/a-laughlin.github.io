@@ -6,11 +6,11 @@ title: High Value JavaScript (Part 1)
 Startup SaaS Company.  Two years in.  Funds running low.  Our JavaScript is a ball of mud.  One page costs $94k per year to maintain.  140 pages.  Shit.  How did we get here?
 
 ## Backstory
-A couple of great guys learned javascript (Angular 1) to launch a SaaS business.  They had neither coding experience nor formal education.  Still, they were smart and focused and used Angular to produce features at an incredible rate.
+A couple of great guys learned javascript (Angular 1) to launch a SaaS business.  They had neither coding experience nor formal programming education.  Still, they were smart and focused and used Angular to produce features at an incredible rate.
 
 Code quality was low.  It wasn't a problem.  The code was short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  They added customers.  They added developers.
 
-When I started 1.5 years in, our most troublesome page's code had grown to 2500 lines.  New technical leadership prioritized a back-end rewrite first.  Bugs abounded in that page and others.  I stabilized things as much as I could.  Months of whack-a-mole bug squashing while the back-end code changed.  Mud can only get so clean.  Global variables littered the code.  Unexpected things often broke.  Customers complained.  Tests were flaky or non-existent.  Error prevention processes expanded from a quick functionality checks, to multi-person code reviews, multi-person manual tests, extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
+When I started 1.5 years in, our most troublesome page's code was 2500 lines of code.  New technical leadership prioritized a back-end rewrite first.  Bugs abounded in that page and others.  I stabilized what I could.  Months of whack-a-mole bug squashing while the back-end code changed.  Mud can only get so clean.  Global variables littered the code.  Unexpected things often broke.  Customers complained.  Tests were flaky or non-existent.  Error prevention processes expanded from a quick functionality checks, to multi-person code reviews, multi-person manual tests, extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
 
 Estimated time per change grew to around 3 hours.  I got curious.  Most changes went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  Git showed 500 changes to that page in the last year.  1500 hours spent maintaining one page.  We had 140 other pages with similar issues.  Not good.
 
@@ -21,8 +21,8 @@ Financially speaking, assume 80k per year per developer, add 50k for benefits, o
 
 1500 hours, $94k, bad experiences.  Low-qualitiy JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
 
-## Developer fault?
-No.  All devs I've met generally do the best they can given their experience.  Producing high quality code is not easy.
+## Causes?
+Developer Fault?  No.  All devs I've met generally do the best they can given their experience.
 
 When you start to learn JavaScript, and your programming background is:
   - Classical Object-oriented, you follow OO examples and use OO libraries because they make sense to you. You work around JavaScript's OO quirks.
@@ -40,64 +40,97 @@ A few days later Frankenstein's monster emerges into the web.
 
 What happened?  Well, to start, modules, objects, and separate concerns probably meant different things in each of them.
 
-Problems arise when new devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood, often-unstated philosophies to describe often-misunderstood, sometimes-conflicting "good" coding principles.  Then they attempt to write high-quality code in a new language with its own label interpretations and philosophy implementations, using frameworks that often add even more ambiguous labels and interpretations (e.g., angular 1's expressions & services).
+Problems arise when new devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood, often-unstated philosophies to describe often-misunderstood, sometimes-conflicting "good" coding principles.  Then they attempt to write high-quality code in a new language with its own label interpretations and philosophy implementations, often using frameworks with additional ambiguous labels and interpretations (e.g., Angular 1's expressions & services).
 
-The problem - ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  To combat that, a simple heuristic develops - "whatever code works".  The result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.  For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  Given enough changes, the accumulated costs per change can exceed the value produced, and a downward spiral begins.  A spiral that no one wants to enter, with an entrance no one can clearly detect, and an exit no one can leave without significant investments of engineering time, energy, and/or finances.
+### The Problem
+Ultimately, I've come to believe that ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  A simple heuristic develops - "whatever code works".  Its result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.   For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  As average cost per change approaches average value per change, net-positive changes grow increasingly scarce.  Once the threshold is crossed, re-achieving net-positive-outcome changes is nearly impossible.
 
-Think of it like this, but replace "customer responsiveness" with "customer interest in product":
+Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  The closer you get to the edge, the faster the current gets.  The water feels still because you're moving with it.  The noise is consistently loud.  It's unclear if swimming upstream actually works.
 
-![technical debt impact on customer interest over time](../assets/technical_debt_slide.jpg)
+Judging your proximity to the edge is difficult.  The more pressure there is to produce value, the higher the likelihood you're near or over the edge.  Not the best indicator, I know.  Value per change is difficult to measure.  Comments regarding metrics are very welcome.
 
-## How do we get out?
-We can never achieve all high quality code.  Deposits of low quality code continually form due to deadlines and inexperience.  Eventually costs per change threaten value produced per change, and investments of time, energy, and finances go into removing them and increasing overall code quality.  Then the cycle repeats.
+![woman screaming in water, about to go over waterfall](../images/devilpool4.jpg)
 
-Deadlines plus inexperience grow low quality code volume quickly.  The cost of replacing low quality code grows exponentially with the amount of it.  There are many factors involved in creating that cost, so for simplicity, figure the cost of fixing low quality code is `(original time per change * 100 * number of changes) / experienced developers`.  500 low quality changes to fix gets costly fast.
 
-The best we can do is slow down the accumulation to generate as much value per change as possible before we have to invest in decreasing it.  That ideally gives us revenue.  Revenue gives us options.  Hire other developers?  Spend time ourselves?  Whatever we choose, we won't have the choice unless we produce as much value per change as possible from the start.  But how?  Given all the ambiguity, complexity, and information involved in learning?
 
-This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code early on, in less time, with greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
+### Solution
+This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
-## Connecting Code to Quality
+Let's start by removing uncertainty (i.e., the blindflold).  Here are the basic connections between "Whatever Works" code and Value.
 
-Let's start by removing some ambiguity.  Here are the basic connections between "Whatever Works" code and Value.
+**Code > ~uncertainty~ > Quality > Value**
 
-`Code > **ambiguity** > Quality > Value`
+Here are the connections with uncertainty replaced:
 
-Here are the connections with ambiguity replaced:
+**Code > Practices + Principles + Philosophies  > Quality  > Value**
 
-`Code > Practices + Principles + Philosophies  > Quality  > Value`
 
-Terms: (clean these up, add pic of cycles)
-Accumulations of low-quality JavaScript are called [Technical Debt](https://en.wikipedia.org/wiki/Technical_debt).
-Replacing some low quality code with higher-quality code is called refactoring
-Replacing all low quality code with higher-quality code is called rewriting/rearchitecting.
-Value: People's desires satisfied.
-Quality:  How well code can satisfies peoples' desires (i.e., its value produceability).
-High Quality Code: Code that can produce value per change well above its costs per change.
-Low Quality Code: Code that can costs more to change than the value it can produce.
 
-## Quality?
-You might have heard terms like "flexibility", "reliability", and "usability" before.  These are system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
+#### What exactly is Value?
+**Value** is people's desires satisfied.
 
-Different quality attributes satisfy different desires.  For example, we desire our planes to stay in the air, so reliability is critically important quality attribute in airplane software.  To stay competitive, businesses often desire to adapt quickly, so changeability is a critically important quality attribute in many businesses.
+#### What exactly is Quality?
+**Quality** is code's ability to satisfy people's desires. Quality's nature varies for each piece of software because people's desires for that software vary.  Quality's different natures are called system quality attributes.  You might have heard terms like "flexibility", "reliability", and "usability" before.  These are system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
 
-Things to be aware of:
-- Some quality attributes have overlapping meanings
-- Different articles use different words for the same or similar quality attributes
-- You'll chase your tail if you try to satisfy all attributes.  There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability"
+Saying code is flexible, or changeable, or reliable should say something about how an organization produces value.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  To stay competitive, businesses often desire to change quickly, so changeability is a important quality attribute in many businesses.
 
 A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  This series of articles will focus on changeability.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions. Focusing on changeability often results in other attributes like modularity, flexibility, testability, and reliability.
 
 **Changeability** - How fast you or others can make error-free code changes to produce the desired behaviors
 
+Things to be aware of:
+  - Quality attributes often have overlapping definitions
+  - Different articles use different words for the same or similar quality attributes
+  - Know what aspects of quality you're trying to achieve when reading dev articles.  They'll help you understand what's important.
+  - You'll chase your tail if you try to satisfy all attributes.  There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability"
+  - Choose your attributes carefully.  If we write highly flexible code for airplanes, and highly reliable code for businesses, we'll spend months or years producing high cost, needlessly redundant business software plus dangerous airline software.
+  - Coding is mentally absorbing. Losing perspective in the weeds is easy.  A common case for devs is optimizing for efficiency (aka execution speed) when such gains are super low priority.  Revisit Attributes frequently to retain perspective.
+  - Term to Know: Accumulations of low-quality code are an aspect of **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**
+
+
+#### Quality: The Right Amount at the Right Time
+If you've made it this far, there's a decent chance you're you're already in the river.  Let's explore what quality improvement solutions look like at different distances from the edge (how close potential value per change is to cost per change).
+
+##### Solution Terms to Know
+Solutions vary from adding no code, to replacing all code.  Each has has a different name and and different cost, depending on how time/energy/financially exhausting it is:
+| metaphor | Action | Term |
+| ------------- | ------------- | ------------- |
+| treading water  | not adding code  | feature freeze  |
+| small strokes  | replace small code parts  | refactoring  |
+| medium strokes  | replace large code parts  | partial/incremental rewrite  |
+| large strokes  | replace all code  | rearchitecture/rewrite  |
+
+Far from the waterfall edge, swimming upriver is easy.  Most any stroke is effective.  At the edge, no stroke is powerful enough.
+Let's consider those solutions in terms of proximity to waterfall edge (how close value per change is to cost per change).  Starting at the edge and working backward.
+Solutions At Distances
+
+##### Over the Edge
+Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high-value features are not high enough now.  Escaping is as easy and probable as escaping as an actual waterfall plummet.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.
+![technical debt impact on customer interest over time](../images/code-quality-late.png)
+
+#####  Near the Edge - Get Help
+You're close to the edge.  Your best upstream strokes can almost stop your your downstream slippage, but not quite.  The only way out is external help.  Maybe yell for a rope, an immediate and large investment of engineering time, energy, and finances, or perhaps [a rudimentary lathe](https://www.youtube.com/watch?v=EQG3I5efwWo).
+
+No image for this one.  Finding and catching a rope is highly improbable.  If a rope does appear, it came from the river's side.  You can't pull yourself out instantly.  You're still going over, just maybe not all the way down if you can hold on.  Getting out is going to hurt.  Necessary feature freezes will increase stress for everyone, especially leadership and sales.  Adding low-quality code to satisfy customer promises is like swimming downstream into the accelerating current.  It only makes sense if the rope clearly landed there.  Adding high-quality code now is clinging to a floating log.  It's going over too, will get trashed in the fall, and won't help you climb the rope.
+
+#####  Decently Far - Swim
+You're far enough away from the edge that swimming upstream still works well.  Value per change well above cost per change gives you options.  You can even swim downstream a little when customers have a deadline.  Less dramatic, more incremental solutions like refactoring, partial feature freezes, and partial rewrites still reduce costs.
+![value per change decently above cost per change over time](../images/code-quality-early.png)
+
+#####  Prevent the Problem - Go Somewhere Wiser
+Refreshing cool water around your ankles.  Walking forward to swim is tempting.  That noise is probably just the wind in the trees.  Probably.  Then again, why accept the uncertainty?  You could just remove the blindfold, notice the waterfall, walk up the trail, and swim in a quiet pool a mile upstream.  Learning to write higher-quality code from the start keeps your costs low, your value high, your chances of success high, and greatly improves everyone's experience in the proccess.
+
+![value per change far above cost per change over time](../images/code-quality-high.png)
 
 ## Summary
 
-Code > Practices + Principles + Philosophies  > Quality (high)  > Value (high)
 
+  **Code > Practices + Principles + Philosophies  > Quality > Value**
   - Increase value by increasing quality attributes (e.g., changeability)
   - Increase quality attributes (changeability) through...
   - To be Continued!
+
+  The examples should apply to any JavaScript code, including code written for specific frameworks (e.g., jQuery, React, Angular, Ember).  The concepts should also apply to other languages.
 
 [Code]() The basics, for examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
 [Philosophies, Principles, and Practices]() Simple ways to think about them in JavaScript, for Context (includes composition, inheritance)
