@@ -2,7 +2,6 @@
 layout: post
 title: High Value JavaScript (Part 1)
 ---
-
 Startup SaaS Company.  Two years in.  Funds running low.  Our JavaScript is a ball of mud.  One page costs $94k per year to maintain.  140 pages.  Shit.  How did we get here?
 
 ## Backstory
@@ -74,9 +73,9 @@ Here are the connections with uncertainty replaced:
 
 Saying code is flexible, or changeable, or reliable should say something about how an organization produces value.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  To stay competitive, businesses often desire to change quickly, so changeability is a important quality attribute in many businesses.
 
-A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  This series of articles will focus on changeability.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions. Focusing on changeability often results in other attributes like modularity, flexibility, testability, and reliability.
+A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  This series of articles will focus on changeability.  **Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions. Focusing on changeability often results in other attributes like modularity, flexibility, testability, and reliability.
 
-**Changeability** - How fast you or others can make error-free code changes to produce the desired behaviors
+
 
 Things to be aware of:
   - Quality attributes often have overlapping definitions
@@ -115,6 +114,7 @@ No image for this one.  Finding and catching a rope is highly improbable.  If a 
 
 #####  Decently Far - Swim
 You're far enough away from the edge that swimming upstream still works well.  Value per change well above cost per change gives you options.  You can even swim downstream a little when customers have a deadline.  Less dramatic, more incremental solutions like refactoring, partial feature freezes, and partial rewrites still reduce costs.
+
 ![value per change decently above cost per change over time](../images/code-quality-early.png)
 
 #####  Prevent the Problem - Go Somewhere Wiser
@@ -124,16 +124,16 @@ Refreshing cool water around your ankles.  Walking forward to swim is tempting. 
 
 ## Summary
 
+Problem: Devs have difficulty connecting code to value
+Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
-  **Code > Practices + Principles + Philosophies  > Quality > Value**
-  - Increase value by increasing quality attributes (e.g., changeability)
-  - Increase quality attributes (changeability) through...
-  - To be Continued!
+Value: People's desires Satisfied
+Quality: Code's ability to satisfy peoples' desires.  Expressed as System Quality Attributes (e.g. Changeability)
 
-  The examples should apply to any JavaScript code, including code written for specific frameworks (e.g., jQuery, React, Angular, Ember).  The concepts should also apply to other languages.
+How to Increase Quality?  To be Continued in upcoming articles!
 
-[Code]() The basics, for examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
-[Philosophies, Principles, and Practices]() Simple ways to think about them in JavaScript, for Context (includes composition, inheritance)
-[Principles Part 1]() Zero Repetition
-[Principles Part 2]() Zero Couples
-[Summary]()
+Rough Article Roadmap:
+Code: The basics, for context and examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
+Philosophies, Principles, and Practices: High level introduction to OO/Functional/Procedural Philosophies, Principles overview, Composition/Inheritance
+Principles Part 1: Zero Repetition
+Principles Part 2: Zero Couples
