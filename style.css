@@ -500,9 +500,9 @@ a:link, a:visited {
 #boat,#pads,#search,#rss,#github-projects,#recent-posts,
 #recent-posts H3,#recent-posts ul,#text-4{position: absolute;}
 #branding {right: 10px;top: 20px;}
-#site-title {font-size: 30px;line-height: 36px;margin:10px 30px 0}
-#site-title a {text-decoration:none;color: #AAA;font-family:"Comic Sans MS",sans-serif}
-#site-description {font-size: 14px; font-style: italic; margin: 82px 0 0 0;width: 236px;text-align: center; color:#333;font-family:georgia,serif;}
+.site-title {font-size: 30px;line-height: 36px;margin:10px 30px 0}
+.site-title a {text-decoration:none;color: #AAA;font-family:Georgia;}
+
 
 
 #boat {width:280px; height:345px; opacity:.9; filter:alpha(opacity=90); background-image:url(assets/boat_background.gif);left:0;top:0;z-index:-5}
@@ -619,18 +619,25 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 .post-645 .redColor {color:#D00;}
 
 
-.masthead{margin:0 auto;width:60%;text-align:center;}
-
+.masthead{margin:0 auto;width:100%;text-align:center;}
+.site-title{position:relative;top:30px;text-align:center;}
+.site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;top:95px}
+.tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
+.tagline-upper{position:absolute;left:200px;text-align:left;color:#999}
+.tagline-split{position:absolute;top:25px;text-align:center;color:#999}
+.tagline-lower:before{content:"&";display:block;color:#777;text-align:left;margin-left:-5px;}
+.tagline-lower{position:absolute;right:200px;top:50px;text-align:right;color:#fff}
 #content-wrap {
   padding: 2% 5%;
-  margin: 115px 20% 0 20%;
+  top:210px;
+  margin: 0 20% 0 20%;
   width:75%;
   min-width:400px;
   height: auto;
   background-color: #fff;
   opacity: .9;
   filter: alpha(opacity=90);
-  position: relative;
+  position: absolute;
   z-index: 10;
 }
 #content {
@@ -652,9 +659,9 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 }
 @media all and (max-width: 899px){
   H1{color:#070;}
-  #content-wrap {width:90%;margin:auto 5%;}
-  nav.main-nav {position:relative;margin-left:5%;}
-  nav.main-nav .nav-item{position:relative;bottom:0;top:0;left:0;right:0;font-size:1.4em;color:#ccc;}
+  #content-wrap {width:90%;margin:0 5%;}
+  nav.main-nav {position:absolute;top:70px;margin-left:5%;}
+  nav.main-nav .nav-item{line-height:150%;position:relative;bottom:0;top:0;left:0;right:0;font-size:1.2em;color:#ccc;}
   nav.main-nav .nav-item a:link,
   nav.main-nav .nav-item a:visited {color:#ddd;}
   #content {}
