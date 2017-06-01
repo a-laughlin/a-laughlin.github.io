@@ -488,7 +488,7 @@ a:link, a:visited {
 #content .entry-title a{color: #999;font-size: 21px;font-weight: bold;line-height: 1.3em;margin-bottom: 0;text-decoration: none}*/
 #footer {clear: both;width: 100%;margin:0}
 
-nav.main-nav, #branding,#boulders,#island,
+.main-nav, .nav-item, #branding,#boulders,#island,
 #boat,#pads,#search,#rss,#github-projects,#recent-posts,
 #recent-posts H3,#recent-posts ul,#text-4{position: absolute;}
 #branding {right: 10px;top: 20px;}
@@ -504,14 +504,14 @@ nav.main-nav, #branding,#boulders,#island,
 
 
 nav.main-nav {bottom:0;left:0;margin:0;padding:0;width:200px;z-index:5}
-.menu-about{bottom: 205px;left: 60px}
-.menu-about a:link, .menu-about a:visited {color: #BBB;font-size:1.4em}
-.menu-hire{bottom: 160px;left: 20px}
-.menu-hire a:link, .menu-hire a:visited {color: #DDD}
-.menu-contact{ bottom: 160px;left: 5px;font-size:1.7em;}
-.menu-contact a:link, .menu-contact a:visited {color: #DDD}
-.menu-goals{display:none}
-.menu-goals a:link, .menu-goals a:visited {color: #BBB}
+.nav-item.about{bottom: 205px;left: 60px}
+.nav-item.about a:link, .menu-about a:visited {color: #BBB;font-size:1.4em}
+.nav-item.hire{bottom: 160px;left: 20px}
+.nav-item.hire a:link, .menu-hire a:visited {color: #DDD}
+.nav-item.contact{ bottom: 160px;left: 5px;font-size:1.7em;}
+.nav-item.contact a:link, .menu-contact a:visited {color: #DDD}
+.nav-item.goals{display:none}
+.nav-item.goals a:link, .menu-goals a:visited {color: #BBB}
 #rss{left:65px;bottom:10px;color:#DDD}
 #github-projects{left:80px;bottom:70px;color:#EEE;font-size:2em;white-space: nowrap;}
 
