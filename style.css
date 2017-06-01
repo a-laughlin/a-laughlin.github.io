@@ -451,7 +451,7 @@ table {
 
 
 body {background:#0f0f0f url(assets/bg.png) repeat-x;}
-#content_wrap {
+#content-wrap {
   margin: 115px 220px;
   padding: 0 2em;
   width: 46%;
@@ -617,8 +617,20 @@ a:link, a:visited {
   #island {z-index:8}
   #branding {z-index:10}
   #wrapper {margin-right:0}
+  #pads{}
+  #content-wrap {}
+  #content-wrap nav {position:relative;}
+  #content {}
+  #content .entry {}
+}
+@media all and (max-width: 600px){
+  #island {z-index:8}
+  #branding {z-index:10}
+  #wrapper {margin-right:0}
   #pads{display:none}
-  #content {padding-top:266px}
+  #content {}
+  #content-wrap {}
+  #content-wrap nav {}
 
 }
 
