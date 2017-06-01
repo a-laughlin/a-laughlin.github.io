@@ -25,17 +25,22 @@
             <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
         </header>
       </div>
     </div>
 
-    <div id="content" role="main" class="container">
-      {{ content }}
+    <div class="content-wrap">
+
+      <nav id="menu-pages">
+        <a href="{{ site.baseurl }}/">Blog</a>
+        <a href="{{ site.baseurl }}/about">About</a>
+      </nav>
+      <div id="recent-posts">
+
+      </div>
+      <div id="content" role="main" class="container">
+        {{ content }}
+      </div>
     </div>
 
     <div class="wrapper-footer">
