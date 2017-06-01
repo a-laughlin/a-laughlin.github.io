@@ -451,11 +451,22 @@ table {
 
 
 body {background:#0f0f0f url(assets/bg.png) repeat-x;}
-/* #content-wrap {
-  margin: 115px 0 0 220px ;
-  padding: 0 2em;
-  width: 46%;
-  max-width:599px;
+.masthead{margin:0 auto;width:100%;text-align:center;}
+.site-title { position: relative; top: 20px; text-align: right; right: 50px; }
+.site-title a {text-decoration:none;color: #AAA;font-style:italic;font-family:Georgia;}
+.site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;top:95px}
+.tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
+.tagline-upper{position:absolute;left:200px;text-align:left;color:#999;}
+.tagline-split{position:absolute;top:25px;left:56.5%;text-align:center;color:#aaa;}
+.tagline-lower{position:absolute;right:200px;top:50px;text-align:right;color:#fff}
+
+
+#content-wrap {
+  padding: 2% 5%;
+  top:210px;
+  margin: 0 20% 0 20%;
+  width:75%;
+  min-width:400px;
   height: auto;
   background-color: #fff;
   opacity: .9;
@@ -463,13 +474,8 @@ body {background:#0f0f0f url(assets/bg.png) repeat-x;}
   position: absolute;
   z-index: 10;
 }
-#content {
-  width:100%;
-  opacity:.85;
-  filter:alpha(opacity=85);
-  background-color: #fff;
-  padding:20px 0
-} */
+#content { width:100%; background-color: #fff; }
+nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
 #content img {width:100%;}
 a:link, a:visited {
     color: #DDDDDD;
@@ -499,9 +505,6 @@ a:link, a:visited {
 .main-nav, .nav-item, #branding,#boulders,#island,
 #boat,#pads,#search,#rss,#github-projects,#recent-posts,
 #recent-posts H3,#recent-posts ul,#text-4{position: absolute;}
-#branding {right: 10px;top: 20px;}
-.site-title {font-size: 30px;line-height: 36px;margin:10px 30px 0}
-.site-title a {text-decoration:none;color: #AAA;font-family:Georgia;}
 
 
 
@@ -620,7 +623,7 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 
 
 .masthead{margin:0 auto;width:100%;text-align:center;}
-.site-title{position:relative;top:30px;text-align:center;}
+.site-title { position: relative; top: 20px; text-align: right; right: 50px; }
 .site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;top:95px}
 .tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
 .tagline-upper{position:absolute;left:200px;text-align:left;color:#999;}
@@ -639,39 +642,19 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
   position: absolute;
   z-index: 10;
 }
-#content {
-  width:100%;
-  background-color: #fff;
-}
+#content { width:100%; background-color: #fff; }
 nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
 
 /*smaller screen sizes*/
-@media all and (max-width: 3999px){
-  H1{color:#f00;}
-  #island {z-index:8}
-  #branding {z-index:10}
-  #pads{}
-  #content-wrap {}
-  nav.main-nav {}
-  #content {}
-  #content .entry {}
-}
 @media all and (max-width: 899px){
-  H1{color:#070;}
   #content-wrap {width:90%;margin:0 5%;}
   nav.main-nav {position:absolute;top:70px;margin-left:5%;}
   nav.main-nav .nav-item{line-height:150%;position:relative;bottom:0;top:0;left:0;right:0;font-size:1.2em;color:#ccc;}
   nav.main-nav .nav-item a:link,
   nav.main-nav .nav-item a:visited {color:#ddd;}
-  #content {}
-  #content .entry {}
 }
 @media all and (max-width: 599px){
-  H1{color:#007;}
-  #content-wrap {width:96%;margin:auto 2%;}
-  nav.main-nav {}
-  #content {}
-  #content .entry {}
+  #content-wrap {width:98%;margin:auto 1%;}
 }
 
 
