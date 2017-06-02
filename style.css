@@ -475,9 +475,9 @@ a:link, a:visited { color: #DDDDDD;}
   position: absolute;
   z-index: 10;
 }
-#content { width:100%; background-color: #fff; }
+#content { width:100%; background-color: #fff; max-width:800px;}
 nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
-#content img {width:100%;}
+#content img {width:100%;max-width:600px;}
 
 #content H1 {font-size:1.8em}
 #content H2 {font-size:1.5em}
