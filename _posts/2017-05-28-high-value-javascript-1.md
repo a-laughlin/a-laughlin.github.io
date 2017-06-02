@@ -21,21 +21,17 @@ Financially speaking, assume $80k per year per developer, add $50k for benefits,
 
 1500 hours, $94k, bad experiences.  Low-qualitiy JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
 
-## Causes?
-Developer Fault?  No.  All devs I've met generally do the best they can given their experience.
-
-When you start to learn JavaScript, and your programming background is:
+## Causes
+Developer Fault?  No.  All devs I've met generally do the best they can given their experience.  When you start to learn JavaScript, and your programming background is:
   - Classical Object-oriented, you follow OO examples and use OO libraries because they make sense to you. You work around JavaScript's OO quirks.
   - Functional, you follow functional examples and use functional libraries because they make sense to you.  You work around JavaScript's functional quirks.
   - None, no articles make sense yet.  You follow guidelines from all articles because they're written by more experienced developers.  You don't know that programming languages have quirks.
 
 The path to getting stuff done looks something like this:
-
  - Article 1: (jQuery) Submit your form with `$('.loginForm').submit()`;
  - Article 2: (jQuery) Separate concerns is good - separate your data and functions from others' data and functions by namespacing them in an object.
  - Article 3: (OO) Separate concerns is good - do it with modules, classes, and objects with data and functions
  - Article 4: (functional) Separate concerns is good - do it with modules, classes, and objects with data, and functions
-
 A few days later Frankenstein's monster emerges into the web.
 
 What happened?  Well, to start, modules, objects, and separate concerns probably meant different things in each of them.
@@ -47,8 +43,6 @@ Ambiguity, misunderstandings, complexity, and information overload make it nearl
 
 Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  The closer you get to the edge, the faster the current gets.  The water feels still because you're moving with it.  The noise is consistently loud.  It's unclear if swimming upstream actually works.
 
-Judging your proximity to the edge is difficult.  The more pressure there is to produce value, the higher the likelihood you're near or over the edge.  Not the best indicator, I know.  Value per change is difficult to measure.  Comments regarding metrics are very welcome.
-
 ![woman screaming in water, about to go over waterfall](../images/devilpool4.jpg)
 
 
@@ -57,11 +51,9 @@ Judging your proximity to the edge is difficult.  The more pressure there is to 
 This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
 Let's start by removing uncertainty (i.e., the blindflold).  Here are the basic connections between "Whatever Works" code and Value.
-
 **Code > ~uncertainty~ > Quality > Value**
 
 Here are the connections with uncertainty replaced:
-
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
 **Value** is people's desires satisfied.
@@ -71,9 +63,7 @@ Here are the connections with uncertainty replaced:
 Quality is like Ice Cream.  It comes in flavors because people and organizations have different desires.  You might have heard flavors like "flexibility", "reliability", and "usability" before.  Quality flavors are called system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
 
 It's easy to get overwhelmed by all the options.  A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.  This series of articles will focus on changeability since most developers work for a business of some sort.
-
 **Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.
-
 Things to be aware of:
   - Quality attributes often have overlapping definitions
   - Different articles use different words for the same or similar quality attributes
@@ -86,6 +76,8 @@ Things to be aware of:
 
 #### Quality: The Right Amount at the Right Time
 Swimming is easy far from the waterfall edge.  The current is calm.  Little quality bumps work well.  As you approach the edge the the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary.
+
+Judging your proximity to the edge is difficult.  The more pressure there is to produce value, the higher the likelihood you're near or over the edge.  Not the best indicator, I know.  Value per change is difficult to measure.  Comments regarding metrics are very welcome.
 
 Low quality code has exponential effects because most code is connected, so improving early is best.  The reality is not all of us have that option.  If you're reading this, there's a decent chance you're you're already in the river.  Let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change).
 
@@ -104,31 +96,23 @@ You're close to the edge.  There's little you can do.  Swimming only slows your 
 
 #####  Decently Far - Swim
 You're far enough away from the edge that swimming upstream still works well.  Value per change well above cost per change gives you options.  You can even swim downstream a little when customers have a deadline.  Less dramatic, more incremental solutions like refactoring, partial feature freezes, and partial rewrites still reduce costs.
-
 ![value per change decently above cost per change over time](../images/code-quality-early.png)
 
-#####  Prevent the Problem - Go Somewhere Wiser
+#####  Standing near the Shore - Look.  Walk.
 Refreshing cool water around your ankles.  Walking forward to swim is tempting.  That noise is probably just the wind in the trees.  Probably.  Then again, why accept the uncertainty?  You could just remove the blindfold, notice the waterfall, walk up the trail, and swim in a quiet pool a mile upstream.  Learning to write higher-quality code from the start keeps your costs low, your value high, your chances of success high, and greatly improves everyone's experience in the proccess.
-
 ![value per change far above cost per change over time](../images/code-quality-high.png)
 
 ## Summary
-
 Problem: Devs have difficulty connecting code to value
-
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
-
 Terms to Know:
  - Value: People's desires Satisfied
  - Quality: Code's ability to satisfy peoples' desires.
  - System Quality Attributes: Are to quality as flavors are to ice cream
  - Changeability: How fast you or others can make error-free code changes that produce the desired behaviors.
-
 How to Increase Quality?  By increasing Changeability!
-
 How to Increase Changeability?  By reading upcoming articles in this series!
-
-Rough Article Roadmap:
+Rough Series Roadmap:
  - Code: The basics, for context and examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
  - Philosophies, Principles, and Practices: High level introduction to OO/Functional/Procedural Philosophies, Principles overview, Composition/Inheritance
  - Principles Part 1: Zero Repetition
