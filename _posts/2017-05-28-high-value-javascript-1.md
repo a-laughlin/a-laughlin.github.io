@@ -48,14 +48,14 @@ Writing an app using "what works" quality is equivalent to swimming blindfolded 
 ### Solution: High Quality Code
 This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
-Let's start by removing uncertainty (i.e., the blindflold).  Here are the basic connections between "Whatever Works" code and Value.\\
+Let's start by removing uncertainty (i.e., the blindflold).  Here are the basic connections between "Whatever Works" code and Value.  
 **Code > ~uncertainty~ > Quality > Value**
 
-Here are the connections with uncertainty replaced:\\
+Here are the connections with uncertainty replaced:  
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
-**Value** is people's desires satisfied.\\
-**Quality** is code's ability to satisfy people's desires.\\
+**Value** is people's desires satisfied.  
+**Quality** is code's ability to satisfy people's desires.  
 
 #### Quality Attributes
 Quality is like Ice Cream.  It comes in flavors because people and organizations have different desires.  You might have heard flavors like "flexibility", "reliability", and "usability" before.  Quality flavors are called system quality attributes.  You improve quality by designing your code to improve those attributes, so choosing some is important.  It's also overwhelming because there are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  
@@ -103,7 +103,7 @@ Refreshing cool water around your ankles.  Walking forward to swim is tempting. 
 ![value per change far above cost per change over time](../images/code-quality-high.png)
 
 ## Summary 
-Problem: Devs have difficulty connecting code to value\\
+Problem: Devs have difficulty connecting code to value  
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
 Terms to Know:
@@ -112,8 +112,8 @@ Terms to Know:
  - System Quality Attributes: Are to quality as flavors are to ice cream
  - Changeability: How fast you or others can make error-free code changes that produce the desired behaviors. 
 
-How to Increase Quality?  By increasing Changeability!\\
-How to Increase Changeability?  By reading upcoming articles in this series!\\
+How to Increase Quality?  By increasing Changeability!  
+How to Increase Changeability?  By reading upcoming articles in this series!  
 
 Rough Series Roadmap:
  - Code: The basics, for context and examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
