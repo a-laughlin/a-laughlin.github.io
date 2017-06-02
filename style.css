@@ -465,7 +465,7 @@ a:link, a:visited { color: #DDDDDD;}
 #content-wrap {
   padding: 2% 5%;
   top:210px;
-  margin: 0 20% 0 20%;
+  margin: 0 0 0 190px;
   width:75%;
   min-width:400px;
   height: auto;
@@ -475,7 +475,7 @@ a:link, a:visited { color: #DDDDDD;}
   position: absolute;
   z-index: 10;
 }
-#content { width:100%; background-color: #fff; max-width:800px;}
+#content { width:100%; background-color: #fff; max-width:800px;line-height:166%;}
 nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
 #content img {width:100%;max-width:600px;}
 
@@ -537,7 +537,7 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 #content ol > li{list-style-type: decimal;margin-left: 20px}
 #content ol > li > li {list-style-type: decimal;margin-left: 20px}
 #content ul {padding-left:20px;}
-#content p {line-height:166%;word-break:break-word;}
+#content p {word-break:break-word;}
 #content ul > li{list-style-type: disc;margin-left: 20px}
 #content pre {white-space:pre-wrap;word-break:break-word;padding:1em 0 1em .2em}
 code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;font-size:90%;font-family:"consolas","andale mono",monospace}
