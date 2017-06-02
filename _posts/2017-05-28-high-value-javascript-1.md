@@ -125,9 +125,11 @@ Refreshing cool water around your ankles.  Walking forward to swim is tempting. 
 ## Summary
 
 Problem: Devs have difficulty connecting code to value
+
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
 Value: People's desires Satisfied
+
 Quality: Code's ability to satisfy peoples' desires.  Expressed as System Quality Attributes (e.g. Changeability)
 
 How to Increase Quality?  To be Continued in upcoming articles!
