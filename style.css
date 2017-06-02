@@ -517,13 +517,13 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 .nav-item:nth-child(1){bottom:205px;left:60px;font-size:1em;}
 .nav-item:nth-child(2){bottom:160px;left:5px;font-size:1.4em;}
 .nav-item:nth-child(3){bottom:150px;left:100px;font-size:1.7em}
-.nav-item:nth-child(4){left:5px;bottom:35px;color:#EEE;font-size:1.8em;white-space: nowrap;}
+.nav-item:nth-child(4){left:5px;bottom:35px;font-size:1.8em;white-space: nowrap;}
 
 .nav-item a{text-decoration:none;}
 .nav-item:nth-child(1) a:link,.nav-item:nth-child(1) a:visited {color: #BBB;}
-.nav-item:nth-child(2) a:link,.nav-item:nth-child(2) a:visited {color: #DDD;}
-.nav-item:nth-child(3) a:link,.nav-item:nth-child(3) a:visited {color: #DDD;}
-.nav-item:nth-child(4) a:link,.nav-item:nth-child(4) a:visited {color: #EEE;}
+.nav-item:nth-child(2) a:link,.nav-item:nth-child(2) a:visited {color: #CCC;}
+.nav-item:nth-child(3) a:link,.nav-item:nth-child(3) a:visited {color: #CCC;}
+.nav-item:nth-child(4) a:link,.nav-item:nth-child(4) a:visited {color: #DDD;}
 #rss{left:65px;bottom:10px;color:#DDD}
 
 /*#primary * {z-index:5;margin:0;margin:0;font-weight: 400;}*/
