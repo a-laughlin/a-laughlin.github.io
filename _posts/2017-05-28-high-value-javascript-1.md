@@ -63,15 +63,13 @@ Here are the connections with uncertainty replaced:
 
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
-
-
-#### What exactly is Value?
 **Value** is people's desires satisfied.
+**Quality** is code's ability to satisfy people's desires.
 
-#### What exactly is Quality?
-**Quality** is code's ability to satisfy people's desires. Quality's nature varies for each piece of software because people's desires for that software vary.  Quality's different natures are called system quality attributes.  You might have heard terms like "flexibility", "reliability", and "usability" before.  These are system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
+#### Quality Attributes
+Quality's nature varies for each piece of software because people's desires for that software vary.  Quality's different natures are called system quality attributes.  You might have heard terms like "flexibility", "reliability", and "usability" before.  These are system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
 
-Saying code is flexible, or changeable, or reliable should say something about how an organization produces value.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  To stay competitive, businesses often desire to change quickly, so changeability is a important quality attribute in many businesses.
+Quality attributes should point to how an organization produces value.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  To stay competitive, businesses often desire to change quickly, so changeability is a important quality attribute in many businesses.
 
 A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  This series of articles will focus on changeability.  **Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions. Focusing on changeability often results in other attributes like modularity, flexibility, testability, and reliability.
 
@@ -91,13 +89,15 @@ Things to be aware of:
 If you've made it this far, there's a decent chance you're you're already in the river.  Let's explore what quality improvement solutions look like at different distances from the edge (how close potential value per change is to cost per change).
 
 ##### Solution Terms to Know
-Solutions vary from adding no code, to replacing all code.  Each has has a different name and and different cost, depending on how time/energy/financially exhausting it is:
-| metaphor | Action | Term |
-| ------------- | ------------- | ------------- |
-| treading water  | not adding code  | feature freeze  |
-| small strokes  | replace small code parts  | refactoring  |
-| medium strokes  | replace large code parts  | partial/incremental rewrite  |
-| large strokes  | replace all code  | rearchitecture/rewrite  |
+Quality Improvement Solutions have different names depending on how time/energy/financially exhausting they are:
+
+<table>
+  <tr><th>Metaphor</th><th>Action</th><th>Common Name</th></tr>
+  <tr><td>treading water</td><td>not adding code</td><td>feature freeze</td></tr>
+  <tr><td>small strokes</td><td>replace small code parts</td><td>refactoring</td></tr>
+  <tr><td>medium strokes</td><td>replace large code parts</td><td>partial/incremental rewrite</td></tr>
+  <tr><td>large strokes</td><td>replace all code</td><td>rearchitecture/rewrite</td></tr>
+</table>
 
 Far from the waterfall edge, swimming upriver is easy.  Most any stroke is effective.  At the edge, no stroke is powerful enough.
 Let's consider those solutions in terms of proximity to waterfall edge (how close value per change is to cost per change).  Starting at the edge and working backward.
