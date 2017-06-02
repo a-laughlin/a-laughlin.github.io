@@ -493,9 +493,9 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 #content H6 a{}
 #content a{color: #999}
 #content .entry a {color: #46B;text-decoration: none}
-/*.entry a:link {}*/
-.entry a:visited {color: #84B}
-.entry a:active,.entry a:hover{text-decoration:underline}
+#content .entry a:link {color: #46B;}
+#content .entry a:visited {color: #84B;}
+#content .entry a:active,#content .entry a:hover{text-decoration:underline}
 
 /*#content .entry-title a:link,#content .entry-title a:visited,#content .entry-title a:active,#content .entry-title a:hover{color:#999}
 #content .entry-title a{color: #999;font-size: 21px;font-weight: bold;line-height: 1.3em;margin-bottom: 0;text-decoration: none}*/
