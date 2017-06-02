@@ -15,9 +15,9 @@ When I started 1.5 years in, our most troublesome page's code was 2500 lines.  N
 Estimated time per change grew to around 3 hours.  I got curious.  Most changes went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  Git showed 500 changes to that page in the last year.  1500 hours spent maintaining one page.  We had 140 other pages with similar issues.  Not good.
 
 ## Costs
-Financially speaking, assume 80k per year per developer, add 50k for benefits, overhead, taxes, etc.  Total 130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.  Multiply 1500 hours by $62.5/hr, and that page required $94,000 per year to maintain.
+Financially speaking, assume $80k per year per developer, add $50k for benefits, overhead, taxes, etc.  Total $130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.  Multiply 1500 hours by $62.5/hr, and that page required $94,000 per year to maintain.
 
-[Outcomes](https://hbr.org/2012/11/its-not-just-semantics-managing-outcomes) extended further.  Good experiences produce delight and pleasant interactions among users, staff, their teams, and beyond.  Bad experiences create stress and sour interactions.  Unexpected behaviors produce confusion, frustration, and stress.  Delays produce frustration.  Low reliability adds to stress through uncertainty and perceived lack of control, while decreasing sales staff confidence and company reputation.  Ripple effects spread the impacts into other areas of life, like the impact of carrying increased stress home.
+[Outcomes](https://hbr.org/2012/11/its-not-just-semantics-managing-outcomes) extended further.  Good experiences produce delight and pleasant interactions among users, staff, their teams, and beyond.  Bad experiences create stress and sour interactions.  Unexpected behaviors produce confusion, frustration, and stress.  Delays also produce frustration.  Low reliability adds to stress through uncertainty and perceived lack of control, while decreasing sales staff confidence and company reputation.  Ripple effects spread the impacts into other areas of life, like the impact of carrying increased stress home.
 
 1500 hours, $94k, bad experiences.  Low-qualitiy JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
 
@@ -53,7 +53,7 @@ Judging your proximity to the edge is difficult.  The more pressure there is to 
 
 
 
-### Solution
+### Solution: High Quality Code
 This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
 Let's start by removing uncertainty (i.e., the blindflold).  Here are the basic connections between "Whatever Works" code and Value.
@@ -68,50 +68,39 @@ Here are the connections with uncertainty replaced:
 **Quality** is code's ability to satisfy people's desires.
 
 #### Quality Attributes
-Quality's nature varies for each piece of software because people's desires for that software vary.  Quality's different natures are called system quality attributes.  You might have heard terms like "flexibility", "reliability", and "usability" before.  These are system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
+Quality is like Ice Cream.  It comes in flavors because people and organizations have different desires.  You might have heard flavors like "flexibility", "reliability", and "usability" before.  Quality flavors are called system quality attributes.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
 
-Quality attributes should point to how an organization produces value.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  To stay competitive, businesses often desire to change quickly, so changeability is a important quality attribute in many businesses.
+It's easy to get overwhelmed by all the options.  A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.  This series of articles will focus on changeability since most developers work for a business of some sort.
 
-A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  This series of articles will focus on changeability.  **Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.  Most of us work for businesses.  Most businesses with programmers want to adapt to changing conditions. Focusing on changeability often results in other attributes like modularity, flexibility, testability, and reliability.
-
-
+**Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.
 
 Things to be aware of:
   - Quality attributes often have overlapping definitions
   - Different articles use different words for the same or similar quality attributes
-  - Know what aspects of quality you're trying to achieve when reading dev articles.  They'll help you understand what's important.
   - You'll chase your tail if you try to satisfy all attributes.  There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability"
+  - Knowing what aspects of quality you care about will help you think critically about dev articles.
   - Choose your attributes carefully.  If we write highly flexible code for airplanes, and highly reliable code for businesses, we'll spend months or years producing high cost, needlessly redundant business software plus dangerous airline software.
-  - Coding is mentally absorbing. Losing perspective in the weeds is easy.  A common case for devs is optimizing for efficiency (aka execution speed) when such gains are super low priority.  Revisit Attributes frequently to retain perspective.
-  - Term to Know: Accumulations of low-quality code are an aspect of **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**
+  - Coding is mentally absorbing.  Losing perspective in the weeds is easy.  For example, devs will often optimize for efficiency (aka execution speed) when such gains are super low priority.  Posting your attributes in a visual reminder can help retain perspective.
+  - Term to Know: Accumulations of low-quality code contribute to **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**
 
 
 #### Quality: The Right Amount at the Right Time
-If you've made it this far, there's a decent chance you're you're already in the river.  Let's explore what quality improvement solutions look like at different distances from the edge (how close potential value per change is to cost per change).
+Swimming is easy far from the waterfall edge.  The current is calm.  Little quality bumps work well.  As you approach the edge the the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary.
 
-##### Solution Terms to Know
-Quality Improvement Solutions have different names depending on how time/energy/financially exhausting they are:
+Low quality code has exponential effects because most code is connected, so improving early is best.  The reality is not all of us have that option.  If you're reading this, there's a decent chance you're you're already in the river.  Let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change).
 
-<table>
-  <tr><th>Metaphor</th><th>Action</th><th>Common Name</th></tr>
-  <tr><td>treading water</td><td>not adding code</td><td>feature freeze</td></tr>
-  <tr><td>small strokes</td><td>replace small code parts</td><td>refactoring</td></tr>
-  <tr><td>medium strokes</td><td>replace large code parts</td><td>partial/incremental rewrite</td></tr>
-  <tr><td>large strokes</td><td>replace all code</td><td>rearchitecture/rewrite</td></tr>
-</table>
-
-Far from the waterfall edge, swimming upriver is easy.  Most any stroke is effective.  At the edge, no stroke is powerful enough.
-Let's consider those solutions in terms of proximity to waterfall edge (how close value per change is to cost per change).  Starting at the edge and working backward.
-Solutions At Distances
+##### Terms to Know
+ * not adding code: **feature freeze**
+ * replace small code parts: **refactoring**
+ * replace large code parts: **partial/incremental rewrite**
+ * replace all code: **full rewrite**
 
 ##### Over the Edge
 Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high-value features are not high enough now.  Escaping is as easy and probable as escaping as an actual waterfall plummet.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.
 ![technical debt impact on customer interest over time](../images/code-quality-late.png)
 
-#####  Near the Edge - Get Help
-You're close to the edge.  Your best upstream strokes can almost stop your your downstream slippage, but not quite.  The only way out is external help.  Maybe yell for a rope, an immediate and large investment of engineering time, energy, and finances, or perhaps [a rudimentary lathe](https://www.youtube.com/watch?v=EQG3I5efwWo).
-
-No image for this one.  Finding and catching a rope is highly improbable.  If a rope does appear, it came from the river's side.  You can't pull yourself out instantly.  You're still going over, just maybe not all the way down if you can hold on.  Getting out is going to hurt.  Necessary feature freezes will increase stress for everyone, especially leadership and sales.  Adding low-quality code to satisfy customer promises is like swimming downstream into the accelerating current.  It only makes sense if the rope clearly landed there.  Adding high-quality code now is clinging to a floating log.  It's going over too, will get trashed in the fall, and won't help you climb the rope.
+#####  Near the Edge - Swim Hard
+You're close to the edge.  There's little you can do.  Swimming only slows your downstream progress.  You need to dig deep.  Some level of rewrite is necessary.  The time, energy, and finances required are large.  Year-ish large.  Adding low-quality code to satisfy customer promises is swimming downstream into the accelerating current.  It only makes sense if that's where your fins land.  Necessary feature freezes will increase stress, especially leadership and sales.  Adding high-quality code now is a sparkly swimsuit.  It looks nice, but will probably get stripped away in the effort.
 
 #####  Decently Far - Swim
 You're far enough away from the edge that swimming upstream still works well.  Value per change well above cost per change gives you options.  You can even swim downstream a little when customers have a deadline.  Less dramatic, more incremental solutions like refactoring, partial feature freezes, and partial rewrites still reduce costs.
@@ -129,14 +118,18 @@ Problem: Devs have difficulty connecting code to value
 
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
-Value: People's desires Satisfied
+Terms to Know:
+ - Value: People's desires Satisfied
+ - Quality: Code's ability to satisfy peoples' desires.
+ - System Quality Attributes: Are to quality as flavors are to ice cream
+ - Changeability: How fast you or others can make error-free code changes that produce the desired behaviors.
 
-Quality: Code's ability to satisfy peoples' desires.  Expressed as System Quality Attributes (e.g. Changeability)
+How to Increase Quality?  By increasing Changeability!
 
-How to Increase Quality?  To be Continued in upcoming articles!
+How to Increase Changeability?  By reading upcoming articles in this series!
 
 Rough Article Roadmap:
-Code: The basics, for context and examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
-Philosophies, Principles, and Practices: High level introduction to OO/Functional/Procedural Philosophies, Principles overview, Composition/Inheritance
-Principles Part 1: Zero Repetition
-Principles Part 2: Zero Couples
+ - Code: The basics, for context and examples in the following posts. (introduces language structures, purposes, patterns, cohesion)
+ - Philosophies, Principles, and Practices: High level introduction to OO/Functional/Procedural Philosophies, Principles overview, Composition/Inheritance
+ - Principles Part 1: Zero Repetition
+ - Principles Part 2: Zero Couples
