@@ -480,9 +480,9 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 #content img {width:100%;max-width:600px;}
 
 #content H1 {font-size:1.8em}
-#content H2 {font-size:1.5em}
-#content H3 {font-size:1.2em}
-#content H4 {}
+#content H2 {font-size:1.6em}
+#content H3 {font-size:1.4em}
+#content H4 {font-size:1.2em}
 #content H5 {}
 #content H6 {}
 #content H1 a{}
@@ -537,7 +537,7 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 #content ol > li{list-style-type: decimal;margin-left: 20px}
 #content ol > li > li {list-style-type: decimal;margin-left: 20px}
 #content ul {padding-left:20px;}
-#content p {line-height:140%;word-break:break-word;}
+#content p {line-height:166%;word-break:break-word;}
 #content ul > li{list-style-type: disc;margin-left: 20px}
 #content pre {white-space:pre-wrap;word-break:break-word;padding:1em 0 1em .2em}
 code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;font-size:90%;font-family:"consolas","andale mono",monospace}
