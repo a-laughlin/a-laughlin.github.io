@@ -455,7 +455,7 @@ a:link, a:visited { color: #DDDDDD;}
 .masthead{margin:0 auto;width:100%;text-align:center;}
 /*.site-title { position: relative; top: 20px; right: 75px; text-align: right; font-size:120%}
 .site-title a {text-decoration:none;color: #AAA;font-style:italic;font-family:Georgia;}*/
-.site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;top:95px}
+.site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;max-width: 1260px;top:95px}
 .tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
 .tagline-upper{position:absolute;left:200px;text-align:left;color:#999;}
 .tagline-split{position:absolute;top:25px;left:56.5%;text-align:center;color:#aaa;}
@@ -479,12 +479,12 @@ a:link, a:visited { color: #DDDDDD;}
 nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
 #content img {width:100%;max-width:600px;}
 
-#content H1 {font-size:1.8em}
-#content H2 {font-size:1.6em}
-#content H3 {font-size:1.4em}
-#content H4 {font-size:1.2em}
-#content H5 {}
-#content H6 {}
+#content H1 {font-size:180%;}
+#content H2 {font-size:160%;}
+#content H3 {font-size:140%;}
+#content H4 {font-size:120%;}
+#content H5 {font-size:110%;}
+#content H6 {font-size:105%;}
 #content H1 a{}
 #content H2 a{}
 #content H3 a{}

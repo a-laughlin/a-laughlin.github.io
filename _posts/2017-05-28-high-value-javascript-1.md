@@ -10,7 +10,7 @@ A couple of great guys learned javascript (Angular 1) to launch a SaaS business.
 
 Code quality was low.  It wasn't a problem.  The code was short.  Changes to one "page" (angular template + controller + route) took ~20 minutes.  They added customers.  They added developers.
 
-When I started 1.5 years in, our most troublesome page's code was 2500 lines.  New technical leadership prioritized a back-end rewrite first.  Bugs abounded in that page and others.  I stabilized what I could.  Months of whack-a-mole bug squashing while the back-end code changed.  Mud can only get so clean.  Global variables littered the code.  Unexpected things often broke.  Customers complained.  Tests were flaky or non-existent.  Error prevention processes expanded from a quick functionality checks, to multi-person code reviews, multi-person manual tests, extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
+When I started 1.5 years in, our most troublesome page's code was 2500 lines.  New technical leadership prioritized a back-end rewrite first.  Bugs abounded in that page and others.  I stabilized what I could.  Months of whack-a-mole bug squashing while the back-end code changed.  Mud can only get so clean.  Global variables littered the code.  Unexpected things often broke.  Customers complained.  Tests were flaky or non-existent.  Error prevention processes expanded from quick functionality checks, to multi-person code reviews, multi-person manual tests, extensive change communication, whole-team pre-release testing sessions, and dedicated QA staffing.
 
 Estimated time per change grew to around 3 hours.  I got curious.  Most changes went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  Git showed 500 changes to that page in the last year.  1500 hours spent maintaining one page.  We had 140 other pages with similar issues.  Not good.
 
@@ -31,7 +31,8 @@ The path to getting stuff done looks something like this:
  - Article 1: (jQuery) Submit your form with `$('.loginForm').submit()`;
  - Article 2: (jQuery) Separate concerns is good - separate your data and functions from others' data and functions by namespacing them in an object.
  - Article 3: (OO) Separate concerns is good - do it with modules, classes, and objects with data and functions
- - Article 4: (functional) Separate concerns is good - do it with modules, classes, and objects with data, and functions 
+ - Article 4: (functional) Separate concerns is good - do it with modules, classes, and objects with data, and functions
+
 A few days later Frankenstein's monster emerges into the web.
 
 What happened?  Well, to start, modules, objects, and separate concerns probably meant different things in each of them.
@@ -56,13 +57,16 @@ Here are the connections with uncertainty replaced:
 
 **Value** is people's desires satisfied.  
 **Quality** is code's ability to satisfy people's desires.  
+**Code > Practices + Principles + Philosophies** we'll break those down in later articles.  Let's explore the first two.
 
 #### Quality Attributes
-Quality is like Ice Cream.  It comes in flavors because people and organizations have different desires.  You might have heard flavors like "flexibility", "reliability", and "usability" before.  Quality flavors are called system quality attributes.  You improve quality by designing your code to improve those attributes, so choosing some is important.  It's also overwhelming because there are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  
+Quality is like Ice Cream.  It comes in flavors.  Different flavors exist because people and organizations have different desires.
 
-A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.  This series of articles will focus on changeability since most developers work for a business of some sort.
+You might have heard terms like "flexibility", "reliability", and "usability" before.  Those are quality flavors.  Quality flavors are called system quality attributes.  To have a good mix, you have to choose attributes that correspond to people and organization desires.  
 
-**Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.
+Making that choice can be overwhelming.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.
+
+This series of articles will focus on changeability since most developers work for a business of some sort.  **Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.
 
 Things to be aware of:
   - Quality attributes often have overlapping definitions

@@ -11,6 +11,11 @@ description: Musings On The Black and White of Technology, and The Gray Matter i
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
 
+collections:
+  tags:
+    output: true
+    permalink: /blog/tags/:name/
+
 #
 # Flags below are optional
 #
