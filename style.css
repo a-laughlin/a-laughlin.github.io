@@ -461,11 +461,31 @@ a:link, a:visited { color: #DDDDDD;}
 .tagline-split{position:absolute;top:25px;left:56.5%;text-align:center;color:#aaa;}
 .tagline-lower{position:absolute;right:200px;top:50px;text-align:right;color:#fff}
 
+nav.main-nav {
+  width:20%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin:0;
+  padding:0;
+  z-index:5
+}
+.nav-item:nth-child(1){bottom:205px;left:50px;font-size:1em;}
+.nav-item:nth-child(2){bottom:160px;left:5px;font-size:1.4em;}
+.nav-item:nth-child(3){bottom:150px;left:100px;font-size:1.7em}
+.nav-item:nth-child(4){left:5px;bottom:35px;font-size:1.8em;white-space: nowrap;}
+
+.nav-item a{text-decoration:none;}
+.nav-item:nth-child(1) a:link,.nav-item:nth-child(1) a:visited {color: #BBB;}
+.nav-item:nth-child(2) a:link,.nav-item:nth-child(2) a:visited {color: #CCC;}
+.nav-item:nth-child(3) a:link,.nav-item:nth-child(3) a:visited {color: #CCC;}
+.nav-item:nth-child(4) a:link,.nav-item:nth-child(4) a:visited {color: #DDD;}
+
 
 #content-wrap {
   padding: 2% 5%;
-  top:210px;
-  margin: 0 0 0 190px;
+  top:270px;
+  left:190px;
   width:75%;
   min-width:400px;
   height: auto;
@@ -475,8 +495,12 @@ a:link, a:visited { color: #DDDDDD;}
   position: absolute;
   z-index: 10;
 }
-#content { width:100%; background-color: #fff; max-width:800px;line-height:166%;}
-nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-index:5}
+#content {
+  width:100%;
+  background-color: #fff;
+  max-width:800px;
+  line-height:166%;
+}
 #content img {width:100%;max-width:600px;}
 
 #content H1 {font-size:180%;}
@@ -499,10 +523,9 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 
 /*#content .entry-title a:link,#content .entry-title a:visited,#content .entry-title a:active,#content .entry-title a:hover{color:#999}
 #content .entry-title a{color: #999;font-size: 21px;font-weight: bold;line-height: 1.3em;margin-bottom: 0;text-decoration: none}*/
-#footer {clear: both;width: 100%;margin:0}
+.wrapper-footer{position:fixed; bottom:0; color:#aaa;}
 
-#branding,#island,
-#boat,#search,#rss,#github-projects,#recent-posts,
+#island,#boat,#search,#rss,#github-projects,#recent-posts,
 #recent-posts H3,#recent-posts ul,#text-4{position: absolute;}
 
 .main-nav, .nav-item, #boulders, #pads {position:fixed;}
@@ -514,17 +537,7 @@ nav.main-nav {width:20%;position:absolute;bottom:0;left:0;margin:0;padding:0;z-i
 
 
 
-.nav-item:nth-child(1){bottom:205px;left:50px;font-size:1em;}
-.nav-item:nth-child(2){bottom:160px;left:5px;font-size:1.4em;}
-.nav-item:nth-child(3){bottom:150px;left:100px;font-size:1.7em}
-.nav-item:nth-child(4){left:5px;bottom:35px;font-size:1.8em;white-space: nowrap;}
 
-.nav-item a{text-decoration:none;}
-.nav-item:nth-child(1) a:link,.nav-item:nth-child(1) a:visited {color: #BBB;}
-.nav-item:nth-child(2) a:link,.nav-item:nth-child(2) a:visited {color: #CCC;}
-.nav-item:nth-child(3) a:link,.nav-item:nth-child(3) a:visited {color: #CCC;}
-.nav-item:nth-child(4) a:link,.nav-item:nth-child(4) a:visited {color: #DDD;}
-#rss{left:65px;bottom:10px;color:#DDD}
 
 /*#primary * {z-index:5;margin:0;margin:0;font-weight: 400;}*/
 /*#text-4{bottom:80px;left: 20px;z-index:5}*/
