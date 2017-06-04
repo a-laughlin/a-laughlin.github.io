@@ -458,7 +458,16 @@ a:link, a:visited { color: #DDDDDD;}
 .site-description{font-style: italic; font-family:georgia,serif;position:absolute;min-width:360px;width:100%;max-width: 1260px;top:95px}
 .tagline-upper,.tagline-lower{display:block;white-space:nowrap;}
 .tagline-upper{position:absolute;left:200px;text-align:left;color:#999;}
-.tagline-split{position:absolute;top:25px;left:56.5%;text-align:center;color:#aaa;}
+.tagline-split {
+  position: absolute;
+  top: 30px;
+  left: 56.5%;
+  text-align: center;
+  color: #DDD;
+  text-shadow: 0 0 3px #000;
+  font-weight: 700;
+  font-style: normal;
+}
 .tagline-lower{position:absolute;right:200px;top:50px;text-align:right;color:#fff}
 
 nav.main-nav {
@@ -485,7 +494,7 @@ nav.main-nav {
 #content-wrap {
   padding: 2% 5%;
   top:270px;
-  left:190px;
+  margin-left:190px;
   width:75%;
   min-width:400px;
   height: auto;
