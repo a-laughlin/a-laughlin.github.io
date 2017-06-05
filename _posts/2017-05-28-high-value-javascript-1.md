@@ -55,7 +55,7 @@ Here are the connections with uncertainty replaced:
 
 In future articles we'll explore Code, Practices, Principles, and Philosophies.  In this article, we'll dive into quality and value.
 
-Terms to Know:
+**Terms to Know:**
  - **Value** is people's desires satisfied.  
  - **Quality** is code's ability to satisfy people's desires.
 
@@ -83,20 +83,20 @@ Writing an app using "what works" quality is equivalent to swimming blindfolded 
 
 ![woman screaming in water, about to go over waterfall](../images/devilpool4.jpg)
 
-Swimming is easy far from the waterfall edge.  The current is calm.  Little quality bumps work well.  As you approach the edge the the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary. 
+Swimming is easy far from the waterfall edge.  The current is calm.  Little quality bumps work well.  As you approach the edge the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary. 
 
 Judging your proximity to the edge is difficult.  The more pressure there is to produce value, the higher the likelihood you're near or over the edge.  Not the best indicator, I know.  Value per change is difficult to measure.  Comments regarding metrics are very welcome. 
 
 Low quality code has exponential effects because most code is connected, so improving early is best.  The reality is not all of us have that option.  If you're reading this, there's a decent chance you're you're already in the river.  Let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change). 
 
-##### Terms to Know 
- * not adding code: **feature freeze**
- * replace small code parts: **refactoring**
- * replace large code parts: **partial/incremental rewrite**
- * replace all code: **full rewrite**
+**Terms to Know**
+ * **feature freeze**: not adding code
+ * **refactor**: replace small code parts
+ * **partial/incremental rewrite**: replace large code parts
+ * **full rewrite**: replace all code
 
 ##### Over the Edge 
-Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high-value features are not high enough now.  Escaping is as easy and probable as escaping as an actual waterfall plummet.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.  
+Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high value features are not high enough now.  Escaping is as easy and probable as escaping as an actual waterfall plummet.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.  
 ![technical debt impact on customer interest over time](../images/code-quality-late.png)
 
 #####  Near the Edge - Swim Hard 
