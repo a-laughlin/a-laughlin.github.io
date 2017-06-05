@@ -52,18 +52,20 @@ Let's start by removing uncertainty.  Here are the basic connections between "Wh
 Here are the connections with uncertainty replaced:  
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
-**Value** is people's desires satisfied.  
-**Quality** is code's ability to satisfy people's desires.  
-**Code > Practices + Principles + Philosophies** we'll break those down in later articles.  Let's explore the first two.
+In future articles we'll explore Code, Practices, Principles, and Philosophies.  In this article, we'll dive into quality and value.
 
-#### Quality Attributes
+Terms to Know:
+ - **Value** is people's desires satisfied.  
+ - **Quality** is code's ability to satisfy people's desires.
+
+#### Quality
 Quality is like Ice Cream.  It comes in flavors.  Different flavors exist because people and organizations have different desires.
 
-You might have heard terms like "flexibility", "reliability", and "usability" before.  Those are quality flavors.  Quality flavors are called system quality attributes.  To have a good mix, you have to choose attributes that correspond to people and organization desires.  
+You might have heard terms like "flexibility", "reliability", and "usability" before.  Those are quality flavors.  Quality flavors are called system quality attributes.
 
-Making that choice can be overwhelming.  There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.
+There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  Choosing those that best meet organizational desires can seem overwhelming.  A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.
 
-This series of articles will focus on changeability since most developers work for a business of some sort.  **Changeability**: How fast you or others can make error-free code changes to produce the desired behaviors.
+This series of articles will focus on changeability since most developers work for a business of some sort.  **Changeability**: How fast you or others can make error-free code changes to satisfy desires.  Other attributes similar to changeability are modifiability and maintainability.
 
 Things to be aware of:
   - Quality attributes often have overlapping definitions
@@ -115,7 +117,7 @@ Terms to Know:
  - Value: People's desires Satisfied
  - Quality: Code's ability to satisfy peoples' desires.
  - System Quality Attributes: Are to quality as flavors are to ice cream
- - Changeability: How fast you or others can make error-free code changes that produce the desired behaviors. 
+ - Changeability: How fast you or others can make error-free code changes to satisfy desires. 
 
 How to Increase Quality?  By increasing Changeability!  
 How to Increase Changeability?  By reading upcoming articles in this series!  
