@@ -1,5 +1,6 @@
 ---
 title: High Value JavaScript (Part 1)
+comments: true
 layout: post
 ---
 
@@ -42,14 +43,10 @@ Problems arise when new devs learn programming through variably-accurate article
 ### The Problem
 Ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  A simple heuristic develops - "whatever code works".  Its result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.   For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  As average cost per change approaches average value per change, net-positive changes grow increasingly scarce.  Once the threshold is crossed, re-achieving net-positive-outcome changes is nearly impossible.
 
-Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  The closer you get to the edge, the faster the current gets.  The water feels still because you're moving with it.  The noise is consistently loud.  It's unclear if swimming upstream actually works.
-
-![woman screaming in water, about to go over waterfall](../images/devilpool4.jpg)
-
 ### Solution: High Quality Code
 This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
-Let's start by removing uncertainty (i.e., the blindflold).  Here are the basic connections between "Whatever Works" code and Value.  
+Let's start by removing uncertainty.  Here are the basic connections between "Whatever Works" code and Value.  
 **Code > ~uncertainty~ > Quality > Value**
 
 Here are the connections with uncertainty replaced:  
@@ -79,6 +76,10 @@ Things to be aware of:
 
 
 #### Quality: The Right Amount at the Right Time 
+Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  The closer you get to the edge, the faster the current gets.  The water feels still because you're moving with it.  The noise is consistently loud.  It's unclear if swimming upstream actually works.
+
+![woman screaming in water, about to go over waterfall](../images/devilpool4.jpg)
+
 Swimming is easy far from the waterfall edge.  The current is calm.  Little quality bumps work well.  As you approach the edge the the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary. 
 
 Judging your proximity to the edge is difficult.  The more pressure there is to produce value, the higher the likelihood you're near or over the edge.  Not the best indicator, I know.  Value per change is difficult to measure.  Comments regarding metrics are very welcome. 
