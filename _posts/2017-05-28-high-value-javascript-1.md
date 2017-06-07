@@ -111,7 +111,7 @@ Judging your proximity to the waterfall's edge is difficult.  The water feels st
 
 Each quality attribute will have its own metrics.  Assessing cost per change and potential value per change are difficult.  For changeability, assessing potential value per change and cost per change are important, and also merit a deeper exploration than I want to go into in this article. Comments regarding metrics are very welcome.
 
-That said, metrics likely include some combination of:
+That said, metrics likely include some combination of: 
  - average actual time per change | expected time / total lines of code
  - [user experience metrics](https://www.google.com/search?q=user+experience+metrics).
  - Potentially [net promoter score](https://en.wikipedia.org/wiki/Net_Promoter)
