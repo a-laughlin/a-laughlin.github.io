@@ -133,7 +133,7 @@ Terms to Know:
  - **Changeability**: How fast you or others can make error-free code changes to satisfy desires
  - **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**: accumulations of low-quality code
 
-Improving quality grows exponentially harder as low quality code accumulates.  Starting early is far better.
+As low quality code accumulates, cost per change increases exponentially, and potential value per change decreases exponentially.  Judging where you are on the curve is difficult, so improving quality early is important.
 
 How to Increase Quality?  By increasing Changeability!  
 How to Increase Changeability?  By reading upcoming articles in this series!  
