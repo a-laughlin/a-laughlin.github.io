@@ -5,19 +5,17 @@ layout: default
 <!-- <div><p>site</p><pre>{{site | inspect }}</pre></div> -->
 <!-- <div><p>site.tags</p><pre>{{site.tags | inspect }}</pre></div> -->
 <div><p>page</p><pre>{{page | inspect }}</pre></div>
-{% if site.tags[page.slug] %}
+{% for t in site.tags %}
+  <h1>Posts tagged {{t[0]}}</h1>
   <div class="posts">
-    <h1>Posts tagged {{page.slug}}</h1>
-    {% for post in site.tags[page.slug] %}
-        <article class="post">
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-          <div class="entry">
-            {{ post.excerpt }}
-          </div>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        </article>
-      {% endfor %}
+    {% for post in t[1] %}
+    <article class="post">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endfor %}
   </div>
-{% else %}
-<div>No posts for {{page.slug}}</div>
-{% endif %}
+{% endfor %}
