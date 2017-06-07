@@ -11,11 +11,19 @@ description: Musings On The Black and White of Technology, and The Gray Matter i
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
 
+# github pages doesn't support tagging plugin, so use collections instead
+collections:
+  custom_tags:
+    output: true
+    permalink: /tags/:name/
 
-# collections:
-#   tags:
-#     output: true
-#     permalink: /tags/:name/
+defaults:
+  - scope:
+      path: ""
+      type: custom_tags
+    values:
+      layout: custom_tag.html
+# end collections
 
 #
 # Flags below are optional
