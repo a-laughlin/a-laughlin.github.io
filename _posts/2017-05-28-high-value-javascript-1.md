@@ -79,11 +79,13 @@ Things to be aware of:
 #### Quality: The Right Amount at the Right Time 
 ![woman screaming in water, about to go over waterfall](../images/devilpool-cropped.jpg)
 
-Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  Improving quality is swimming upstream.  Far from the edge swimming is easy.  The current is calm.  Little quality bumps work well.  Close to the edge the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary. 
+Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  Swimming upstream improves quality, only you're unsure which direction that is exactly.
 
-Low quality code growth increases costs and decreases value at an exponential rate due to connections with other code parts (a.k.a. couples, a term we'll revisit later).  For example, making a change to a global "user" variable that spans 100 views, with 10 places in each view that reference the object or values derived from it, means one change, in one file, to the user object can break 1000 other places in the code.  If any of those rely on that value to make further changes, there are then 1000 * 1000 places that can indirectly break.  Checking a million possible logic paths through the code, across route transitions, is impractical and error prone.
+Far from the waterfall's edge swimming upstream is easy.  The current is calm.  Little quality bumps work well.  Close to the edge the current accelerates.  Swimming upstream requires more energy.  Bigger quality bumps are necessary. 
 
-The best strategy is preventing such problems by writing high quality code early.  Realistically, not all of us have that option.  If you're reading this, there's a decent chance you're you're already in the river.  Let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change). 
+Like the accelerating current, accumulating low quality code increases costs and decreases value at an exponential rate due to connections with other code parts (a.k.a. couples, a term we'll revisit later).  For example, making a change to a global "user" variable that spans 100 views, with 10 places in each view that reference the object or values derived from it, means one change, in one file, to the user object can break 1000 other places in the code.  If any of those rely on that value to make further changes, there are then 1000 * 1000 places that can indirectly break.  Checking a million possible logic paths through the code, across asynchronous route transitions, is impractical and error prone.
+
+The best strategy is preventing such problems by writing high quality code early.  Realistically, not all of us have that option, so let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change). 
 
 **Terms to Know**
  * **feature freeze**: adding no code for new features - prevents further quality decay
@@ -110,7 +112,7 @@ Refreshing cool water around your ankles.  Walking forward to swim is tempting. 
 #### Quality: Determining the Right Time
 Judging your proximity to the waterfall's edge is difficult.  The water feels still because you're moving with it.  The noise is consistently loud.  It's unclear if swimming upstream actually works.
 
-Each quality attribute will have its own metrics.  Assessing cost per change and potential value per change are difficult.  For changeability, assessing potential value per change and cost per change are important, and also merit a deeper exploration than I want to go into in this article. Comments regarding metrics are very welcome.
+Each quality attribute will have its own metrics.  For changeability, assessing potential value per change and cost per change are important, and also merit a deeper exploration than I want to go into in this article. Comments regarding metrics are very welcome.
 
 That said, metrics likely include some combination of: 
  - average actual time per change | expected time / total lines of code
@@ -132,7 +134,6 @@ Terms to Know:
  - **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**: accumulations of low-quality code
 
 Improving quality grows exponentially harder as low quality code accumulates.  Starting early is far better.
-
 
 How to Increase Quality?  By increasing Changeability!  
 How to Increase Changeability?  By reading upcoming articles in this series!  
