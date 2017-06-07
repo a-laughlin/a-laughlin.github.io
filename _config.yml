@@ -22,7 +22,7 @@ defaults:
       path: ""
       type: custom_tags
     values:
-      layout: custom_tag.html
+      layout: custom_tag
 # end collections
 
 #
