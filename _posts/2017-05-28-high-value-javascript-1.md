@@ -77,7 +77,8 @@ Things to be aware of:
   - When writing code, it's easy to lose perspective amidst the complexity and start optimizing for low priority attributes like execution/memory efficiency.  Posting your attributes in a visual reminder can help retain perspective
 
 #### Quality: The Right Amount at the Right Time 
-![woman screaming in water, about to go over waterfall](../images/devilpool-cropped.jpg) 
+![woman screaming in water, about to go over waterfall](../images/devilpool-cropped.jpg)
+
 Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  Improving quality is swimming upstream.  Far from the edge swimming is easy.  The current is calm.  Little quality bumps work well.  Close to the edge the current accelerates.  Swimming requires more energy.  Bigger quality bumps are necessary. 
 
 Low quality code growth increases costs and decreases value at an exponential rate due to connections with other code parts (a.k.a. couples, a term we'll revisit later).  For example, making a change to a global "user" variable that spans 100 views, with 10 places in each view that reference the object or values derived from it, means one change, in one file, to the user object can break 1000 other places in the code.  If any of those rely on that value to make further changes, there are then 1000 * 1000 places that can indirectly break.  Checking a million possible logic paths through the code, across route transitions, is impractical and error prone.
