@@ -93,7 +93,7 @@ The best strategy is preventing such problems by writing high quality code early
  * **partial/incremental rewrite**: replace large code parts
  * **full rewrite**: replace all code
 
-##### Over the Edge 
+##### Over the Edge - Fall  
 Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high value features are not high enough now.  There are no more solutions whose value outweighs their cost.  Escaping now is as easy as swimming up a waterfall.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.  
 ![Low quality impact. Graph of cost per change overtaking potential value per change](../images/code-quality-over.png)
 
