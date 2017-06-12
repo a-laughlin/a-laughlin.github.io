@@ -44,13 +44,13 @@ Problems arise when new devs learn programming through variably-accurate article
 ### The Problem: Weak Conceptual Links  
 Ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  A simple heuristic develops - "whatever code works".  Its result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.   For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  As average cost per change approaches average value per change, net-positive changes grow increasingly scarce.  Once the threshold is crossed, re-achieving net-positive-outcome changes is nearly impossible.
 
-Here are the basic connections between "Whatever Works" code and Value.  
-**Code > ~uncertainty~ > Quality > Value**
-
 ### Solution: Clarify
 This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
-Let's start by removing uncertainty. Here are the connections with uncertainty replaced:  
+Let's start by removing uncertainty.  Here are the basic connections between "Whatever Works" code and Value.  
+**Code > ~uncertainty~ > Quality > Value**
+
+Here are the connections with uncertainty replaced:  
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
 In future articles we'll explore Code, Practices, Principles, and Philosophies.  In this article, we'll dive into quality and value.
