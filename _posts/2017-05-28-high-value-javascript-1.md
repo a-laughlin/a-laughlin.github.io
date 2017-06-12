@@ -123,7 +123,7 @@ That said, metrics likely include some combination of:
 
 ## Summary 
 Problem: **Code > ~uncertainty~ > Quality > Value**  
-Uncertainty between daily code decisions and value result in a "Whatever Works" heuristic that exponentially decreases potential software value with each change. 
+Uncertainty between daily code decisions and value result in a "Whatever Works" heuristic that exponentially decreases potential software value with each change.  
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
 Terms to Know:
