@@ -112,7 +112,7 @@ Refreshing cool water around your ankles.  Walking forward to swim is tempting. 
 #### Quality: Determining the Right Time
 Judging your proximity to the waterfall's edge is difficult.  The water feels still because you're moving with it.  The noise is consistently loud.  It's unclear if swimming upstream actually works.
 
-Each quality attribute will have its own metrics.  Changeability metrics likely include some combination of [user experience](https://www.google.com/search?q=user+experience+metrics), [net promoter score](https://en.wikipedia.org/wiki/Net_Promoter),  [code](https://en.wikipedia.org/wiki/Halstead_complexity_measures) [complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity), and value/cost change over time. Further metrics exploration is outside this article’s scope, but comments about them are welcome since they're important to make informed decisions.
+Each quality attribute will have its own metrics.  Changeability metrics likely include some combination of [user experience](https://www.google.com/search?q=user+experience+metrics), [net promoter score](https://en.wikipedia.org/wiki/Net_Promoter), and [code](https://en.wikipedia.org/wiki/Halstead_complexity_measures) [complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) to assess potential value/cost change over time. Further metrics exploration is outside this article’s scope. Comments about them are welcome since they’re important to make informed decisions.
 
 ## Summary 
 Problem: **Code > ~uncertainty~ > Quality > Value**  
