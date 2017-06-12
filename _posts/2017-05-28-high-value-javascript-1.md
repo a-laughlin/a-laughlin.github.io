@@ -67,7 +67,7 @@ You might have heard terms like "flexibility", "reliability", and "usability" be
 
 There are [many](https://www.infoq.com/articles/atam-quality-attributes) [software](https://msdn.microsoft.com/en-us/library/ee658094.aspx) [system](https://ewh.ieee.org/r2/southern_nj/BarbacciOct03.pdf) [quality](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.5016&rep=rep1&type=pdf) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).  Choosing those that best meet organizational desires can seem overwhelming.  A good place to start is focusing on 1-3 attributes whose definitions seem most critical to your organization.  For example, we desire our planes stay airborn, so reliability is an important quality attribute in airplane software.  Businesses often desire quick adaptation to market conditions, so changeability is a important quality attribute in many businesses.  Most developers work for businesses, so this series will focus on changeability.
 
-**Changeability**: How fast you or others can make error-free code changes to satisfy people's desires
+**Changeability**: How fast you or other devs can make error-free code changes to satisfy people's desires
 
 Things to be aware of:
   - Quality attributes often have overlapping definitions (e.g., changeability, [modifiability](https://www.infoq.com/articles/atam-quality-attributes), and [maintainability](https://en.wikipedia.org/wiki/Maintainability#Software_engineering) all include some aspect of quickly making changes)
@@ -123,14 +123,15 @@ That said, metrics likely include some combination of:
 
 ## Summary 
 Problem: **Code > ~uncertainty~ > Quality > Value**  
-Uncertainty between daily code decisions and value result in a "Whatever Works" heuristic that exponentially decreases potential software value with each change.  
+Uncertainty between daily code decisions and value result in a "Whatever Works" heuristic that exponentially decreases potential software value with each change.
+
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
 Terms to Know:
  - **Value**: People's desires Satisfied
  - **Quality**: Code's ability to satisfy peoples' desires
  - **Quality Attributes**: Express the "flavor" of quality. Derived from organization priorities.
- - **Changeability**: How fast you or others can make error-free code changes to satisfy desires
+ - **Changeability**: How fast you or other devs can make error-free code changes to satisfy people's desires
  - **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**: accumulations of low-quality code
 
 As low quality code accumulates, cost per change increases exponentially, and potential value per change decreases exponentially.  Judging where you are on the curve is difficult, so improving quality early is important.
