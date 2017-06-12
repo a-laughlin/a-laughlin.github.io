@@ -122,7 +122,7 @@ That said, metrics likely include some combination of:
  - [Complexity](https://en.wikipedia.org/wiki/Halstead_complexity_measures) [measures](https://en.wikipedia.org/wiki/Cyclomatic_complexity) could provide automated feedback during the development cycle
 
 ## Summary 
-Problem: **Code > ~uncertainty~ > Quality > Value** 
+Problem: **Code > ~uncertainty~ > Quality > Value**  
 Uncertainty between daily code decisions and value result in a "Whatever Works" heuristic that exponentially decreases potential software value with each change. 
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
 
