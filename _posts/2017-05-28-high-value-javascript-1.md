@@ -5,6 +5,8 @@ layout: post
 tags: [javascript, software]
 ---
 
+test
+
 Startup SaaS Company.  Two years in.  Funds running low.  Our JavaScript is a ball of mud.  One page costs $94k per year to maintain.  140 pages.  Shit.  How did we get here?
 
 ## Backstory
