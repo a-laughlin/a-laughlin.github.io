@@ -85,7 +85,7 @@ Far from the waterfall's edge swimming upstream is easy.  The current is calm.  
 
 Like the accelerating current, accumulating low quality code increases costs and decreases value at an exponential rate due to connections with other code parts (a.k.a. couples, a term we'll revisit later).  For example, making a change to a global "user" variable that spans 100 views, with 10 places in each view that reference the object or values derived from it, means one change, in one file, to the user object can break 1000 other places in the code.  If any of those rely on that value to make further changes, there are then 1000 * 1000 places that can indirectly break.  Checking a million possible logic paths through the code, across asynchronous route transitions, is impractical and error prone.
 
-The best strategy is preventing such problems by writing high quality code early.  Realistically, not all of us have that option, so let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change). 
+Preventing such problems by writing high quality code early is wise.  Realistically, not all of us have that option, so let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change). 
 
 **Terms to Know**
  * **feature freeze**: adding no code for new features - prevents further quality decay
