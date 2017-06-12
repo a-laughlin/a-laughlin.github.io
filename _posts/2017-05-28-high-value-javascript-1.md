@@ -41,16 +41,16 @@ What happened?  Well, to start, modules, objects, and separate concerns probably
 
 Problems arise when new devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood, often-unstated philosophies to describe often-misunderstood, sometimes-conflicting "good" coding principles.  Then they attempt to write high-quality code in a new language with its own label interpretations and philosophy implementations, often using frameworks with additional ambiguous labels and interpretations (e.g., Angular 1's expressions & services).
 
-### The Problem
+### The Problem: Uncertainty
 Ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  A simple heuristic develops - "whatever code works".  Its result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.   For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  As average cost per change approaches average value per change, net-positive changes grow increasingly scarce.  Once the threshold is crossed, re-achieving net-positive-outcome changes is nearly impossible.
 
-### Solution: High Quality Code
-This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
-
-Let's start by removing uncertainty.  Here are the basic connections between "Whatever Works" code and Value.  
+Here are the basic connections between "Whatever Works" code and Value.  
 **Code > ~uncertainty~ > Quality > Value**
 
-Here are the connections with uncertainty replaced:  
+### Solution: Clarify
+This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
+
+Let's start by removing uncertainty. Here are the connections with uncertainty replaced:  
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
 In future articles we'll explore Code, Practices, Principles, and Philosophies.  In this article, we'll dive into quality and value.
