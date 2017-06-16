@@ -2,7 +2,7 @@
 title: Visualizing Cambridge Chicago's Data with jQuery and Google Maps + Charts + Refine + Fusion Tables
 comments: true
 layout: post
-tags: [datavis]
+tags: [datavis, draft]
 ---
 
 ## "What story do I want to tell?"
