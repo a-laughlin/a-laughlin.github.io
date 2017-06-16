@@ -450,7 +450,7 @@ table {
 
 
 
-body {background:#0f0f0f url(assets/bg.png) repeat-x;}
+body {background:#0f0f0f url(images/bg.png) repeat-x;}
 a:link, a:visited { color: #DDDDDD;}
 .masthead{margin:0 auto;width:100%;text-align:center;}
 /*.site-title { position: relative; top: 20px; right: 75px; text-align: right; font-size:120%}
@@ -539,10 +539,10 @@ nav.main-nav {
 
 .main-nav, .nav-item, #boulders, #pads {position:fixed;}
 
-#boat {width:280px; height:345px; opacity:.9; filter:alpha(opacity=90); background-image:url(assets/boat_background.gif);left:0;top:0;z-index:-5}
-#island {width:107px; height:178px; opacity:.25; filter:alpha(opacity=25); background-image:url(assets/island.gif);right:80px;top:60px;z-index:-5}
-#boulders {position:fixed;width:200px; height:250px; opacity:.8; filter:alpha(opacity=80); background-image:url(assets/boulders.png);left:0;bottom:0;z-index:-10;background-repeat: no-repeat;}
-#pads {position:fixed;width:307px; height:263px; background-image:url(assets/pads.gif);right:0;bottom:50px;z-index:-5}
+#boat {width:280px; height:345px; opacity:.9; filter:alpha(opacity=90); background-image:url(images/boat_background.gif);left:0;top:0;z-index:-5}
+#island {width:107px; height:178px; opacity:.25; filter:alpha(opacity=25); background-image:url(images/island.gif);right:80px;top:60px;z-index:-5}
+#boulders {position:fixed;width:200px; height:250px; opacity:.8; filter:alpha(opacity=80); background-image:url(images/boulders.png);left:0;bottom:0;z-index:-10;background-repeat: no-repeat;}
+#pads {position:fixed;width:307px; height:263px; background-image:url(images/pads.gif);right:0;bottom:50px;z-index:-5}
 
 
 
