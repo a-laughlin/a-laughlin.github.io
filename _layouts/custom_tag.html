@@ -12,7 +12,7 @@ layout: default
       </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       <pre><code>
-        {{ post | inspect }}
+        {{ post.tags | inspect }}
       </code></pre>
     </article>
   {% endfor %}
