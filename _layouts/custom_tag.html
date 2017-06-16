@@ -5,7 +5,7 @@ layout: default
 <h1>Posts tagged {{page.name}}</h1>
 <div class="posts">
   {% for post in site.tags[page.name] %}
-    {% if post.tags contains 'draft' %}
+    {% if not post.tags contains 'draft' or page.name == 'draft' %}
     <article class="post">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="entry">
