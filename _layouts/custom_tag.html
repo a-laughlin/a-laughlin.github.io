@@ -6,6 +6,7 @@ layout: default
 <div class="posts">
   {% for post in site.tags[page.name] %}
     {% assign not_draft = not post.tags contains 'draft' %}
+    <pre><code>not_draft : {{ not_draft | json }}</code></pre>
     {% if not_draft or page.name == 'draft' %}
     <article class="post">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>

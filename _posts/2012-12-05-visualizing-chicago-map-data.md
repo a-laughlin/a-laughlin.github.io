@@ -2,7 +2,7 @@
 title: "Visualizing Cambridge Chicago's Data with jQuery and Google Maps + Charts + Refine + Fusion Tables"
 comments: true
 layout: post
-tags: [datavis, draft]
+tags: [draft, datavis]
 ---
 
 Draft functionality addition in progress.  Test. Paragraph.

@@ -6,10 +6,7 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <pre><code>post.tags[0] | inspect: {{ post.tags[0] | inspect }}</code></pre>
-      {% assign contains_draft = post.tags.include? 'draft' %}
-      <pre><code>contains_draft : {{ contains_draft | json }}</code></pre>
-      {% unless post.tags contains 'draft' %}
+      {% unless post.tags[0] == 'draft' %}
         <div class="entry">
           {{ post.excerpt }}
         </div>
