@@ -8,7 +8,7 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <pre><code>post.tags | inspect: {{ post.tags | inspect }}</code></pre>
       {% assign contains_draft = post.tags.include? 'draft' %}
-      <pre><code>contains_draft : {{ contains_draft  }}</code></pre>
+      <pre><code>contains_draft : {{ contains_draft | json }}</code></pre>
       {% unless post.tags contains 'draft' %}
         <div class="entry">
           {{ post.excerpt }}
