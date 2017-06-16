@@ -47,7 +47,7 @@ The resulting map is on the right.
     </p>
     </figcaption>
   </figure>
-<div>
+</div>
 
 ##  Crafting the Stories 
 Time series and spatial relationships are a challenge to combine in a single visualization. Three options include animation, small multiples, and embedded charts.
