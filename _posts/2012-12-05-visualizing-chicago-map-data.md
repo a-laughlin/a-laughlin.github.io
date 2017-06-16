@@ -37,7 +37,7 @@ The resulting map is on the right.
     </dl>
   </div>
   <figure>
-    <div id="chicago-theft-yrs">![chicago theft visualization by ward](//images/chicago-theft-map.png)</div>
+    <div id="chicago-theft-yrs"><img src="//images/chicago-theft-map.png" alt="chicago theft visualization by ward" /></div>
     <figcaption class="clear-none">
     <p>
       2003-2010 total Chicago thefts under $300 US dollars by ward and year, including ID thefts.  
