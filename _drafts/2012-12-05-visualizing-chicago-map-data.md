@@ -18,31 +18,34 @@ My initial intent was to map the two questions using Cambridge and/or Boston met
 The closest I found was a reference from the [Cambridge data links](http://www2.cambridgema.gov/cdd/data/datalinks.html) page to some pre-made [2005 maps](http://www.caliper.com/Maptitude/MassStats/Map.aspx).  Mapping the questions sounded fun despite Cambridge data availability issues (apparently a <a href="http://bostonography.com/2011/autumn-streets/" target="_blank">shared problem</a>), so I went ahead using data from <a href="https://data.cityofchicago.org/">Chicago's awesome city data portal</a>  
 The resulting map is on the right.
 
-### 2003-2010 total Chicago thefts under $300 by ward
-<dl id="thefts-map-legend">
+<div style="width:50%; float:right; clear:none;">
+  <h4>2003-2010 total Chicago thefts under $300 by ward</h4>
   <div>
-    <dt id="legend-totals">
-      <img style="background-color: #61536e" height="30" src="//maps.gstatic.com/mapfiles/transparent.png" width="30" /> Total per Ward
-    </dt>
-    <dd>- Darker == more total theft</dd>
+    <dl id="thefts-map-legend">
+      <div>
+        <dt id="legend-totals">
+          <img style="background-color: #61536e" height="30" src="//maps.gstatic.com/mapfiles/transparent.png" width="30" /> Total per Ward
+        </dt>
+        <dd>- Darker == more total theft</dd>
+      </div>
+      <div>
+        <dt id="legend-trends"> Theft Trend</dt>
+        <dd>- % change from 2003 on a 20%-120% scale</dd>
+      </div>
+    </dl>
   </div>
-  <div>
-    <dt id="legend-trends"> Theft Trend</dt>
-    <dd>- % change from 2003 on a 20%-120% scale</dd>
-  </div>
-</dl>
-<figure>
-  <div id="chicago-theft-yrs">Loading...</div>
-  <figcaption class="clear-none">
-  <p>
-    2003-2010 total Chicago thefts under $300 US dollars by ward and year, including ID thefts.  
-    Whether $300 is adjusted for inflation is unknown.  
-     Reporting procedures and other potential bias sources are also unknown.  
-      Excludes 2001-2002 due to irregular/infrequent entries, and a small number of entries lacking wards. From <a href="https://data.cityofchicago.org/Public-Safety/2001-present-Theft-300-by-ward-year/jq8x-ret8">City of Chicago crime data view</a> on 2011/09/22. Originally from <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2">2001-Present full crime data table</a>.
-  </p>
-  </figcaption>
-</figure>
-</div>
+  <figure>
+    <div id="chicago-theft-yrs">![chicago theft visualization by ward](//images/chicago-theft-map.png)</div>
+    <figcaption class="clear-none">
+    <p>
+      2003-2010 total Chicago thefts under $300 US dollars by ward and year, including ID thefts.  
+      Whether $300 is adjusted for inflation is unknown.  
+       Reporting procedures and other potential bias sources are also unknown.  
+        Excludes 2001-2002 due to irregular/infrequent entries, and a small number of entries lacking wards. From <a href="https://data.cityofchicago.org/Public-Safety/2001-present-Theft-300-by-ward-year/jq8x-ret8">City of Chicago crime data view</a> on 2011/09/22. Originally from <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2">2001-Present full crime data table</a>.
+    </p>
+    </figcaption>
+  </figure>
+<div>
 
 ##  Crafting the Stories 
 Time series and spatial relationships are a challenge to combine in a single visualization. Three options include animation, small multiples, and embedded charts.
