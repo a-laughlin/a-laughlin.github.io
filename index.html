@@ -4,11 +4,12 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% assign not_draft = not post.tags contains 'draft' %}
+    {% assign post_not_draft = not post.tags contains 'draft' %}
     <article class="post">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       {{ post.tags | inspect }}
-      {% if not_draft %}
+      {{ post_not_draft | inspect }}
+      {% if post_not_draft %}
         <div class="entry">
           {{ post.excerpt }}
         </div>
