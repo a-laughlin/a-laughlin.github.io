@@ -2,7 +2,7 @@
 title: "Visualizing Cambridge Chicago's Data with jQuery and Google Maps + Charts + Refine + Fusion Tables"
 comments: true
 layout: post
-tags: [draft, datavis]
+tags: [datavis]
 ---
 
 "What story do I want to tell?"
@@ -51,8 +51,7 @@ Still, they require some tweaking to get there - desaturation, map feature remov
 ## Results
 Assuming the data is valid for this purpose, reported thefts in all wards showed net declines between 2003 and 2010.  Contrasts between wards with high and low total theft are easy to see - higher theft in the city center extends to the Northwest, West, and South.
 
-Overall I'm happy with the outcome and had fun creating it.
-Cheers!
+Overall I'm happy with this visualization's outcome and had fun creating it.  Hope you enjoyed the post!
 
 ## Supporting Technologies
 Technologies that went into this visualization (roughly in order applied):
