@@ -5,9 +5,7 @@ layout: post
 tags: [draft, datavis]
 ---
 
-Draft functionality addition in progress.  Test. Paragraph.
-
-## "What story do I want to tell?"
+"What story do I want to tell?"
 
 That question lies at the heart of every visualization.  
 After two things were stolen in my first two weeks in Cambridge, I got curious about thefts trends.
@@ -18,24 +16,10 @@ After two things were stolen in my first two weeks in Cambridge, I got curious a
 
 My initial intent was to map the two questions using Cambridge and/or Boston metro area data.  
 The closest I found was a reference from the [Cambridge data links](http://www2.cambridgema.gov/cdd/data/datalinks.html) page to some pre-made [2005 maps](http://www.caliper.com/Maptitude/MassStats/Map.aspx).  Mapping the questions sounded fun despite Cambridge data availability issues (apparently a <a href="http://bostonography.com/2011/autumn-streets/" target="_blank">shared problem</a>), so I went ahead using data from <a href="https://data.cityofchicago.org/">Chicago's awesome city data portal</a>  
-The resulting map is on the right.
+The resulting map is on the right. (2017 Migration edit: In the interest of preserving a visual despite changing APIs, the map is now a static image instead of the actual code).
 
 <div style="width:50%; float:right; clear:none;">
   <h4>2003-2010 total Chicago thefts under $300 by ward</h4>
-  <div>
-    <dl id="thefts-map-legend">
-      <div>
-        <dt id="legend-totals">
-          <img style="background-color: #61536e" height="30" src="//maps.gstatic.com/mapfiles/transparent.png" width="30" /> Total per Ward
-        </dt>
-        <dd>- Darker == more total theft</dd>
-      </div>
-      <div>
-        <dt id="legend-trends"> Theft Trend</dt>
-        <dd>- % change from 2003 on a 20%-120% scale</dd>
-      </div>
-    </dl>
-  </div>
   <figure>
     <div id="chicago-theft-yrs"><img src="/images/chicago-theft-map.png" alt="chicago theft visualization by ward" /></div>
     <figcaption class="clear-none">
@@ -67,7 +51,7 @@ Still, they require some tweaking to get there - desaturation, map feature remov
 ## Results
 Assuming the data is valid for this purpose, reported thefts in all wards showed net declines between 2003 and 2010.  Contrasts between wards with high and low total theft are easy to see - higher theft in the city center extends to the Northwest, West, and South.
 
-Overall I'm happy with the outcome and had fun creating it. In fact, If you're reading this and you happened to steal a fridge in front of my steps a few weeks ago, consider it a gift.  
+Overall I'm happy with the outcome and had fun creating it.
 Cheers!
 
 ## Supporting Technologies
