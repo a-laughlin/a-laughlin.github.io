@@ -539,7 +539,7 @@ a:link, a:visited { color: #DDDDDD;}
 #content a:visited {color: #84B;}
 #content a:active,#content .entry a:hover{text-decoration:underline}
 
-#content .entry-title a
+#content .entry-title a,
 #content .entry-title a:link,
 #content .entry-title a:visited,
 #content .entry-title a:hover,
