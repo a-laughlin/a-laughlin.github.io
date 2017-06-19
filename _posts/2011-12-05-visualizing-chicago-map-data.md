@@ -1,5 +1,5 @@
 ---
-title: "Visualizing Cambridge Chicago's Data with jQuery and Google Maps + Charts + Refine + Fusion Tables"
+title: "Visualizing Chicago Theft Data - An Experiment"
 comments: true
 layout: post
 tags: [datavis]
@@ -15,7 +15,7 @@ After two things were stolen in my first two weeks in Cambridge, I got curious a
  - How does each area's theft trend over time compare with others around it?
 
 My initial intent was to map the two questions using Cambridge and/or Boston metro area data.  
-The closest I found was a reference from the [Cambridge data links](http://www2.cambridgema.gov/cdd/data/datalinks.html) page to some pre-made [2005 maps](http://www.caliper.com/Maptitude/MassStats/Map.aspx).  Mapping the questions sounded fun despite Cambridge data availability issues (apparently a <a href="http://bostonography.com/2011/autumn-streets/" target="_blank">shared problem</a>), so I went ahead using data from <a href="https://data.cityofchicago.org/">Chicago's awesome city data portal</a>  
+The closest I found was a reference from the [Cambridge data links](http://www2.cambridgema.gov/cdd/data/datalinks.html) page to some pre-made [2005 maps](http://www.caliper.com/Maptitude/MassStats/Map.aspx).  Mapping the questions sounded fun despite Cambridge data availability issues (apparently a <a href="http://bostonography.com/2011/autumn-streets/" class="ext-right" target="_blank">shared problem</a>), so I went ahead using data from <a href="https://data.cityofchicago.org/">Chicago's awesome city data portal</a>  
 The resulting map is on the right. (2017 Migration edit: In the interest of preserving a visual despite changing APIs, the map is now a static image instead of the actual code).
 
 <div style="width:50%; float:right; clear:none;">
@@ -37,11 +37,12 @@ The resulting map is on the right. (2017 Migration edit: In the interest of pres
 Time series and spatial relationships are a challenge to combine in a single visualization. Three options include animation, small multiples, and embedded charts.
 
 ### Animation 
-One solution is <a href="http://www.youtube.com/watch?v=pM8XbzdlZIg" target="_blank">motion</a> - i.e., representing change over eight years by showing eight maps over eight seconds. I'm not a huge fan of animated choropleths since <a href="http://thecartofish.com/fish_thesis.pdf" target="_blank">humans cannot effectively comprehend color transitions in fifty polygons</a> (7.84MB).
+One solution is <a href="http://www.youtube.com/watch?v=pM8XbzdlZIg" class="ext-right" target="_blank">motion</a> - i.e., representing change over eight years by showing eight maps over eight seconds. I'm not a huge fan of animated choropleths since <a href="http://thecartofish.com/fish_thesis.pdf" class="pdf-right" target="_blank">humans cannot effectively comprehend color transitions in fifty polygons</a> (7.84MB).
 
 ### Small Multiples
-Another option advocated by Edward Tufte is <a href="http://www.juiceanalytics.com/writing/better-know-visualization-small-multiples/" target="_blank">small multiple maps</a>.  
-In this scenario, it requires substantial effort to compare many proximal polygons over time, so it wasn't my first choice.
+Another option advocated by Edward Tufte is <a href="http://www.juiceanalytics.com/writing/better-know-visualization-small-multiples/" class="ext-right" target="_blank">small multiple maps</a>.
+
+Comparing many proximal polygons over time requires substantial effort, so it wasn't my first choice.
 
 ### Embedded Charts
 Embedded charts are ideal.  
@@ -59,11 +60,11 @@ Technologies that went into this visualization (roughly in order applied):
 <li><a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2">Chicago Theft Data</a> (CSV)</li>
 <li><a href="https://data.cityofchicago.org/browse?limitTo=blob">Chicago Ward Boundaries</a> (ESRI Shapefiles)</li>
 <li><a title="http://www.shpescape.com/" href="http://www.shpescape.com/">Shpescape.com</a> (Convert ESRI shapefiles to ward Fusion Tables)</li>
-<li><a href="www.google.com/fusiontables/Home" target="_blank">Fusion Tables</a> (Merge ward geo data and thefts data. Export to Google Refine for cleaning. Re-import cleaned data. Format KML via handy style formatter in visualize&gt;map menu)</li>
-<li><a href="http://code.google.com/p/google-refine/" target="_blank">Google Refine</a> (Import merged data as CSV. Remove irrelevant rows, including rows with no ward and years with spotty data.  
+<li><a href="www.google.com/fusiontables/Home" class="ext-right" target="_blank">Fusion Tables</a> (Merge ward geo data and thefts data. Export to Google Refine for cleaning. Re-import cleaned data. Format KML via handy style formatter in visualize&gt;map menu)</li>
+<li><a href="http://code.google.com/p/google-refine/" class="ext-right" target="_blank">Google Refine</a> (Import merged data as CSV. Remove irrelevant rows, including rows with no ward and years with spotty data.  
 Export merged table as CSV for Fusion Tables re-import. Export years, thefts per year, and ward centroids as JSON for JavaScript to create line and bar charts)</li>
 <li><a href="http://code.google.com/apis/loader/">Google API Loader</a> (Load the maps API)</li>
-<li><a href="http://code.google.com/apis/maps/documentation/javascript/" target="_blank">Google Maps API</a> (Framework for interacting with Google Maps)</li>
-<li><a href="http://code.google.com/apis/chart/image/" target="_blank">Google Charts API - Image Charts</a> (Info window bar charts and embedded line charts)</li>
+<li><a href="http://code.google.com/apis/maps/documentation/javascript/" class="ext-right" target="_blank">Google Maps API</a> (Framework for interacting with Google Maps)</li>
+<li><a href="http://code.google.com/apis/chart/image/" class="ext-right" target="_blank">Google Charts API - Image Charts</a> (Info window bar charts and embedded line charts)</li>
 <li>JavaScript / jQuery (File loading, API interaction, and general display)</li>
 </ul>

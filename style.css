@@ -568,8 +568,8 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 .post pre{clear:both}
 
 /*link indicators*/
-#content a.ext-right{background:transparent url(external-transp.gif) no-repeat right;padding-right:1em}
-#content a.pdf-right{background:transparent url(pdf-thumbnail.gif) no-repeat right;padding-right:20px}
+#content a.ext-right{background:transparent url(images/external-transp.gif) no-repeat right;padding-right:1em}
+#content a.pdf-right{background:transparent url(images/pdf-thumbnail.gif) no-repeat right;padding-right:1em}
 
 /*GA+GWO example*/
 #trans-box .item,#trans-items,#trans-id {clear:both}
