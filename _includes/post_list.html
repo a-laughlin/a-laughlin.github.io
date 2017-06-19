@@ -3,7 +3,7 @@
   {% for post in site.tags[page.name] %}
     {% if post.tags[0] != 'draft' or page.name == 'draft' %}
     <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry">
         {{ post.excerpt }}
       </div>
