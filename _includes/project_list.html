@@ -1,26 +1,28 @@
 <style type="text/css">
   #content {max-width: 100%;}
-  .entry{
+  .posts{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
+    align-content:space-between;
   }
-  .entry p{
+  .post {
     width:30%;
     border:1px solid #ddd;
+    margin-bottom:5%;
   }
 
   /*smaller screen sizes*/
   @media all and (max-width: 1999px){
-    .entry p{width:46%;}
-    .entry p img {width:46%;}
+    .post {width:46%;}
+    .post  img {width:46%;}
   }
   @media all and (max-width: 1199px){
-    .entry p{width:100%;}
-    .entry p img {width:50%;height:auto;}
+    .post {width:100%;}
+    .post  img {width:50%;}
   }
   @media all and (max-width: 899px){
-    .entry p img {width:100%;height:auto;}
+    .post  img {width:100%;}
   }
 </style>
 
@@ -34,8 +36,8 @@
     <article class="post">
       {% assign post_url = post.url %}
       <a href="{{ site.baseurl }}{{ post_url }}">
-        <img src="images/{{ post.image}}" alt="{{ post.image_alt }}" />
-        <h2>{{ post.title }}</h2>
+        <img src="/images/{{ post.image}}" alt="{{ post.image_alt }}" />
+        <h2 class="entry-title">{{ post.title }}</h2>
       </a>
       <div class="entry">
         {{ post.content }}
