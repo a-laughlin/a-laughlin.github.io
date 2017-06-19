@@ -2,7 +2,7 @@
 title: "Module Composition Language"
 comments: true
 layout: page
-tags: [javascript, project, software]
+tags: [project, javascript, software]
 image: island.png
 image_alt: test image alt
 url: 
