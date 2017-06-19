@@ -1,18 +1,8 @@
 ---
 layout: default
 ---
-
-<h1>Posts tagged {{page.name}}</h1>
-<div class="posts">
-  {% for post in site.tags[page.name] %}
-    {% if post.tags[0] != 'draft' or page.name == 'draft' %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-    {% endif %}
-  {% endfor %}
-</div>
+{% if page.name == "project" %}
+  {% include project_list.html %}
+{% else%}
+  {% include post_list.html %}
+{% endif %}
