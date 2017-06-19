@@ -1,3 +1,75 @@
+Styles: |
+    /*GA+GWO example*/
+    #trans-box .item,#trans-items,#trans-id {clear:both}
+    #trans-items span {width:15%;display:block;float:left}
+    #trans-id span {display:block;float:left;margin-right:20px}
+
+
+
+    /*Google maps example*/
+    .clear-none {clear:none}
+    .content-right-column {border:1px solid #CCC; margin-left:20px;float:right;clear:none;width:500px}
+    .content-right-column dl, .content-right-column H3, .content-right-column figcaption{padding-left:20px;}
+    .content-right-column * {clear:none}
+    .content-left-column * {clear:none}
+    .content-right-column #chicago-theft-yrs {width:490px; height:800px;margin:0 0 1em 5px}
+    .content-right-column #thefts-map-legend dt, .content-right-column #thefts-map-legend dd{display:inline}
+
+    /*slideshow tutorial*/
+    .post-323 #slideshow{height:187px;width:167px;overflow:hidden;}
+
+    /*fisheye*/
+    .post-601 .fisheye-grid{height:490px;width:650px}
+    .post-601 .kitten-grid{height:310px;width:410px}
+    .post-601 .kitten-grid img{height:100%;width:100%}
+    .post-601 .date-bar{background-color:#880;margin:2px;text-align:right;font-weight:700;color:white}
+    .post-601 .fisheye-row {width:100%;clear:both}
+    .post-601 .fisheye-cell {margin:1px;background-color:#DDD;float:left;clear:none}
+
+    /*fisheye spine example */
+
+    /*Grid styling.  Currently required for the fisheye plugin.*/
+    .post-645 .campaign-grid { width:610px; height:460px }
+    .post-645 .fisheye-row { clear: both; width: 100% }
+    .post-645 .fisheye-cell { background-color: #DDDDDD; clear: none; float: right; margin: 1px; cursor: cell }
+    .post-645 .fisheye-cell div { display:inline }
+    .post-645 .adgroup-row {padding-top:10px}
+
+
+    .post-645 #campaign-grid0 img.cell-sparkChart{display:block; float:right;clear:none;margin:2px 2px 0 0}
+
+
+    .post-645 .cell-chart1,
+    .post-645 img.cell-sparkChart,
+    .post-645 #campaign-grid0.expanded img.cell-sparkChart,
+    .post-645 #campaign-grid0.shrink img.cell-sparkChart,
+    .post-645 .span-keyword,
+    .post-645 .span-ctr,
+    .post-645 div.cell-red-toggle,
+    .post-645 .activeColGrowing img,
+    .post-645 .activeRowGrowing img,
+    .post-645 .activeColShrinking img,
+    .post-645 .activeRowShrinking img,
+    .post-645 .maxHeightLock.maxWidthLock .cell-sparkChart {display:none}
+
+    .post-645 .cell-campaign {background-color: #CAADA4;}
+    .post-645 .cell-adgroup  {background-color: #AC97DA;}
+    .post-645 .cell-keyword {background-color: #BFD3A1;}
+
+
+
+
+
+
+    .post-645 .expanded .fisheye-cell {font-size:80%;}
+    .post-645 .maxHeightLock.maxWidthLock > * {display:block;font-size:200%;clear:none;margin:5px}
+    .post-645 .maxHeightLock.maxWidthLock.cell-keyword span  {display:inline}
+
+    .post-645 .maxHeightLock.maxWidthLock > .cell-chart1 {display:block;float:right;clear:none;}
+
+    .post-645 .span-red{cursor:pointer;border-bottom: 1px dashed #000;}
+    .post-645 .redColor {color:#D00;}
+
 Pages:
   About: |
     <p>Curiosity leads to curious places.</p>
