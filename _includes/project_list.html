@@ -27,33 +27,19 @@
 
 <h1>Projects</h1>
 <p>06/2017 - Migration in progress</p>
-
-pic + description
-
-Theft Map Visualization
-
-StC framework
-
-Yearly MIT Dashboards
-
-System Dynamics Psychosocial Modeling
-
-Module Composition Language
-
-Efficacy.to
-
+<!--   ["_project_files", post.slug, "index.html"].join('/')  -->
 <div class="posts {{ page.name}}">
   {% for post in site.tags[page.name] %}
     {% if post.tags[0] != 'draft' or page.name == 'draft' %}
     <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      {% assign post_url = post.url %}
+      <a href="{{ site.baseurl }}{{ post_url }}">
         <img src="images/{{ post.image}}" alt="{{ post.image_alt }}" />
         <h2>{{ post.title }}</h2>
       </a>
       <div class="entry">
         {{ post.content }}
       </div>
-      <a href="{{ site.baseurl }}{{ post.index_loc }}" class="read-more">Read More</a>
     </article>
     {% endif %}
   {% endfor %}
