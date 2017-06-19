@@ -35,10 +35,8 @@
     {% if post.tags[0] != 'draft' or page.name == 'draft' %}
     <article class="post">
       {% assign post_url = post.url %}
-      <a href="{{ site.baseurl }}{{ post_url }}">
-        <img src="/images/{{ post.image}}" alt="{{ post.image_alt }}" />
-        <h2 class="entry-title">{{ post.title }}</h2>
-      </a>
+      <a href="{{ site.baseurl }}{{ post_url }}"><img src="/images/{{ post.image}}" alt="{{ post.image_alt }}" /></a>
+      <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post_url }}">{{ post.title }}</a></h2>
       <div class="entry">
         {{ post.content }}
       </div>
