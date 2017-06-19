@@ -537,7 +537,8 @@ a:link, a:visited { color: #DDDDDD;}
 #content a {color: #46B;}
 #content a:link {color: #46B;}
 #content a:visited {color: #84B;}
-#content a:active,#content .entry a:hover{text-decoration:underline}
+#content a:hover,
+#content a:active{text-decoration:underline}
 
 #content .entry-title a,
 #content .entry-title a:link,
