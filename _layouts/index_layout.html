@@ -4,22 +4,25 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-     {% assign is_project = post.custom_tags | where:"project" %}
     <!-- <div>{{ post.custom_tags | jsonify }}</div>
     <div>{{ post.custom_tags | join ","}}</div>
     <div>{{ post.custom_tags.join(",")  | inspect }}</div> -->
-    {% if post.custom_tags[0] != 'draft' && post.custom_tags[0] != 'project' %}
+    {% if post.custom_tags contains 'project' %}
+      {% assign is_project = true %}
+      {% assign is_not_project = false %}
+    {% else %}
+      {% assign is_project = false %}
+      {% assign is_not_project = false %}
+    {% endif %}
+    {% if post.custom_tags contains 'draft' %}
+      {% assign is_draft = true %}
+      {% assign is_not_draft = false %}
+    {% else %}
+      {% assign is_draft = false %}
+      {% assign is_not_draft = false %}
+    {% endif %}
+    {% if is_not_draft and is_not_project %}
       <article class="post">
-        {% if post.custom_tags contains 'project' %}
-        <div>project: {{ true }}</div>
-        {% else %}
-        <div>project: {{ false }}</div>
-        {% endif %}
-        {% if post.custom_tags contains 'draft' %}
-        <div>project: {{ true }}</div>
-        {% else %}
-        <div>project: {{ false }}</div>
-        {% endif %}
         <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
           <div>is_project: {{ is_project | jsonify }}</div>
           <div class="entry">

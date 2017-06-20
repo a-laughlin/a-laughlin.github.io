@@ -1,7 +1,22 @@
 <h1>Posts tagged {{page.name}}</h1>
 <div class="posts {{ page.name }}">
   {% for post in site.tags[page.name] %}
-    {% if post.custom_tags[0] != 'draft' or page.name == 'draft' %}
+    {% if post.custom_tags contains 'project' %}
+      {% assign is_project = true %}
+      {% assign is_not_project = false %}
+    {% else %}
+      {% assign is_project = false %}
+      {% assign is_not_project = false %}
+    {% endif %}
+    {% if post.custom_tags contains 'draft' %}
+      {% assign is_draft = true %}
+      {% assign is_not_draft = false %}
+    {% else %}
+      {% assign is_draft = false %}
+      {% assign is_not_draft = false %}
+    {% endif %}
+
+    {% if is_not_draft or page.name == 'draft' %}
     <article class="post">
       <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry">
