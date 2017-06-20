@@ -29,10 +29,8 @@
 
 <h1>Projects</h1>
 <p>06/2017 - Migration in progress</p>
-<!--   ["_project_files", post.slug, "index.html"].join('/')  -->
 <div class="posts {{ page.name}}">
   {% for post in site.tags[page.name] %}
-
     {% if post.custom_tags contains 'project' %}
       {% assign is_project = true %}
       {% assign is_not_project = false %}
@@ -47,7 +45,7 @@
       {% assign is_draft = false %}
       {% assign is_not_draft = true %}
     {% endif %}
-
+    <div>is_project:{{is_project}} , is_draft:{{is_draft}}</div>
     {% if is_project and is_not_draft %}
     <article class="post">
       {% assign post_url = post.url %}
