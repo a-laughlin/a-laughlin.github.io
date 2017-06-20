@@ -4,6 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+    <div>{{ post.custom_tags | contains "project" }}</div>
     <div>{{ post.custom_tags | join ","}}</div>
     <div>{{ post.custom_tags.join(",")  | inspect }}</div>
     {% if post.custom_tags[0] != 'draft' && post.custom_tags[0] != 'project' %}
