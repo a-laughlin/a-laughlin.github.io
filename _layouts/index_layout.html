@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <div>{{ post.tags.class.to_s }}</div>
+    <div>{{ post.tags.class | json }}</div>
     <div>{{ post.tags.join(",")  | inspect }}</div>
     {% if post.tags[0] != 'draft' && post.tags[0] != 'project' %}
       <article class="post">
