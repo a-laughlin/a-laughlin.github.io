@@ -2,7 +2,7 @@
 <div class="posts {{ page.name }}">
   {% for post in site.tags[page.name] %}
 
-    {% if post.custom_tags contains 'project' %}
+    {% if post.tags contains 'project' %}
       {% assign is_project = true %}
       {% assign is_not_project = false %}
     {% else %}
@@ -10,7 +10,7 @@
       {% assign is_not_project = true %}
     {% endif %}
 
-    {% if post.custom_tags contains 'draft' %}
+    {% if post.tags contains 'draft' %}
       {% assign is_draft = true %}
       {% assign is_not_draft = false %}
     {% else %}
