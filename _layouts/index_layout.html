@@ -9,7 +9,8 @@ layout: default
     {% else %}
       <div>false: {{ false }}</div>
     {% endif %}
-    <div>{{ post.custom_tags | contains 'project' }}</div>
+    <div>{{ post.custom_tags | inspect }}</div>
+    <div>{{ post.custom_tags | jsonify }}</div>
     <div>{{ post.custom_tags | join ","}}</div>
     <div>{{ post.custom_tags.join(",")  | inspect }}</div>
     {% if post.custom_tags[0] != 'draft' && post.custom_tags[0] != 'project' %}
