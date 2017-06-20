@@ -567,6 +567,7 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 
 /*smaller screen sizes*/
 @media all and (max-width: 899px){
+  #boulders, #pads{display:none;}
   #content-wrap {width:90%;margin:0 5%;}
   nav.main-nav {position:absolute;top:70px;margin-left:5%;}
   nav.main-nav .nav-item:nth-child(1),
@@ -577,5 +578,6 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
   nav.main-nav .nav-item a:visited {color:#ddd;}
 }
 @media all and (max-width: 599px){
+  .site-description{display:none;}
   #content-wrap {width:98%;margin:auto 1%;}
 }
