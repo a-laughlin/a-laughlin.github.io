@@ -5,6 +5,12 @@ layout: post
 tags: [draft, javascript, software]
 ---
 
+list < list-items
+store < store_extenders
+store < store reducers (you have to use redux, can't put anything in between without changing wiring)
+event publishing fn > publishers
+styles > styleSheetWriter
+styles+react < moduleStyles
 What do the following have in common?
 
 4. Composing data across REST endpoints (each concept gets its own name, every view requesting data coupled to the endpoint structure/naming, endpoint cannot be changed without breaking view code, merging the same data from different endpoints is done manually, endpoints cannot be removed without breaking the view code)
