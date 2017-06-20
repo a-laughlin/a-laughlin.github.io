@@ -46,7 +46,6 @@
       {% assign is_draft = false %}
       {% assign is_not_draft = true %}
     {% endif %}
-    <div>is_project:{{is_project}} , is_draft:{{is_draft}}</div>
     {% if is_project and is_not_draft %}
     <article class="post">
       {% assign post_url = post.url %}
