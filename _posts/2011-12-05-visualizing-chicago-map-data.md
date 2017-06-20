@@ -2,7 +2,7 @@
 title: "Visualizing Chicago Theft Data - An Experiment"
 comments: true
 layout: post
-tags: [datavis]
+custom_tags: [datavis]
 ---
 
 "What story do I want to tell?"

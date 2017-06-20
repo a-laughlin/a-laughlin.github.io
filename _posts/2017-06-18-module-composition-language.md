@@ -2,7 +2,7 @@
 title: Module Composition Language
 comments: true
 layout: post
-tags: [draft, javascript, software]
+custom_tags: [draft, javascript, software]
 ---
 
 What do the following have in common?
