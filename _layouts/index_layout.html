@@ -4,22 +4,19 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <!-- <div>{{ post.custom_tags | jsonify }}</div>
-    <div>{{ post.custom_tags | join ","}}</div>
-    <div>{{ post.custom_tags.join(",")  | inspect }}</div> -->
     {% if post.custom_tags contains 'project' %}
       {% assign is_project = true %}
       {% assign is_not_project = false %}
     {% else %}
       {% assign is_project = false %}
-      {% assign is_not_project = false %}
+      {% assign is_not_project = true %}
     {% endif %}
     {% if post.custom_tags contains 'draft' %}
       {% assign is_draft = true %}
       {% assign is_not_draft = false %}
     {% else %}
       {% assign is_draft = false %}
-      {% assign is_not_draft = false %}
+      {% assign is_not_draft = true %}
     {% endif %}
     {% if is_not_draft and is_not_project %}
       <article class="post">

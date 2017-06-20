@@ -6,14 +6,14 @@
       {% assign is_not_project = false %}
     {% else %}
       {% assign is_project = false %}
-      {% assign is_not_project = false %}
+      {% assign is_not_project = true %}
     {% endif %}
     {% if post.custom_tags contains 'draft' %}
       {% assign is_draft = true %}
       {% assign is_not_draft = false %}
     {% else %}
       {% assign is_draft = false %}
-      {% assign is_not_draft = false %}
+      {% assign is_not_draft = true %}
     {% endif %}
 
     {% if is_not_draft or page.name == 'draft' %}
