@@ -572,7 +572,7 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
   nav.main-nav .nav-item:nth-child(1),
   nav.main-nav .nav-item:nth-child(2),
   nav.main-nav .nav-item:nth-child(3),
-  nav.main-nav .nav-item:nth-child(4){line-height:150%;position:relative;bottom:0;top:0;right:0;font-size:1.2em;color:#ccc;text-align:left;}
+  nav.main-nav .nav-item:nth-child(4){line-height:150%;position:relative;top:0;right:0;bottom:0;left:0;font-size:1.2em;color:#ccc;text-align:left;}
   nav.main-nav .nav-item a:link,
   nav.main-nav .nav-item a:visited {color:#ddd;}
 }
