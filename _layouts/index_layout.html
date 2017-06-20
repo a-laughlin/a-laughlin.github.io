@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <div>{{ post.tags | inspect }}</div>
+    <div>{{ post.tags.to_s }}</div>
     {% if post.tags[0] != 'draft' && post.tags[0] != 'project' %}
       <article class="post">
         <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
