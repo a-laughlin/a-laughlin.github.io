@@ -18,10 +18,12 @@ layout: default
       {% assign is_draft = false %}
       {% assign is_not_draft = true %}
     {% endif %}
+
+    <div>is_project:{{is_project}} , is_draft:{{is_draft}}</div>
+
     {% if is_not_draft and is_not_project %}
       <article class="post">
         <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-          <div>is_project: {{ is_project | jsonify }}</div>
           <div class="entry">
             {{ post.excerpt }}
           </div>
