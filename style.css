@@ -556,12 +556,9 @@ a:link, a:visited { color: #DDDDDD;}
 #content pre {white-space:pre-wrap;word-break:break-word;padding:1em 0 1em .2em}
 code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;font-size:90%;font-family:"consolas","andale mono",monospace}
 
-/*all posts*/
-.post pre{clear:both}
-
 /*link indicators*/
-#content a.ext-right{background:transparent url(images/external-transp.gif) no-repeat right;padding-right:1em}
-#content a.pdf-right{background:transparent url(images/pdf-thumbnail.gif) no-repeat right;padding-right:1em}
+#content a.ext-right{background:transparent url(/images/external-transp.gif) no-repeat right;padding-right:1em}
+#content a.pdf-right{background:transparent url(/images/pdf-thumbnail.gif) no-repeat right;padding-right:1em}
 
 
 /* footer */
@@ -572,7 +569,10 @@ code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;
 @media all and (max-width: 899px){
   #content-wrap {width:90%;margin:0 5%;}
   nav.main-nav {position:absolute;top:70px;margin-left:5%;}
-  nav.main-nav .nav-item{line-height:150%;position:relative;bottom:0;top:0;left:0;right:0;font-size:1.2em;color:#ccc;}
+  nav.main-nav .nav-item:nth-child(1),
+  nav.main-nav .nav-item:nth-child(2),
+  nav.main-nav .nav-item:nth-child(3),
+  nav.main-nav .nav-item:nth-child(4){line-height:150%;position:relative;bottom:0;top:0;right:0;font-size:1.2em;color:#ccc;text-align:left;}
   nav.main-nav .nav-item a:link,
   nav.main-nav .nav-item a:visited {color:#ddd;}
 }
