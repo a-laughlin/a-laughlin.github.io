@@ -513,6 +513,8 @@ a:link, a:visited { color: #DDDDDD;}
   filter: alpha(opacity=95);
   position: absolute;
   z-index: 10;
+  box-shadow: 0px 0px 5px #777;
+  border-radius: 20px;
 }
 #content {
   width:100%;
