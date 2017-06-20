@@ -15,7 +15,7 @@
       {% assign is_draft = false %}
       {% assign is_not_draft = true %}
     {% endif %}
-
+    <div>is_project:{{is_project}} , is_draft:{{is_draft}}</div>
     {% if is_not_draft or page.name == 'draft' %}
     <article class="post">
       <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>

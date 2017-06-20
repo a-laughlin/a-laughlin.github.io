@@ -31,6 +31,7 @@
 <p>06/2017 - Migration in progress</p>
 <div class="posts {{ page.name}}">
   {% for post in site.tags[page.name] %}
+  <div>post.title: {{post.title}}</div>
     {% if post.custom_tags contains 'project' %}
       {% assign is_project = true %}
       {% assign is_not_project = false %}
