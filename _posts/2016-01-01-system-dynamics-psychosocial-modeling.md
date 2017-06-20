@@ -2,7 +2,7 @@
 title: "Efficacy.to"
 comments: true
 layout: page
-custom_tags: [project, javascript, software]
+tags: [draft,project, javascript, software]
 image: island.png
 image_alt: test image alt
 url: http://efficacy.to
