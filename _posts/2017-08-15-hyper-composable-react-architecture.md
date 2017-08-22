@@ -1,5 +1,5 @@
 ---
-title: Hyper Composable React Architecture
+title: Hyper-Composable React Architecture
 comments: true
 layout: post
 tags: [javascript, software]
