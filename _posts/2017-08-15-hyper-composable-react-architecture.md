@@ -80,7 +80,20 @@ There are many.  As a general rule, you can tell a dependency graph is at work w
 - Every REST url and returned data structure are their own graphs.  Wrapping them with GraphQL eliminates many.
 - Increase your threshold for duplication.  I write this hesitantly, as it goes against my DRY sensibilities.  That said, duplication primarily causes problems when we duplicate multi-node dependency graphs.  For example, `setTimeout(dog.woof,0)` fails because we duplicated the 3 node `window.dog.woof` graph without duplicating the `window.dog.noise` graph.  Imagine taking simple code like `compose(multiplyBy5,add1)(1)`.  Let's say you use it 10 times, so you save a reference to it :`const add1Times5 = compose(multiplyBy5,add1);`.  In place of two clear 1-deep graphs and a compose function, you now have a 2-deep operations order dependency graph, a 2-deep execution order graph (if defined in that file... 3 deep if defined in another file), and you're creating a new name to learn where there was none before.  Abstraction -feels- like decreasing complexity in the moment, while actually increasing complexity in the system.  As long as there are no partial dependency graphs possible, duplication + multi-file find/replace is likely faster to change than any abstraction.
 - Avoid object-oriented and imperative code when possible.  In JavaScript, functional dependency graphs tend to be broad but shallow - 1-2 deep, while OO and imperative dependency graphs tend to be 3+ deep.  Imperative code encourages n-deep logic and execution order graphs.  In OO code, each `window.dog.woof` is a 3 deep graph dependent on the n-deep prototype chain.  OO's concept of 'methods' also often combines it with the imperative approach, making 3 deep references that depend on other 3 deep references, plus n-deep logic and execution order, plus the n-deep prototype chain.
-- Make your components [stars](https://en.wikipedia.org/wiki/Star_(graph_theory)), not trees, where each atom is a node, and composes together atom-type-specific arguments.  For example, `withStyles` composes together styles in the demo.
+- Make your components [stars](https://en.wikipedia.org/wiki/Star_(graph_theory)), not trees, where each atom is a node, and composes together atom-type-specific arguments.  For example, `withStyles` composes together styles in the demo.  
+
+## Demo Implementation
+While the principles may seem long, shallow graphs' simplicity results in implementation simplicity.  From the [demo readme](https://github.com/a-laughlin/hyper-composable-ui-architecture-demo/blob/master/README.md):  
+1. Start with string elements. `'div'`.
+2. Wrap them in compose. `const Div = (...HOCs)=>compose(...HOCs)('div');`
+3. Add React Higher Order Components for attributes, styles, behaviors, data, and everything else
+  - Children via `withItems`
+  - Styles via `withStyles` and `withItemContextStyles`
+  - Events via `pipeClicks`, `pipeChanges`, etc.
+  - Redux data via `withReduxData`
+  - GraphQL data via `withGQLData`
+4. Sprinkle some lodash/fp and recompose
+5. That's it!
 
 ## Benefits?
 **Flexibility**: Hands down the most flexible architecture I've ever used.  You can swap out any part.  Often flip parts around.  Whatever.  That's a key benefit of shallow dependency graphs.  Once I was well into the demo, I realized that even React was swappable.  
@@ -90,15 +103,15 @@ There are many.  As a general rule, you can tell a dependency graph is at work w
 **Testability**:  Super, super testable.  To start, `'div'` has nothing to test.  From there, every utility function is exported.  Most are one-liners.  Every component exported.  Any HOC is testable individually too.  
 **Reliability**:  Dependent on test quality.  
 **Portability**:  The flat DOM structure and Flexbox-based styling means a potentially fast transition to React Native.  Haven't tested.  
-**Understandability**:  Largely depends on your skill at naming things.  Take a look a the demo.  See if it makes sense.  
-**Changeability**: aka modifiability aka Maintainability  
+**Understandability**:  Shallow graphs are easier to understand than deep ones.
+**Changeability** (aka Modifiability aka Maintainability): This is a rollup system quality attribute.  Factors like flexibility, testability, and understandability all contribute to fast changes.
 **Productivity**:  Building new components is fast.  Really fast.  No file lookups.  No stylesheet lookups.  Once you know the basic tools like colors and utility functions, you can just go.
 **Value**: All of these qualities directly increase potential value to organizations, teams, and users.  Potential, because the software has to be useful too!
 
 ## Tradeoffs?
-- No HTML, visually speaking.  In the demo, each HTML element is a separate component decoupled from all others, so it doesn't look like HTML.  That was a mental adjustment.
-- High signal to noise ratio can feel really dense.  Demo components are often under 100 characters.  I've gone back and forth between 1-lining and many-lining those components.  Multi-line format is slow to visually scan in a long multi-component file, but faster to debug and modify when working on just one.  I prefer one-lining them in a multi-component file like the demo, and will likely multi-line them in separate files in a real application.
-- No CSS selectors (except for pseudo-selectors) was the most difficult transition.  I found it really frustrating to express what I wanted at first.  Your experience with the demo may be different.  However, that was before I wrote the withStyles HOCs, and before I realized the distinction between styles and context-specific styles (e.g, it doesn't make sense for children elements to apply their own outer margins).  I now spend less time planning and debugging styles than I did with separate CSS files + class names + selectors.  Their extra dependency graphs simply slow development.
+- No HTML, visually speaking.  In the demo, each HTML element is a separate component decoupled from all others, so it doesn't look like HTML.  It took getting used to.
+- High code signal to noise ratio can feel really dense.  Demo components are often under 100 characters.  I've gone back and forth between 1-lining and many-lining those components.  Multi-line format is slow to visually scan in a long multi-component file, but faster to debug and modify when working on just one.  I prefer one-lining them in a multi-component file like the demo, and will likely multi-line them in separate files in a real application.
+- No CSS selectors (except for pseudo-selectors) was the most difficult transition.  Your experience with the demo may be different.  I found it really frustrating to express what I wanted at first.  However, that was before I wrote the withStyles HOCs, and before I realized the distinction between styles and context-specific styles (e.g, it doesn't make sense for children elements to apply their own outer margins).  I now spend less time planning and debugging styles than I did with separate CSS files + class names + selectors.  Their extra dependency graphs simply slow development.
 - Naming functions is more challenging - the classic FP tiny functions dilemma.  Deciding if/how they should be categorized is also a challenge.  From what I'm seeing so far, the lodash and ramda categories are probably sufficient, with an addition of HOCs.
 - Performance.  Maybe?  Shallow dependency graphs might also reduce system complexity that decreases performance too, so I'm not actually sure if performance will be worse or better with this setup.  Even if it's worse, I'll trade some performance for developer productivity any day.  It's usually more valuable to build things fast then tweak for performance, than the other way around.  Especially when there is requirements miscommunication.  If performance is an issue, you can also use other HOCs like Recompose's `shouldUpdate` to control rendering.
 - Debugging Styletron styles sucks so far because dev tools generally aren't designed to work with 20 tiny class names per element on a dynamically generated stylesheet.  I'd like it to be a little better, so I can edit them in dev tools.  However, it isn't a huge deal.  Why?  Because debugging only matters when you have bugs.  Now that I compose styles directly with elements, they usually just work.  I'll take no bugs over a good debugging experience any day.  Styletron is awesome for that.  I'm amazed how well it works.
@@ -108,9 +121,11 @@ There are many.  As a general rule, you can tell a dependency graph is at work w
 ## Reusability - Toward a Calculation
 When every component is reusable, deciding when and how to reuse them becomes paramount. Reuse adds dependency graphs... which add complexity costs...  But how much?  I want to get a more quantifiable answer than individual preference.
 
-Cyclomatic Complexity (`Edges - Nodes + (2 * Predicate Nodes)`) is inadequate.  Most graphs lack predicate nodes.  Cyclomatic Complexity also doesn't account for human cognitive limitations when dealing with temporal and/or deeply nested graphs, especially when the two interact, and state is involved.  Or when parts of graphs can be passed around, like passing `dog.woof` without passing the prototype chain.  Thoughts?
+Cyclomatic Complexity (`Edges - Nodes + (2 * Predicate Nodes)`) is inadequate.  Most graphs lack predicate nodes.  Cyclomatic Complexity also doesn't account for human cognitive limitations when dealing with temporal and/or deeply nested graphs, especially when the two interact, and state is involved.  Or when parts of graphs can be passed around, like passing `dog.woof` without passing the prototype chain.  
 
 This article is getting long enough, so I'll stop on this topic with a back-of-the napkin calculation as food for thought.  Accounting for cognitive and language complexity with `!`, the complexity of any one graph is `(ds)!`, where `d` is graph depth, and `s` is the number of atom types involved.  The definition of "one graph" is a separate question.
+
+Have better measurement ideas?  Speak up in the comments!
 
 ## Definitional Challenges
 While the "shallower graphs improves composability" idea is consistent throughout the article, my specific examples of graph depth are inconsistent due to unresolved definitional questions.  Are branches considered separate graphs?  Are connections between atoms like `x-x-y-y-z-z` one 6-deep graph, three 2-deep graphs and one 3 deep graph, or both, or...?  More concretely, should `foo(a,b)`'s dependency graph, include a 2-deep arguments order graph, as well as `import {foo} from './bar'`, which includes 2 deep object property and directory structure graphs?
