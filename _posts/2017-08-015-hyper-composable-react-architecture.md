@@ -1,10 +1,11 @@
 ---
 title: "Hyper-Composable UI Architecture"
 comments: true
-layout: page
-tags: [project, javascript, software]
-url: http://github.com/a-laughlin
+layout: post
+tags: [javascript, software]
 ---
+title: High Value JavaScript (Part 1)
+
 Note: This is an initial draft posted on my blog but not on medium, to share for feedback and because some folks have asked.  There are probably grammar, clarity, and other issues.  Feedback appreciated.
 
 
@@ -72,9 +73,9 @@ There are many.  As a general rule, you can tell a dependency graph is at work w
 - Flatten flattenable graphs e.g., [in redux state](http://redux.js.org/docs/recipes/reducers/NormalizingStateShape.html#relationships-and-tables) `authorBooks` vs `author.books`, or use graphQL to query just the data a component needs vs jumping through hoops of sequentially (one order graph) querying multiple endpoint urls (more graphs) and merging their data (yet more graphs).
 - Couple to names over structures (and turn unflattenable graphs into names).  e.g., with Ramda's lenses, or npm's mojo that enables `require('react')` vs `require `../../node_modules/bin/react/.../react.js`.  Also, coupling to a redux state key is more flexible than passing data directly to them, since it has shallower graphs, and can make components standalone.
 - Compose logic functions instead of creating a deep imperative control flow graph, with functions like `cond`,`ifElse`,`and`,`or`.  I can't link directly to [Ramda's docs](http://ramdajs.com/docs/) categories, but clicking one of the functions with "Logic" next to it yields some example functions.
-- Flatten file structures.  As humans, we tend to think hierarchies make things simpler.  It's a form of abstraction that works well when information is naturally hierarchical.  UI components are not naturally hierarchical.  Functions aren't.
+- Flatten file structures.  As humans, we tend to think hierarchies make things simpler.  It's a form of abstraction that works well when information is naturally hierarchical.  UI components are not naturally hierarchical.
 - Eliminate non-presentational HTML elements.  In the demo, there's no distinction between presentation and container components.  All components are presentational.  Some have behaviors or data HOCs.
-- Keep functions pure, to avoid creating scope and prototype chain graphs.  Better yet, prevent the possibility by not creating functions in components.  Functions are the reusable parts.  The demo components have very few, and then usually where I was unsure how to do something sans function creation.
+- Keep functions pure, to avoid creating scope and prototype chain graphs.  Better yet, prevent the possibility of creating dependency graphs by not creating functions in components.  The demo has very few, and then usually for example or where I was unsure how to do something cleanly sans function creation.
 - Function argument order: cap all functions at 0 or 1 arguments, so there is no order dependency
 - Eliminate the -many- graphs CSS selectors create by composing Styles and Elements directly.
 - Every REST url and returned data structure are their own graphs.  Wrapping them with GraphQL eliminates many.
