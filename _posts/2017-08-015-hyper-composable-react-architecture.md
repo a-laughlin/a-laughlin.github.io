@@ -4,8 +4,6 @@ comments: true
 layout: post
 tags: [javascript, software]
 ---
-title: High Value JavaScript (Part 1)
-
 Note: This is an initial draft posted on my blog but not on medium, to share for feedback and because some folks have asked.  There are probably grammar, clarity, and other issues.  Feedback appreciated.
 
 
