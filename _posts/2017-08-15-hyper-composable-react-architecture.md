@@ -96,7 +96,7 @@ While the principles may seem long, shallow graphs' simplicity results in implem
 5. That's it!
 
 ## Benefits?
-**Flexibility**: Hands down the most flexible architecture I've ever used.  You can swap out any part.  Often flip parts around.  Whatever.  That's a key benefit of shallow dependency graphs.  Once I was well into the demo, I realized that even React was swappable.  
+**Flexibility**: Easily the most flexible architecture I've ever used.  You can swap out any part.  Often flip parts around.  Whatever.  That's a key benefit of shallow dependency graphs.  Once I was well into the demo, I realized that even React was swappable.  
 **Debuggability**: Starting a component with 'div' means zero dependencies possible.  Once you know your utility functions, there are almost no lookups to other files.  All the problems are created and resolved right in front of you. I can't stress enough how awesome and fast that is.  While the demo is a contrived and simple example, I've been amazed how few bugs I've had using this architecture, and how fast tracking them down has been.  
 **Learnability**: Few abstractions means little to learn.  
 **Reusability**: Almost everything is reusable.  To the point of it being daunting without criteria for when/where/how to reuse things.  I don't believe pre-composing across atom types is a good idea.  I do think there might be some potential within atom types, though I'm unsure which ones, or what my criteria for success is.  See the [Reusability - Toward a Calculation]() section.  
