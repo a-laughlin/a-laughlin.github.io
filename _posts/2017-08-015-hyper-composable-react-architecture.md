@@ -1,9 +1,10 @@
 ---
-title: "Hyper-Composable UI Architecture"
+title: Hyper-Composable React Architecture
 comments: true
 layout: post
 tags: [javascript, software]
 ---
+
 Note: This is an initial draft posted on my blog but not on medium, to share for feedback and because some folks have asked.  There are probably grammar, clarity, and other issues.  Feedback appreciated.
 
 
