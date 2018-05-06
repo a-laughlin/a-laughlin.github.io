@@ -62,6 +62,9 @@ Each connection (aka couple) between atoms creates a dependency graph.  What are
 - JS Data structures (both developer-accessible and built in): arrays, objects, sets, maps, scope chain, prototype chain
 - ...
 
+// Event propagation(i.e.bubbling) is another dependency graph where it's common to couple business logic,conditionals, and event handlers.
+// visualize with 3 side-by-side files, html, css, js
+
 There are many.  As a general rule, you can tell a dependency graph is at work when changing two atom positions breaks your code. e.g., `woof.dog() == error`.
 
 ## Composing UI Atoms Replicator Style - Potential Principles
