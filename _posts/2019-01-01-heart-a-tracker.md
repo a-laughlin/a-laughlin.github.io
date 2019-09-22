@@ -1,5 +1,5 @@
 ---
-title: "Heart-A-Tracker" Wearable Data Prediction
+title: "\"Heart-A-Tracker\" Dev Process + Wearable Data Prediction"
 comments: true
 layout: page
 tags: [project, javascript]
