@@ -25,7 +25,6 @@
 
 
 <h1>Projects</h1>
-<p>06/2017 - Migration in progress. Links, descriptions, and additional projects coming.</p>
 <div class="posts {{ page.name}}">
   {% for post in site.tags[page.name] %}
 
@@ -47,8 +46,8 @@
     {% if is_project and is_not_draft %}
     <article class="post">
       {% if post.index_loc %}
-        <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.index_loc }}">{{ post.title }}</a></h2>
-        <a href="{{ site.baseurl }}{{ post.index_loc }}"><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
+        <h2 class="entry-title"><a href="{{ post.index_loc }}">{{ post.title }}</a></h2>
+        <a href="{{ post.index_loc }}"><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
       {% else %}
         <h2 class="entry-title"><a>{{ post.title }}</a></h2>
         <a><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>

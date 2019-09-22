@@ -5,23 +5,16 @@ layout: post
 tags: [javascript, software]
 ---
 
-Note: This is an initial draft posted on my blog but not on medium, to share for feedback and because some folks have asked.  There are probably grammar, clarity, and other issues.  Feedback appreciated.
 
-
-## Composing Dinner.  Then Software.
-Think about composing dinner.  That is, combining ingredients into a meal.  Maybe you just got home from work.  Ever decide you're too tired?
-
-What if you had a food replicator you could talk to?  "Replicator, make me rosemary garlic chicken, mashed potatoes, and steamed asparagus."  Poof!  Dinner!  Done!
-
-Easier.  Right?
-
-Why?  What makes meal composition via replicator more efficient than manually composing ingredients?
-
-Each step of dinner composition involves deep [dependency graphs](https://en.wikipedia.org/wiki/Directed_graph) of action/decision sequences.  Planning meals. Acquiring ingredients (including travel). Merging new ingredients into home stashes.  Preparing.  Combining.  Cooking.  Plating...  Navigating all those graphs to compose a meal takes significant time and effort.
-
-By contrast, the replicator composes atoms into the desired structure at the desired moment.  Assuming the atoms are piped in like natural gas, electric, and water are in US cities today, the dependency graphs are shallower.  No ingredients, no travel, no store, no fridge, no stove, no waiting, no effort.  Chicken. Mashed potatoes. Asparagus. Bam!
-
-Composing food directly from atoms eliminates a huge amount of time and effort from dinner composition.  Can we gain similar efficiencies by applying the concept to UI composition?
+Improve changeability by:
+Show common dependencies between concerns.
+Identify separate Concerns.
+Eliminate unnecessary dependencies.
+Design remaining dependency tree from existing concerns.
+Storybook composing two components? https://www.learnstorybook.com/react/en/composite-component/
+Data tree.
+UI Tree
+Composites 
 
 TL;DR.  [Initial prototype](https://github.com/a-laughlin/hyper-composable-ui-architecture-demo) looks promising.  For its concepts in greater depth, read on.  
 
@@ -32,15 +25,21 @@ Dinner requires real atoms.  Carbon.  Nitrogen.  Oxygen.  User interface atoms a
 - Styles: `width, height, background-color`
 - Files: `index.html, .styles.css`
 - Directories: `usr, bin, System`
+- Directory relations: `usr/bin`
 - Event Hooks: `onclick, onchange`
 - States: `doorStatus = 'open!'; doorStatus='closed!';`
 - Behaviors: `alert, myFunction`
 - logic: `if, else, and, or`
 - Data: `'hi!',  1`
+- State Relations: `loading -> loaded, loading -> error`
+- Data Relations: `user.name`
+- Data mutations (CrUD)
+- Data reads (cRud)
+- Session vs Persistent
 - [Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): `[],{}` 
 
-## Composing UI Atoms - Current 
-Each connection (aka couple) between atoms creates a dependency graph.  What are some common ways we pre-couple UI atoms into deep dependency graphs?
+## Composing UI Atoms
+Each connection creates a dependency graph.  Deep dependency graphs decrease changeability.  What are some common ways we pre-couple UI atoms into deep dependency graphs?
 
 - Elements to Elements `<div><span><img /></span></div>`
 - Elements to Attributes `<div name='cheeky'></div>`

@@ -1,0 +1,14 @@
+---
+title: "Oura Exploration"
+comments: true
+layout: page
+tags: [project, javascript]
+image: /images/island.gif
+image_alt: island placeholder
+index_loc: projects/2017-mit-robotics-dashboard/index.html
+---
+
+Experiment in interactive code cost visualization.
+Stakeholders: Primarily myself.  Curious during an infovis course.
+Requirements: Which files would yield the highest ROI if refactored?  Juxtapose different repo.  Juxtapose a different commit in the same repo.
+Tech: GraphQL, React, Mobx, D3.js, lodash/fp.

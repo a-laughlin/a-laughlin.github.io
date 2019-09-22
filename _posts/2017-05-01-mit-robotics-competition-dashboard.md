@@ -1,11 +1,14 @@
 ---
-title: "2017 MIT Mechanical Engineering Robotics Competition Dashboard"
+title: "2017 MIT Robotics Competition - Interactive Scoring Visualization"
 comments: true
 layout: page
 tags: [project, javascript]
 image: /images/2017-mit-dashboard-thumbnail.png
 image_alt: 2017 mit dashboard project thumbnail
-index_loc: _project_files/2017-mit-robotics-dashboard/index.html
+index_loc: projects/2017-mit-robotics-dashboard/index.html
 ---
 
-Description TBD
+Interactive Dashboard for the yearly MIT 2.007 Robotics Competition.  
+Stakeholders: Viewers 200-400.  Students 100-200.  Professors 2-4.  Lab Staff 2-4.  Scorers 2.  
+Requirements: SVG matches physical robot competition environment.  Real-time updates.  Undo & redo.  Custom toggleable timers.  Custom multipliers.  Manual and Autonomous mode modifiers. Concurrently viewable by audience and unobtrusively updatable by scorers.  Visual affordances linking score updates to board positions.
+Technologies: Hand-coded SVG, D3.js, Lodash, RxJS.  Basically reused the previous year's code.
