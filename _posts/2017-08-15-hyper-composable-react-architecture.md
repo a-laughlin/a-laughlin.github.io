@@ -2,7 +2,7 @@
 title: Hyper-Composable React Architecture
 comments: true
 layout: post
-tags: [javascript, software]
+tags: [javascript, software, draft]
 ---
 
 
