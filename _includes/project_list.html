@@ -7,19 +7,19 @@
     align-content:space-between;
   }
   .post {width:30%; margin-bottom:5%;}
-  .post  img {border:1px solid #ddd;}
+  .project-image {border:1px solid #ddd;}
 
   /*smaller screen sizes*/
   @media all and (max-width: 1999px){
     .post {width:46%;}
-    .post  img {width:46%;}
+    .project-image {width:46%;}
   }
   @media all and (max-width: 1199px){
     .post {width:100%;}
-    .post  img {width:50%;}
+    .project-image {width:50%;}
   }
   @media all and (max-width: 899px){
-    .post  img {width:100%;}
+    .project-image {width:100%;}
   }
 </style>
 
@@ -47,10 +47,10 @@
     <article class="post">
       {% if post.index_loc %}
         <h2 class="entry-title"><a href="{{ post.index_loc }}" target="_blank">{{ post.title }} <img src="{{ site.baseurl }}/images/external-transp.gif" /></a></h2>
-        <a href="{{ post.index_loc }}" target="_blank"><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
+        <a href="{{ post.index_loc }}" target="_blank"><img class="project-image" src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
       {% else %}
         <h2 class="entry-title"><a>{{ post.title }}</a></h2>
-        <a><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
+        <a><img class="project-image" src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
       {% endif %}
       <div class="entry">
         {{ post.content }}
