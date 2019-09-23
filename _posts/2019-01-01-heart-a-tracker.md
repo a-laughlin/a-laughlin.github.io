@@ -3,8 +3,8 @@ title: "\"Heart-A-Tracker\" Dev Process + Wearable Data Prediction"
 comments: true
 layout: page
 tags: [project, javascript]
-image: /images/island.gif
-image_alt: island placeholder
+image: /images/3308proj-code-contribution-flow.png
+image_alt: Code contribution flowchart
 index_loc: https://github.com/a-laughlin/3308proj
 ---
 

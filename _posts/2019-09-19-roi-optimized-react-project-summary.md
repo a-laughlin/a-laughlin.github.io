@@ -3,13 +3,13 @@ title: "ROI-Optimized React"
 comments: true
 layout: page
 tags: [project, javascript]
-image: /images/island.gif
-image_alt: island placeholder
-index_loc: projects/roi-optimized-react
+image: /images/1200px-Train_coupling-rotated.jpg
+image_alt: hive plot
+index_loc: roi-optimized-react
 ---
 
-Interactive Dashboard for the yearly MIT 2.007 Robotics Competition.  
-Stakeholders: Viewers 200-400.  Students 100-200.  Professors 2-4.  Lab Staff 2-4.  Scorers 2.  
-Requirements: SVG matches physical robot competition environment.  Real-time updates.  Undo & redo.  Custom toggleable timers.  Custom multipliers.  Concurrently viewable by audience and unobtrusively updatable by scorers.  
-Technologies: Hand-coded SVG, Angular 1.  
-/Users/adam/Dropbox/repos/composable-architecture/README.md
+Project title linked to post exploring React with ROI-focused archecture optimizations.
+
+[Related composable-react-architecture repo](https://github.com/a-laughlin/composable-react-architecture) from a couple of years ago exploring some earlier ideas of what the code might look. May eventually update it now that React Hooks enable a much cleaner and simpler implementation. Also needs unit/integration tests to show how they would work.  One thing at a time...
+
+Tech in that example:  React, Redux, GraphQL, create-react-app (i.e., webpack).

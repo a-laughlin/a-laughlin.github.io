@@ -1,14 +1,13 @@
 ---
-title: "Oura Exploration"
+title: "Human Change"
 comments: true
 layout: page
 tags: [project, javascript]
-image: /images/island.gif
-image_alt: island placeholder
-index_loc: projects/2017-mit-robotics-dashboard/index.html
+image: /images/human-change.png
+image_alt: charts showing psych characteristic change
+index_loc: 
 ---
 
-Experiment in interactive code cost visualization.
-Stakeholders: Primarily myself.  Curious during an infovis course.
-Requirements: Which files would yield the highest ROI if refactored?  Juxtapose different repo.  Juxtapose a different commit in the same repo.
-Tech: GraphQL, React, Mobx, D3.js, lodash/fp.
+A personal interest of mine is measuring/modeling/visualizing psychological change/growth.  As part of a data mining course, I led a project exploring what we can learn from a long-running blog with NLP (Natural Language Processing) and linguistic analysis.  Data gathered myself with a custom crawler/scraper. [Overview Slides PDF](https://github.com/a-laughlin/data-mining-group/blob/master/Group2_TimeSeriesNLP_Part6.pdf). Code:[scrape/crawl]( https://github.com/a-laughlin/data-mining-group/blob/master/adam_scraper.js), [transform/clean](https://github.com/a-laughlin/data-mining-group/blob/master/adam_transform.py), [analysis notebook](https://github.com/a-laughlin/data-mining-group/blob/master/adam_analysis.ipynb)  
+
+Tech: Puppeteer+Node.js Crawler/Scraper. Python. Pandas. LIWC. spaCy. Skikit-learn.    
