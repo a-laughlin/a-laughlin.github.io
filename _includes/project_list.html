@@ -46,7 +46,7 @@
     {% if is_project and is_not_draft %}
     <article class="post">
       {% if post.index_loc %}
-        <h2 class="entry-title"><a href="{{ post.index_loc }}" target="_blank">{{ post.title }} <img src="{{ site.baseurl }}/images/external-transp.gif" /></a></h2>
+        <h2 class="entry-title"><a href="{{ post.index_loc }}" target="_blank">{{ post.title }} <img style="width:auto;" src="{{ site.baseurl }}/images/external-transp.gif" /></a></h2>
         <a href="{{ post.index_loc }}" target="_blank"><img class="project-image" src="{{ post.image }}" alt="{{ post.image_alt }}" /></a>
       {% else %}
         <h2 class="entry-title"><a>{{ post.title }}</a></h2>
