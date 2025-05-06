@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+  {% include meta.html %}
 
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-  </head>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+    href="{{ site.baseurl }}/feed.xml" />
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" />A Laughlin</a> -->
+<body>
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" />A Laughlin</a> -->
 
-          <div class="site-info">
-            <!-- <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1> -->
-            <p class="site-description"><span class="tagline-upper">Musings On the Black and White of Technology</span><span class="tagline-split">&amp;</span><span class="tagline-lower">The Grey Matter in Between</span></p>
-          </div>
-        </header>
-      </div>
+        <div class="site-info">
+          <!-- <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1> -->
+          <p class="site-description"><span class="tagline-upper">Musings On the Black and White of
+              Technology</span><span class="tagline-split">&amp;</span><span class="tagline-lower">The Grey Matter in
+              Between</span></p>
+        </div>
+      </header>
     </div>
+  </div>
 
-    <nav class="main-nav">
-      <div class="nav-item projects"><a href="{{ site.baseurl }}/tags/project" title="projects">Projects</a></div>
-      <div class="nav-item about"><a href="{{ site.baseurl }}/about"  title="about me">About</a></div>
-      <div class="nav-item"><a></a></div>
-      <div class="nav-item blog"><a href="{{ site.baseurl }}/" title="blog index">Blog</a></div>
-      <!-- <div class="menu-blog"><a href="{{ site.baseurl }}/">Blog</a></div> -->
-    </nav>
-    <div id="content-wrap">
-      <div>9/23/2019 Site-wide updates in progress.  Things like links and descriptions likely to change.</div>
-      <div id="recent-posts">
+  <nav class="main-nav">
+    <div class="nav-item projects"><a href="{{ site.baseurl }}/tags/project" title="projects">Projects</a></div>
+    <div class="nav-item about"><a href="{{ site.baseurl }}/about" title="about me">About</a></div>
+    <div class="nav-item"><a></a></div>
+    <div class="nav-item blog"><a href="{{ site.baseurl }}/" title="blog index">Blog</a></div>
+    <!-- <div class="menu-blog"><a href="{{ site.baseurl }}/">Blog</a></div> -->
+  </nav>
+  <div id="content-wrap">
+    <div id="recent-posts">
 
-      </div>
-      <div id="content" role="main" class="container">
-        {{ content }}
-      </div>
     </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          <span>&copy; Adam Laughlin</span>
-        </footer>
-      </div>
+    <div id="content" role="main" class="container">
+      {{ content }}
     </div>
-    <div id="boat"></div>
-    <div id="island"></div>
-    <div id="boulders"></div>
-    <div id="pads"></div>
-    {% include analytics.html %}
-  </body>
+  </div>
+
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        <span id="copyright">Copyright &copy; 2025 Adam Laughlin</span>
+      </footer>
+    </div>
+  </div>
+  <div id="boat"></div>
+  <div id="island"></div>
+  <div id="boulders"></div>
+  <div id="pads"></div>
+  {% include analytics.html %}
+  <script>
+    document.getElementById("copyright").innerHTML = `"&copy; ${new Date().getFullYear()} Adam Laughlin"`;
+  </script>
+</body>
+
 </html>

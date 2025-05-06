@@ -1,25 +1,16 @@
 {
-  "name": "CMS.js",
+  "name": "alaughlin.github.io",
   "version": "1.0.0",
-  "description": "The Javascript Site Generator.",
-  "keywords": "client-side, javascript, site-generator",
-  "homepage": "https://github.com/cdmedia/cms.js",
+  "description": "Adam Laughlin's personal website",
+  "keywords": [],
+  "homepage": "https://www.a-laughlin.com/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/cdmedia/cms.js.git"
-  },
-  "author": "Chris Diana",
-  "license": "MIT",
+  "repository": "https://github.com/a-laughlin",
+  "author": "Adam Laughlin",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
   "bugs": {
     "url": "https://github.com/cdmedia/cms.js/issues"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-copy": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest"
   }
 }

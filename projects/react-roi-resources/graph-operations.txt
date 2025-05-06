@@ -1,0 +1,47 @@
+cases:
+Disconnected node list
+  Create virtual root with out-edges to nodes. Treat as rooted out-tree. create virtual root. Go to rooted out-tree.
+Undirected Graph
+  direct edges to prevent cycles
+  Can't prevent cycles (including back-edges)?
+    Go to directed-cyclic-graph
+  has root? Go to rooted-out-tree
+  no root? Go to forest
+directed-cyclic-graph
+  Transform to rooted-out-tree with back edges?
+  ... That's basically what redux does with RootReducer
+  TBD.  State article will hit this.
+forest (multi-rooted-out-trees):
+  Create virtual root. Treat as rooted out-tree.
+rooted-in-tree:
+  add virtual root after leaves
+  conceptually invert tree (root becomes single leaf)
+  go to rooted-out-tree
+2-graph operations:
+  insert virtual root to transform 2 graphs to
+  one rooted-out-tree
+rooted-out-tree:
+  no back edges
+  operations:
+    read root
+    read intermediate
+    read leaf
+    insert node root
+    insert node middle
+    insert node leaf
+    update root
+    update middle
+    update leaf
+    remove root
+    remove middle
+    remove leaf
+    insert edge root->internal
+    insert edge root->leaf
+    insert edge internal->internal
+    insert edge internal->leaf
+    insert forward-edge root->internal
+    insert forward-edge root->leaf
+    insert forward-edge internal->internal
+    insert forward-edge internal->leaf
+    insert cross-edge internal->internal
+    insert cross-edge internal->leaf

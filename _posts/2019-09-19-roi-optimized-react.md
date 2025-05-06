@@ -18,9 +18,9 @@ A large contributor to front-end code ROI is changeability.
 
 >  **Changeability** How fast can I make an error-free change to this code?
 
-Changeability is similar to other [software quality](https://en.wikipedia.org/wiki/Software_quality) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes) like maintainability. I prefer changeability because its simplicity makes it easier to remember when committing code.  Its concreteness also more intuitive when reasoning about metrics (e.g., [cost per change]()).
+Changeability is similar to other [software quality](https://en.wikipedia.org/wiki/Software_quality) [attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes) like maintainability. I prefer changeability because its simplicity makes it easier to remember when committing code.  Its concreteness is also intuitive when reasoning about metrics (e.g., [cost per change]()).
 
-Experience has taught me that one of the fastest ways to improve changeability is by reducing unncessary code dependency graphs.  Toward that end, this article has three primary purposes:
+One of the fastest ways to improve changeability is by reducing unncessary code dependency graphs.  Toward that end, this article has three primary purposes:
 Identify a set of front-end web application concerns
 Identify how they can be coupled
 Identify common coupling-created dependency graphs and their subsets that optimize changeability+ROI
@@ -70,7 +70,7 @@ I was shocked when I stopped to reflect on how many dependency graphs CSS select
 - CSS specificity creates a graph
 - CSS Grid and Flexbox create parent-child HTML spatial order dependencies
 - CSS File load order creates a dependency graph
-- `<link href="a/c.css">` (Object > key > value > location > location > Selectors > Objects) 
+- `<link href="a/c.css">` (Object > key > value > location > location > Selectors > Objects)
 - The list goes on: `a > .b > #c + [d]   e`
 
 ### CSS Selectors ROI-Optimized
@@ -108,7 +108,7 @@ Absent selectors' `{}`, Style attributes are simply a list of indepenendent keys
 - Locations (React/HTML/DOM elements to each other) `<div><span><img /></span></div>`, `<span>Some Text</span>`
 - Elements to Attributes/Properties keys `<div class></div>`, `<input checked />`
 - Attribute keys to values`<div class='foo'></div>`, `<div onClick={()=>{...doStuff...}}></div>`
-All 
+All
 <!-- Nesting -->
 - Browser urls `http://example.com/a/b/c`
 - API endpoints `http://api.example.com/a/b/c`
@@ -133,7 +133,7 @@ All
 - Function arguments `function ab(a,b){return a.map(b);}`
 <!-- naming -->
 
-- 
+-
 <!-- naming we can't get around -->
 - `require('some-module')`
 
@@ -141,7 +141,7 @@ All
 - network IO is basically time + location + data + any req/response plumbing
 - Data Persistence Duration (UI Component, Session, User... these are sort of time + location)
 - UI state: data
-- 
+-
 <!-- functional -->
 - Abstractions: nameA>arguments>nameB property>name>property and indirections
 - Documentation
@@ -176,14 +176,14 @@ HTML+Data
     Post
   FN:Component
     HTML element ()
-    
+
     Fn:styles
     PropPasser(key)
     FN: Observable
     Fn: OPTIONAL Mutator:Fn(updater(props))
     Fn: Optional Children(key,...childhooks) creates data observables for children, logic for which children, different children for different styles
-      
-    
+
+
 ## List Graphs
 
 styles flat

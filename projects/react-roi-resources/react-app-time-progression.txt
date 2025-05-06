@@ -1,0 +1,23 @@
+// assumes create-react-app, and files served from src/
+T0: define time
+  file tree exists. Nothing imported.  Static intra-file code graphs exist.
+T1: JS run time starts.
+  index.js imports files:
+  Functions in imported files run: JS graphs updated.
+  Conceptual component graph exists.
+T2: React run time starts
+  App Component runs. Virtual dom root exists.
+  loop:
+    children components run, forming branches and leaves on the virtual dom tree
+    async events pushed out on event loop
+  Synchronous Element tree (Virtual Dom) instantiated
+  All initial states defined
+T3: Async event loop starts
+  loop:
+    case: component arrives (suspense)
+      ...
+    case: data arrives
+      ...
+    case: browser event
+      ...
+    flurry of Component graph updates as lifecycle methods and related conditionals run
