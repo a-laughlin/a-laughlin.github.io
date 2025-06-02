@@ -2,7 +2,7 @@
 title: "Clarifying Developer Experience, Developer Productivity, and How they Relate"
 comments: true
 layout: post
-tags: [Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
+tags: [draft, Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
 ---
 
 # Clarifying Developer Experience, Developer Productivity, and How they Relate
