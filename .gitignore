@@ -6,3 +6,4 @@ release.zip
 .idea/
 dev/*
 *ignore*
+.vscode
