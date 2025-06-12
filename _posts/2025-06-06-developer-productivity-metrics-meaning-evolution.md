@@ -28,11 +28,11 @@ Those expanded definitions and team names include metrics, outputs, strategies, 
 
 There isn't. Yet. Terms are still evolving as evidenced by team name diversity.
 
-All terms are equally \[in\]accurate. None encompass the full breadth of the roles, metrics, and strategies that exist and will exist to improve engineering stakeholder outcomes and business impact. "Developer Productivity" combines a changeable role, optimization metric, and implies improving a meaningless number. "Developer Experience" combines a changeable role, optimization strategy, and implies adopting a non-universal strategy. "Developer Tools" combines a changeable role,  optimization strategy, and implies optimizing only a subset of important factors.
+All popular terms today are equally \[in\]accurate. None encompass the full breadth of the roles, metrics, and strategies that exist and will exist to improve engineering stakeholder outcomes and business impact. "Developer Productivity" combines a changeable role, optimization metric, and implies improving a meaningless number. "Developer Experience" combines a changeable role, optimization strategy, and implies adopting a non-universal strategy. "Developer Tools" combines a changeable role,  optimization strategy, and implies optimizing only a subset of important factors.
 
-All terms' inaccuracies lead me to think we'll continue evolving towards a more holistic optimization term that excludes roles, metrics, and strategies du jour. A stable term is likely to arise from engineering optimization's single stable aspect - things optimized (i.e. engineering stakeholder outcomes and business impact). It's also likely to be simpler than Software Delivery and Operations for stickiness.
+Popular terms' inaccuracies lead me to think we'll continue evolving towards a more holistic optimization term that excludes roles, metrics, and strategies du jour. A stable term is likely to arise from engineering optimization's single stable aspect - things optimized (i.e. engineering stakeholder outcomes and business impact). It's also likely to be simpler than "Software Delivery and Operations" for stickiness.
 
-Perhaps Developer Productivity's successor will be Engineering Thrive or Engineering Results. My (close) favorite is Engineering Results. "How do I improve Engineering Results"? Not "How do I improve Developer Productivity (whatever it means)" Regardless, a more accurate term would simplify life for those of us who define terms before optimizing.
+Perhaps Developer Productivity's successor will be Engineering Thrive or Engineering Results. My (close) favorite is Engineering Results. "How do I improve Engineering Results?" yields more actionable answers than "How do I improve Developer Productivity?". Regardless, a more accurate term would simplify life for those of us who define terms before optimizing.
 
 ## Footnotes
 
