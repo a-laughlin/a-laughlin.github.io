@@ -5,7 +5,7 @@ layout: post
 tags: [draft, Developer Productivity, Developer Experience, Developer Tools, Engineering Productivity, Engineering Optimization, DX, DevEx, DevProd]
 ---
 
-I recently tried to define developer productivity (DevProd) in the context of optimizing it. Reading more articles decreased my ability to concisely define it.
+I recently tried to define developer productivity (DevProd) in the context of optimizing it. Reading more articles decreased my ability to concisely define it. Optimizing something ill-defined is a recipe for wasting time. Hopefully my learnings will help clarify it in your mind too.
 
 **Developer Productivity** is a standard productivity metric (input to output conversion efficiency) that has evolved to describe [collections of company-specified engineering metrics](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae) that are more useful to optimize engineering stakeholder outcomes and business impact. The evolution also seems unfinished. Developer Productivity is a less frequent team name than User Experience (UX) and Developer Experience (DX, DevEx), despite its longer existence ¹. That tells me it isn't and likely won't become a field of expertise like the others - at least not with that name. Two reasons seem likely ([among](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [others](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)): usefulness and accuracy.
 
