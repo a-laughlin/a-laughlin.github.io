@@ -1,5 +1,5 @@
 ---
-title: Replace "Developer Productivity" with "Engineering Results" for Clarity and Time Savings
+title: Replace "Developer Productivity" for Clarity and Time Savings
 comments: true
 layout: post
 tags: [draft, Developer Productivity, Developer Experience, Developer Tools, Engineering Productivity, Engineering Optimization, DX, DevEx, DevProd]
