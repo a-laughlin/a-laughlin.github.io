@@ -5,7 +5,7 @@ layout: post
 tags: [draft, Developer Productivity, Developer Experience, Developer Tools, Engineering Productivity, Engineering Optimization, DX, DevEx, DevProd]
 ---
 
-Developer Productivity (DevProd)'s definition matters. Discussing and optimizing an unclear measure wastes time. While defining Developer Productivity I learned that the metric isn't useful to improve stakeholder outcomes or business impact. I also learned that the term has become so ambiguous that discussing it generates more confusion than clarity. Those are only two of Developer Productivity's [many](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [drawbacks](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity). Replacing the term "Developer Productivity" with an alternative like "Engineering Results" clarifies discussions and focuses more impactful metrics.
+Developer Productivity (DevProd)'s definition matters. Discussing and optimizing an unclear measure wastes time. When I defined Developer Productivity I learned a couple important lessons: First, the metric isn't useful to improve stakeholder outcomes or business impact. Second, the term has become so ambiguous that discussing it generates more confusion than clarity. Those are only two of Developer Productivity's [many](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [drawbacks](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity). Replacing the term "Developer Productivity" with an alternative like "Engineering Results" clarifies discussions and focuses more impactful metrics.
 
 <!-- TOC -->
 
