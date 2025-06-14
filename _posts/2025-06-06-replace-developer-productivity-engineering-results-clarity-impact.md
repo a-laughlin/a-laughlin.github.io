@@ -32,7 +32,7 @@ Companies seem to compensate for that inaccuracy in two ways - expanding the mea
 
 After reflection, I believe that expanding Developer Productivity beyond the standard definition has been more harmful than helpful. [SPACE](https://queue.acm.org/detail.cfm?id=3454124) covers limitless engineering performance factors. Expanding Developer Productivity's definition with __any__ of those factors makes it unclear whether __all__ of SPACE falls under Developer Productivity. Combine that with the fact that individual productivity (efficiency) is a sub-category of SPACE itself, and the result is recursive ambiguity. Discussions involving "Developer Productivity" today may imply zero to many developers, one to many activities, and may reference standard input-to-output conversion efficiency, other efficiency factors, or even all the factors in SPACE, [DORA](https://dora.dev/research/), and [DevEx](https://queue.acm.org/detail.cfm?id=3595878) combined. Developer Productivity has expanded to meaninglessness.
 
-Platform teams can save time, confusion, and misunderstandings by replacing "Developer Productivity" with terms like "Engineering Results" that more accurately describe the result of their optimizations. Many teams already have. As a bonus effect, it also focuses more impactful metrics.
+Platform teams can save time, confusion, and unnecessary discussions by replacing "Developer Productivity" with terms like "Engineering Results" that more accurately describe the result of their optimizations. Many teams already have. As a bonus effect, it also focuses more impactful metrics.
 
 ## An Alternate Term
 
@@ -45,7 +45,7 @@ Platform teams can save time, confusion, and misunderstandings by replacing "Dev
 
 ## Wrapping Up
 
-A "developer productivity" metric isn't useful to improve stakeholder outcomes and business impact. The "Developer Productivity" term has become so ambiguous that it generates more confusion than clarity. Choosing alternate metrics and a different term will save time, confusion, and facilitate greater impact for all of us in the engineering optimization space.
+A "developer productivity" metric isn't useful to improve stakeholder outcomes and business impact. The "Developer Productivity" term has become so ambiguous that it generates more confusion than clarity. Choosing alternate metrics and a different term will save time, prevent misunderstandings, and facilitate greater impact.
 
 Even moreso if Developer Productivity writers shift to a new term too.
 
