@@ -30,9 +30,9 @@ The factors necessary to maximize business impact and stakeholder outcomes are [
 
 Companies seem to compensate for that inaccuracy in two ways - expanding the meaning or switching terms. Measurement tool companies usually expand the meaning (probably for SEO). For example "input to output conversion efficiency" has expanded to ["effectiveness and efficiency ... including:" Code Quality, Speed, Collaboration, Problem-Solving, Adherence to Best Practices](https://linearb.io/blog/developer-productivity). Measurement teams switch terms. Examples include DORA researchers using [Software Delivery and Operations (SDO)](https://dora.dev/research/2019/dora-report/2019-dora-accelerate-state-of-devops-report.pdf), and platform teams adopting names like [Enablement, Productivity and Happiness, Engineering Productivity/Solutions/Thrive, and Developer Experience/Infrastructure/Platform/Tools](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae).
 
-After reflection, I believe that expanding Developer Productivity's meaning creates more harm than good. [SPACE](https://queue.acm.org/detail.cfm?id=3454124) covers a limitless swath of engineering performance factors. Developer Productivity's expanded definition lumps all of SPACE's factors under its own narrow category of individual efficiency, recursively creating semantic interference and ambiguity. Discussions involving "Developer Productivity" may reference standard input-to-output conversion efficiency, other efficiency factors, or even all the factors in SPACE, [DORA](https://dora.dev/research/), and [DevEx](https://queue.acm.org/detail.cfm?id=3595878) combined. Developer Productivity has expanded to meaninglessness.
+After reflection, I believe that expanding Developer Productivity beyond the standard definition has been more harmful than helpful. [SPACE](https://queue.acm.org/detail.cfm?id=3454124) covers limitless engineering performance factors. Expanding Developer Productivity's definition with __any__ of those factors makes it unclear whether __all__ of SPACE falls under Developer Productivity. Combine that with the fact that individual productivity (efficiency) is a sub-category of SPACE itself, and the result is recursive ambiguity. Discussions involving "Developer Productivity" today may imply zero to many developers, one to many activities, and may reference standard input-to-output conversion efficiency, other efficiency factors, or even all the factors in SPACE, [DORA](https://dora.dev/research/), and [DevEx](https://queue.acm.org/detail.cfm?id=3595878) combined. Developer Productivity has expanded to meaninglessness.
 
-Platform teams can save time, confusion, and misunderstandings by replacing "Developer Productivity" with terms like "Engineering Results" that more accurately describe their optimizations (as many teams above already have). Replacement also focuses discussions on more impactful metrics.
+Platform teams can save time, confusion, and misunderstandings by replacing "Developer Productivity" with terms like "Engineering Results" that more accurately describe the result of their optimizations. Many teams already have. As a bonus effect, it also focuses more impactful metrics.
 
 ## An Alternate Term
 
@@ -45,7 +45,9 @@ Platform teams can save time, confusion, and misunderstandings by replacing "Dev
 
 ## Wrapping Up
 
-A "developer productivity" metric isn't useful to improve stakeholder outcomes and business impact. The "Developer Productivity" term has become so ambiguous that it generates more confusion than clarity. Choosing an alternate metrics and a different term will save time and encourage greater impact for all of us in the engineering optimization space.
+A "developer productivity" metric isn't useful to improve stakeholder outcomes and business impact. The "Developer Productivity" term has become so ambiguous that it generates more confusion than clarity. Choosing alternate metrics and a different term will save time, confusion, and facilitate greater impact for all of us in the engineering optimization space.
+
+Even moreso if Developer Productivity writers agree on new term too.
 
 How have you addressed your challenges with the term Developer Productivity? Adopted another term? Some other approach?
 
