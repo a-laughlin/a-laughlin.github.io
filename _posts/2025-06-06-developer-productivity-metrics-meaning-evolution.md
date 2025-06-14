@@ -11,7 +11,7 @@ Developer Productivity (DevProd)'s definition matters. Discussing and optimizing
 
 - [Developer Productivity (Metric) Usefulness](#developer-productivity-metric-usefulness)
 - [Developer Productivity (Term) Accuracy](#developer-productivity-term-accuracy)
-- [An Alternate Term](#whats-an-alternative-term)
+- [An Alternate Term](#an-alternate-term)
 - [Wrapping Up](#wrapping-up)
 - [Footnotes](#footnotes)
 
