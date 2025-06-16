@@ -43,7 +43,7 @@ Platform teams can save time and focus more impactful metrics by replacing "Deve
 
 "Engineering Results" (i.e. stakeholder and business outcomes) is one possible solution to Developer Productivity's inaccuracy and ambiguity.
 
-Other possible terms include "Engineering Outcomes" and "Engineering Thrive". Thrive is a delightful choice at Microsoft despite the term's grammatical awkwardness. I love the idea of all engineering stakeholders and the business thriving.
+Other possible terms include "Engineering Outcomes", "Engineering Impacts", and "Engineering Thrive". Thrive is a delightful choice at Microsoft despite the term's grammatical awkwardness. I love the idea of all engineering stakeholders and the business thriving.
 
 If those terms are unsatisfying, the criteria behind them may help choose a different one.
 
