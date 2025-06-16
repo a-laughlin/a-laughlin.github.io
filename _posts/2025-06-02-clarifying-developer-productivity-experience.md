@@ -5,60 +5,19 @@ layout: post
 tags: [draft, Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
 ---
 
-# Clarifying Developer Experience, Developer Productivity, and How they Relate
+# Clarifying Developer Experience, Engineering Results, and How they Relate
 
-While User Experience (UX) defines the concept of "a user experience" and "the field of User Experience" separately, no such distinction exists in definitions of Developer Experience (DX, DevEx). Developer Productivity also lacks the distinction, and the concept itself is evolving in two different ways that increase ambiguity.
+While User Experience (UX) defines the concept of "a user experience" and "the field of User Experience" separately, no such distinction exists in definitions of Developer Experience (DX, DevEx).
 
-In this post we'll TL;DR the clarified definitions, dive into existing Developer Experience and Developer Productivity definitions, synthesize clear definitions for each concept and its field, and finally wrap up with how they relate.
+In this post we'll synthesize clear definitions for Developer Experience, its field, and relate it to [Engineering Results](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) (aka developer productivity).
 
 ## TL;DR - Clarified Definitions
 
-**Developer Productivity** means software developers' task completion efficiency. However current engineering measurement practices are evolving to either [use different terms](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae) or assign different meaning to the same term (like adding "effectiveness" and encompassing many aspects) for a few reasons we'll cover [later](#what-is-developer-productivity-engineering-optimization).
-
-**Software Delivery and Operation (SDO)** is a term [used by DORA researchers](https://dora.dev/research/2019/dora-report/2019-dora-accelerate-state-of-devops-report.pdf) to encompass a more useful, system-wide engineering view than Developer Productivity. Since no popular term has yet replaced Developer Productivity, we'll use SDO for the rest of this post to avoid propagating confusion with an effectively deprecated term.
-
-**SDO Performance Metrics** are company-contextualized [collections of engineering performance metrics](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae) commonly derived from [research](https://getdx.com/blog/best-research-papers-developer-productivity/) like [DORA](https://dora.dev/research/), [SPACE](https://queue.acm.org/detail.cfm?id=3454124), and [DevEx](https://queue.acm.org/detail.cfm?id=3595878).
-
-**The field of SDO Performance Optimization** is a professional practice focused on continuously improving business impact and engineering stakeholder outcomes, by improving SDO metrics, by optimizing their contributing factors (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments, experiences).
-
 **A developer experience (DX, DevEx)** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, physical environment).
 
-**The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving business impact and engineering stakeholder outcomes, by improving developers' experiences, by optimizing developers' context aspects (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments).
+**The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing developers' context aspects (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments).
 
-**How do the Fields of Developer Experience and Developer Productivity (SDO Optimization) relate?** Developer Experience is an approach to SDO Performance Optimization that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, while yielding equivalent or greater [business impact](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/), [developer outcomes, and other stakeholder outcomes](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/).
-
-## What is Developer Productivity?
-
-Existing "Productivity" definitions:
-- In the simplest terms, productivity is a measure of output relative to input. [McKinsey](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-productivity)
-- Productivity is a measure of economic performance that compares the amount of goods and services produced (output) with the amount of inputs used to produce those goods and services. [U.S. Bureau of Labor Statistics](https://www.bls.gov/k12/productivity-101/content/what-is-productivity/)
-- Productivity is a measure of efficiency that quantifies how efficiently inputs are used in the production of outputs. - Gemini
-
-Existing "Developer Productivity" Definitions
-- Developer productivity measures the efficiency and effectiveness with which software developers can complete their tasks. - [DX](https://getdx.com/blog/developer-productivity/)
-- Developer Productivity refers to the effectiveness and efficiency with which software developers produce high-quality code and complete projects. - [LinearB](https://linearb.io/blog/developer-productivity)
-
-There were few concise Developer Productivity definitions. Likely because most companies avoid using such definitions for various reasons. For example:
-- Productivity (the original efficiency concept) is [highly context dependent](https://doi.org/10.1007/978-1-4842-4221-6_2). It is only meaningful in the context of a workflow with consistent input qualities, output qualities, a time window to produce the outputs, and [stakeholders with similar understandings](https://doi.org/10.48550/arXiv.2111.04302).
-- A single productivity definition scales poorly. Productivity's context-dependence make it a decent metric for analyzing one workflows's efficiency, but a less effective metric for cross-workflow comparisons or aggregate insights.
-- As developers automate processes, measuring developers' own efficiency becomes irrelevant while workflow efficiency metrics stay useful.
-- Measuring output metrics like efficiency leads to gaming the system, low value optimizations, and wasted time, especially when those metrics start appearing in performance reviews. Instead, [teams can estimate](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-part-2) and optimize business impact, like feature revenue or [cost saved by a process improvement](https://gist.github.com/a-laughlin/5ddfcc3d1e9baa7e59920521a584a4a1).
-- Measuring "Developer Productivity" frames workflow inefficiencies as a developer bottleneck, not a context bottleneck, when [the most effective efficiency gains are contextual](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance) (e.g., tools, processes, culture). Such framing can create unnecessary stress, decrease morale, and facilitate ineffective decisions.
-- Emerging research on development's [contributing](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance) [factors](https://newsletter.getdx.com/p/factors-of-developer-productivity) points to their significant [business](https://dora.dev/research/2023/dora-report/) [impact](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/).
-- Tasks' variability paired with productivity measures' high context dependence [prevents useful cross-task productivity measurements](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) (even tasks across the same developer).
-- Maximizing output efficiency alone yields local optimizations at the cost of business impact and stakeholder outcomes like reliability.
-
-
-**Developer Productivity** is a historical approach to Software Engineering Optimization that applied a traditional but highly context dependent metric (input to output conversion efficiency) across impractically diverse contexts. Today companies rely on [collections of metrics](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae) that emphasize factors like workflow efficiency, quality, and culture over individual efficiency. Engineering Optimization is a more accurate term.
-
-
-**Engineering Optimization (Developer Productivity) metrics** are company-contextualized [collections of engineering metrics](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae) commonly derived from [research](https://getdx.com/blog/best-research-papers-developer-productivity/) like [DORA](https://dora.dev/research/), [SPACE](https://queue.acm.org/detail.cfm?id=3454124), and [DevEx](https://queue.acm.org/detail.cfm?id=3595878).
-
-
-DevProd is a term for a minimally useful metric that has evolved to inaccurately describe collections of more useful company-specified engineering metrics. DevProd's lack of team name adoption leads me to think that it will never expand beyond metrics to a specialized field of work like UX and (increasingly) DX.
----- Previously ----
-**The field of Developer Productivity** is a professional practice focused on continuously improving business impact and engineering stakeholder outcomes, by improving Engineering Optimization metrics, by optimizing their contributing factors (e.g., tools, platforms, portals, processes, workflows, activities, experiences, documents, systems, cultures, physical environments).
-
+**How does the field of Developer Experience relate to Engineering Results (Developer Productivity)?** Developer Experience is an Engineering Results optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, producing equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
 
 ## What is Developer Experience (DX, DevEx)?
 
@@ -94,11 +53,3 @@ Surprisingly, unlike the UX Field definition, all Developer Experience definitio
 Positive developer experiences are both developer-specific outcomes and leading indicators for other engineering stakeholder outcomes. They appear in the definition as a leading indicator in order to convey the multi-outcome impact and optimize the definition framing for engineering leaders.
 
 The Developer Experience Field definition explicitly optimizes developer context aspects, not developer experiences (perceptions, emotions, interactions). Directly manipulating experiences without understanding and consent is [unethical](https://doi.org/10.1145/3563657.3596013). Further, persuading developers to change their own experiences is often ineffective without accompanying context changes. Consider improving a team's PR response time to 24 hours. Asking developers to respond faster (an interaction) will work briefly but eventually regress above 24 hours. Context changes like intelligently distributed personal-vs-target status and PR review reminders will more effectively reach and maintain the 24hr target. Developer Experience optimizes context aspects for greater efficacy and ethicality than directly optimizing experiences (perceptions, emotions, and interactions).
-
-
-## How do the Fields of Developer Experience and Engineering Optimization (Developer Productivity) Relate?
-- Developer Experience is an approach to Engineering Optimization (Developer Productivity).
-- Both focus on maximizing engineering stakeholder outcomes and business impact.
-- Improving developers' experiences [improves Engineering Optimization metrics](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/). The converse is not necessarily true.
-- Both fields optimize similar factors (e.g., tools, processes), though Developer Experience's UX influence encourages more effective and ethical optimizations.
-- Both fields use similar metrics, though Developer Experience leverages a larger proportion of qualitative feedback to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches.
