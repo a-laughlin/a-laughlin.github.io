@@ -40,7 +40,7 @@ The first approach, expanding Developer Productivity's meaning beyond a traditio
 
 While an accurate definition is unhelpfully ambiguous, Developer Productivity is a popular alias for engineering optimization. Popularity's positives include searchability for engineering optimization articles and tools. Ambiguity's positives include helping expand "single-productivity-metric" mindsets. Popularity's negatives include the term's abundance outside single-productivity-metric companies. Ambiguity's negatives include learning difficulty, definition difficulty, and discussions spent defining terms, clearing confusion, resolving misunderstandings, redirecting to more effective metrics, and discouraging abuses. It's no wonder that the platform teams above chose less ambiguous names.
 
-Platform teams can save time and focus more impactful metrics by replacing "Developer Productivity" with terms that more accurately describe what they optimize. Writers and tool providers could benefit the industry by collectively adopting a more accurate term.
+Platform teams can save time and focus more impactful metrics by replacing "Developer Productivity" with terms that more accurately describe what they optimize. Authors and tool providers could benefit the industry by collectively adopting a more accurate term.
 
 ## An Alternate Term
 
