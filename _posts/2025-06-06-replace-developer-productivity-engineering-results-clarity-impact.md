@@ -2,7 +2,7 @@
 title: Replace "Developer Productivity" with "Engineering Results" for Clarity and Impact
 comments: true
 layout: post
-tags: [draft, Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Results]
+tags: [draft, Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Results]
 ---
 
 Developer Productivity's definition matters. Discussing and optimizing an unclear measure wastes time. When I defined Developer Productivity I learned a couple important lessons: First, the metric isn't useful to improve stakeholder outcomes or business impact. Second, the term's ambiguity potentially causes more problems than it solves. Those are only two of Developer Productivity's [many](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [drawbacks](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity). Replacing the term "Developer Productivity" with an alternative like "Engineering Results" clarifies discussions and focuses more impactful metrics.
@@ -51,8 +51,8 @@ If those terms are unsatisfying, the criteria behind them may help choose a diff
 
 A common software idiom is "Naming things is hard". Here are a few criteria to help avoid current term's issues:
 
-- Evolution: A term's words and implications should support engineering's evolving roles, metrics, strategies, and contributing factors. They shouldn't calcify a particular subset. One way to support evolution is by focusing on stakeholder and business outcomes instead of how they're achieved. Counterexamples include: "Developer Productivity" which combines a role, optimization metric, and implies improving a meaningless number. "Developer Experience" - combines a role, optimization strategy, and implies adopting that strategy. "Developer Tools" - combines a role, contributing factor, and implies optimizing only a subset of contributing factors.
-- Outcomes Focus: Focusing on improving outcomes over outputs focuses metrics on things that matter.
+- Evolution: A term's words and implications should support engineering's evolving roles, metrics, outputs, strategies, and contributing factors. They shouldn't calcify a particular subset. One way to support evolution is by focusing on stakeholder and business outcomes instead of how they're achieved. Counterexamples include: "Developer Productivity" which combines a role, optimization metric, and implies improving a meaningless number. "Developer Experience" - combines a role, optimization strategy, and implies adopting that strategy. "Developer Tools" - combines a role, contributing factor, and implies optimizing only a subset of contributing factors.
+- Outcomes Focus: Improving outcomes focuses metrics on things that matter.
 - Memorability: Accurate and stable terms like DORA's "Software Delivery and Operations (SDO)" aren't simple enough to be memorable.
 - Low Abusability: Output metrics like efficiency enable negative consequences like micromanagement, low-value optimizations, and system-gaming temptations. Terms that instead focus on outcomes improve those outcomes while reducing likelihood of negative consequences.
 - Measurement Team Usefulness: Any term should facilitate great measurement team interactions and messaging (e.g., quick understanding and alignment, vs needing to explain what developer productivity means and how it doesn't measure what it sounds like)
