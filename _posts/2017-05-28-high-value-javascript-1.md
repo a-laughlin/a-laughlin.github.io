@@ -1,9 +1,11 @@
 ---
-title: High Value JavaScript (Part 1)
+title: High Value JavaScript
 comments: true
 layout: post
 tags: [javascript, software]
 ---
+
+# High Value JavaScript
 
 Startup SaaS Company.  Two years in.  Funds running low.  Our JavaScript is a ball of mud.  One page costs $94k per year to maintain.  140 pages.  How did we get here?
 
@@ -16,14 +18,14 @@ When I started 1.5 years in, our most troublesome page's code was 2500 lines.  N
 
 Estimated time per change grew to around 3 hours.  I got curious.  Most changes went to fixing and re-fixing bugs that crept in from introducing new features or fixing other bugs.  Git showed 500 changes to that page in the last year.  1500 hours spent maintaining one page.  We had 140 other pages with similar issues.  Not good.
 
-## Costs 
+## Costs
 Financially speaking, assume $80k per year per developer, add $50k for benefits, overhead, taxes, etc.  Total $130k/yr.  There are about 2080 hours per work year in the US, so each hour costs roughly $62.5 USD.  Multiply 1500 hours by $62.5/hr, and that page required $94,000 per year to maintain.
 
 [Outcomes](https://hbr.org/2012/11/its-not-just-semantics-managing-outcomes) extended further.  Good experiences produce delight and pleasant interactions among users, staff, their teams, and beyond.  Bad experiences create stress and sour interactions.  Unexpected behaviors produce confusion, frustration, and stress.  Delays also produce frustration.  Low reliability adds to stress through uncertainty and perceived lack of control, while decreasing sales staff confidence and company reputation.  Ripple effects spread the impacts into other areas of life, like the impact of carrying increased stress home.
 
 1500 hours, $94k, bad experiences.  Low-quality JavaScript exacts many costs from you, your team, your company, your users, and many people each of you interact with.
 
-## Causes 
+## Causes
 Developer Fault?  No.  All devs I've met generally do the best they can given their experience.  When you start to learn JavaScript, and your programming background is:
   - Classical Object-oriented, you follow OO examples and use OO libraries because they make sense to you. You work around JavaScript's OO quirks.
   - Functional, you follow functional examples and use functional libraries because they make sense to you.  You work around JavaScript's functional quirks.
@@ -41,22 +43,22 @@ What happened?  Well, to start, modules, objects, and separate concerns probably
 
 Problems arise when new devs learn programming through variably-accurate articles and instruction created by variably-experienced developers, using ambiguous, often-misunderstood labels from often-misunderstood, often-unstated philosophies to describe often-misunderstood, sometimes-conflicting "good" coding principles.  Then they attempt to write high-quality code in a new language with its own label interpretations and philosophy implementations, often using frameworks with additional ambiguous labels and interpretations (e.g., Angular 1's expressions & services).
 
-### The Problem: Weak Conceptual Links  
+### The Problem: Weak Conceptual Links
 Ambiguity, misunderstandings, complexity, and information overload make it nearly impossible for new developers to create solid conceptual links between daily code decisions and value.  A simple heuristic develops - "whatever code works".  Its result, low quality code [accumulates imperceptibly](https://en.wikipedia.org/wiki/Boiling_frog#As_metaphor) with every change, increasing costs and decreasing the code's ability to produce value.   For companies with SaaS/PaaS business models, frequent changes quickly grow human and financial costs.  As average cost per change approaches average value per change, net-positive changes grow increasingly scarce.  Once the threshold is crossed, re-achieving net-positive-outcome changes is nearly impossible.
 
 ### Solution: Clarify
 This article's purpose is to help you, as a new JavaScript developer, produce significantly higher-quality code, in less time, with greater effectiveness and greater understanding, for the sake of you, your team, your organization, your customers, and everyone else involved.
 
-Let's start by removing uncertainty.  Here are the basic connections between "Whatever Works" code and Value.  
+Let's start by removing uncertainty.  Here are the basic connections between "Whatever Works" code and Value.
 **Code > ~uncertainty~ > Quality > Value**
 
-Here are the connections with uncertainty replaced:  
+Here are the connections with uncertainty replaced:
 **Code > Practices + Principles + Philosophies  > Quality  > Value**
 
 In future articles we'll explore Code, Practices, Principles, and Philosophies.  In this article, we'll dive into quality and value.
 
 **Terms to Know:**
- - **Value**: people's desires satisfied  
+ - **Value**: people's desires satisfied
  - **Quality**: code's ability to satisfy people's desires
  - **[Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)**: accumulations of low-quality code
 
@@ -76,16 +78,16 @@ Things to be aware of:
   - You'll chase your tail if you try to satisfy all attributes.  There are tradeoffs.  For example, optimizing an algorithm for "efficiency" often decreases "understandability", which increases time to learn+change it, which decreases changeability
   - When writing code, it's easy to lose perspective amidst the complexity and start optimizing for low priority attributes like execution/memory efficiency.  Posting your attributes in a visual reminder can help retain perspective
 
-#### Quality: The Right Amount at the Right Time 
+#### Quality: The Right Amount at the Right Time
 ![woman screaming in water, about to go over waterfall](../images/devilpool-cropped.jpg)
 
 Writing an app using "what works" quality is equivalent to swimming blindfolded above a large waterfall.  Swimming upstream improves quality, only you're unsure which direction that is exactly.
 
-Far from the waterfall's edge swimming upstream is easy.  The current is calm.  Little quality bumps work well.  Close to the edge the current accelerates.  Swimming upstream requires more energy.  Bigger quality bumps are necessary. 
+Far from the waterfall's edge swimming upstream is easy.  The current is calm.  Little quality bumps work well.  Close to the edge the current accelerates.  Swimming upstream requires more energy.  Bigger quality bumps are necessary.
 
 Like the accelerating current, accumulating low quality code increases costs and decreases value at an exponential rate due to connections with other code parts (a.k.a. couples, a term we'll revisit later).  For example, making a change to a global "user" variable that spans 100 views, with 10 places in each view that reference the object or values derived from it, means one change, in one file, to the user object can break 1000 other places in the code.  If any of those rely on that value to make further changes, there are then 1000 * 1000 places that can indirectly break.  Checking a million possible logic paths through the code, across asynchronous route transitions, is impractical and error prone.
 
-Preventing such problems by writing high quality code early is wise.  Realistically, not all of us have that option, so let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change). 
+Preventing such problems by writing high quality code early is wise.  Realistically, not all of us have that option, so let's explore solution size and related terms at different distances from the waterfall edge (how close potential value per change is to cost per change).
 
 **Terms to Know**
  * **feature freeze**: adding no code for new features - prevents further quality decay
@@ -93,20 +95,20 @@ Preventing such problems by writing high quality code early is wise.  Realistica
  * **partial/incremental rewrite**: replace large code parts
  * **full rewrite**: replace all code
 
-##### Over the Edge - Fall  
-Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high value features are not high enough now.  There are no more solutions whose value outweighs their cost.  Escaping now is as easy as swimming up a waterfall.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.  
+##### Over the Edge - Fall
+Once cost exceeds value, you're over the edge.  Bugs abound.  Reputation suffers due to both bugs and delays.  Last month's high value features are not high enough now.  There are no more solutions whose value outweighs their cost.  Escaping now is as easy as swimming up a waterfall.  Fortunately the effects are usually less permanent.  Accept it.  Deal with the consequences.  Move on.  Learn.
 ![Low quality impact. Graph of cost per change overtaking potential value per change](../images/code-quality-over.png)
 
-#####  Near the Edge - Swim Hard 
-You're close to the edge.  There's little you can do.  Swimming only slows your downstream progress.  You need to dig deep.  Some level of rewrite is necessary.  Getting upstream is going to be painful and exhausting.  The time, energy, and finances required are large.  Think year-ish large.  Bugs and necessary feature freezes turn everyone's delight to stress, especially for leadership and sales.  Adding new code to satisfy customer promises is swimming downstream into the accelerating current.  It adds more bugs that will likely affect other customers, and wastes time because it will likely get thrown away or rewritten due to its low-quality dependencies.  
+#####  Near the Edge - Swim Hard
+You're close to the edge.  There's little you can do.  Swimming only slows your downstream progress.  You need to dig deep.  Some level of rewrite is necessary.  Getting upstream is going to be painful and exhausting.  The time, energy, and finances required are large.  Think year-ish large.  Bugs and necessary feature freezes turn everyone's delight to stress, especially for leadership and sales.  Adding new code to satisfy customer promises is swimming downstream into the accelerating current.  It adds more bugs that will likely affect other customers, and wastes time because it will likely get thrown away or rewritten due to its low-quality dependencies.
 ![Low quality impact. Graph of cost per change close to potential value per change](../images/code-quality-close.png)
 
-#####  Decently Far - Swim 
-You're far enough away from the edge that swimming upstream still works well.  You have options.  Less dramatic, more incremental solutions like refactoring, partial feature freezes, and partial rewrites still reduce costs.  You can even swim downstream a little when customers have a deadline.    
+#####  Decently Far - Swim
+You're far enough away from the edge that swimming upstream still works well.  You have options.  Less dramatic, more incremental solutions like refactoring, partial feature freezes, and partial rewrites still reduce costs.  You can even swim downstream a little when customers have a deadline.
 ![Low quality impact. Graph of cost per change middle distance from potential value per change](../images/code-quality-middle.png)
 
-#####  Standing near the Shore - Walk 
-Refreshing cool water around your ankles.  Walking forward to swim is tempting.  That noise is probably just the wind in the trees.  Probably.  Then again, why accept the uncertainty?  You could just remove the blindfold, notice the waterfall, walk up the trail, and swim in a quiet pool a mile upstream.  Learning to write higher-quality code from the start keeps your costs low, your value high, your chances of success high, and greatly improves everyone's experience in the process.  
+#####  Standing near the Shore - Walk
+Refreshing cool water around your ankles.  Walking forward to swim is tempting.  That noise is probably just the wind in the trees.  Probably.  Then again, why accept the uncertainty?  You could just remove the blindfold, notice the waterfall, walk up the trail, and swim in a quiet pool a mile upstream.  Learning to write higher-quality code from the start keeps your costs low, your value high, your chances of success high, and greatly improves everyone's experience in the process.
 ![High quality impact. Graph of cost per change far distance from potential value per change](../images/code-quality-far.png)
 
 #### Quality: Determining the Right Time
@@ -114,8 +116,8 @@ Judging your proximity to the waterfall's edge is difficult.  The water feels st
 
 Each quality attribute will have its own metrics.  Changeability metrics likely include some combination of [user experience](https://www.google.com/search?q=user+experience+metrics), [net promoter score](https://en.wikipedia.org/wiki/Net_Promoter), and [code](https://en.wikipedia.org/wiki/Halstead_complexity_measures) [complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) to assess potential value/cost change over time. Further metrics exploration is outside this article’s scope. Comments about them are welcome since they’re important to make informed decisions.
 
-## Summary 
-Problem: **Code > ~uncertainty~ > Quality > Value**  
+## Summary
+Problem: **Code > ~uncertainty~ > Quality > Value**
 Uncertainty between daily code decisions and value result in a "Whatever Works" heuristic that exponentially decreases potential software value with each change.
 
 Solution: **Code > Practices + Principles + Philosophies  > Quality > Value**
@@ -129,8 +131,8 @@ Terms to Know:
 
 As low quality code accumulates, cost per change increases exponentially, and potential value per change decreases exponentially.  Judging where you are on the curve is difficult, so improving quality early is important.
 
-How to Increase Quality?  By increasing Changeability!  
-How to Increase Changeability?  By reading upcoming articles in this series!  
+How to Increase Quality?  By increasing Changeability!
+How to Increase Changeability?  By reading upcoming articles in this series!
 
 Rough Series Roadmap:
  - Code: The basics, for context and examples in the following posts. (introduces language structures, purposes, patterns, cohesion)

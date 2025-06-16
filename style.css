@@ -524,7 +524,7 @@ a:link, a:visited { color: #DDDDDD;}
 }
 #content img {width:100%;max-width:600px;}
 #content H1 {font-size:180%;}
-#content H2 {font-size:160%;}
+#content H2 {font-size:160%; line-height: 2em;}
 #content H3 {font-size:140%;}
 #content H4 {font-size:120%;}
 #content H5 {font-size:110%;}
