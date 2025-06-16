@@ -522,7 +522,7 @@ a:link, a:visited { color: #DDDDDD;}
   width:100%;
   background-color: #fff;
   max-width:800px;
-  line-height:166%;
+  line-height:2rem;
 }
 #content img {width:100%;max-width:600px;}
 #content H1,H2,H3,H4,H5,H6 {line-height: 1.5em;}
