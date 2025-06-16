@@ -1,11 +1,11 @@
 ---
-title: Replace "Developer Productivity" with "Engineering Results" for Clarity and Impact
+title: Replace "Developer Productivity" with "Engineering Results" for Time and Impact
 comments: true
 layout: post
 tags: [draft, Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Results]
 ---
 
-Developer Productivity's definition matters. Discussing and optimizing an unclear measure wastes time. Defining Developer Productivity highlighted problems with both the metric and the term itself (among [other](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [problems](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)): The metric is ineffective for improving stakeholder and business outcomes. The term's ambiguity causes more problems than it solves for organizations who are past a single productivity metric, and for anyone defining developer productivity or discussing engineering optimization. Replacing the term "Developer Productivity" with an alternative like "Engineering Results" clarifies discussions and focuses more impactful metrics.
+Developer Productivity's definition matters. Discussing and optimizing an unclear measure wastes time. Defining Developer Productivity highlighted problems with both the metric and the term itself (among [other](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [problems](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)): The metric is ineffective for improving stakeholder and business outcomes. The term's ambiguity causes more problems than it solves for organizations who are past a single productivity metric, and for anyone defining developer productivity or discussing engineering optimization. Replacing the term "Developer Productivity" with an alternative like "Engineering Results" saves time and focuses more impactful metrics.
 
 <!-- TOC -->
 
@@ -60,7 +60,7 @@ A common software idiom is "Naming things is hard". Here are a few criteria to h
 
 ## Wrapping Up
 
-A "developer productivity" metric is ineffective and problematic for improving stakeholder and business outcomes. The "Developer Productivity" term has become so ambiguous that it generates more confusion than clarity for anyone defining developer productivity or discussing engineering optimization. Choosing alternate metrics and a different term like "Engineering Results" will save time and facilitate greater impact.
+A "developer productivity" metric is ineffective and problematic for improving stakeholder and business outcomes. The "Developer Productivity" term has become so ambiguous that it generates more confusion than clarity for anyone defining developer productivity or discussing engineering optimization. Choosing alternate metrics and a different term like "Engineering Results" saves time and facilitates greater impact.
 
 What challenges have you faced with the term Developer Productivity? How did you resolve them?
 
