@@ -45,14 +45,14 @@ Platform teams can save time and focus more impactful metrics by replacing "Deve
 
 Other possible terms include "Engineering Outcomes" and "Engineering Thrive". Thrive is a delightful choice at Microsoft despite the term's grammatical awkwardness. I love the idea of all engineering stakeholders and the business thriving.
 
-If those terms are unsatisfying, the criteria they arose from may help choose a different one.
+If those terms are unsatisfying, the criteria behind them may help choose a different one.
 
 ## Criteria for Alternate Terms
 
-A common software idiom is "Naming things is hard". Here are a few criteria to help choose a term that avoids current terms' issues.
+A common software idiom is "Naming things is hard". Here are a few criteria to help avoid current term's issues:
 
 - Evolution: A term's words and implications should support engineering's evolving roles, metrics, strategies, and contributing factors. They shouldn't calcify a particular subset. One way to support evolution is by focusing on stakeholder and business outcomes instead of how they're achieved. Counterexamples include: "Developer Productivity" which combines a role, optimization metric, and implies improving a meaningless number. "Developer Experience" - combines a role, optimization strategy, and implies adopting that strategy. "Developer Tools" - combines a role, contributing factor, and implies optimizing only a subset of contributing factors.
-- Improvability: Developer productivity is often referenced as a desirable thing to improve. Engineering Results works similarly. Improving "Engineering Optimization" would focus on improving improvement itself, making it less broadly applicable than improving results.
+- Outcomes Focus: Focusing on improving outcomes over outputs focuses metrics on things that matter.
 - Memorability: Accurate and stable terms like DORA's "Software Delivery and Operations (SDO)" aren't simple enough to be memorable.
 - Low Abusability: Output metrics like efficiency enable negative consequences like micromanagement, low-value optimizations, and system-gaming temptations. Terms that instead focus on outcomes improve those outcomes while reducing likelihood of negative consequences.
 - Measurement Team Usefulness: Any term should facilitate great measurement team interactions and messaging (e.g., quick understanding and alignment, vs needing to explain what developer productivity means and how it doesn't measure what it sounds like)
