@@ -4,10 +4,7 @@ title: About
 permalink: /about/
 ---
 
-CV: Updating
-LinkedIn: Updating
-[Github](https://github.com/a-laughlin/)  
-[Projects](http://www.a-laughlin.com/tags/project/)  
+[LinkedIn](https://www.linkedin.com/in/alaughlin/)
 
 <!-- ### More Information
 
