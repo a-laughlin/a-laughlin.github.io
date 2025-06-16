@@ -69,7 +69,7 @@ What challenges have you faced with the term Developer Productivity? How did you
 
 ## Footnotes
 
-<a id="developer-productivity-definition">1.</a> Developer Productivity is any combination of factors in SPACE, including Developer Productivity. In discussions it is often used as an alias for Engineering Optimization. Its usage may imply Traditional Developer Productivity [²](#traditional-developer-productivity-definition), but may also imply zero to many developers, zero to many developer activities, and one to all factors in SPACE (including [DORA](https://dora.dev/research/), [DevEx](https://queue.acm.org/detail.cfm?id=3595878) and [Core 4](https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/) ).
+<a id="developer-productivity-definition">1.</a> Developer Productivity is any combination of factors in SPACE, including Developer Productivity. In discussions it is often used as an alias for Engineering Optimization. Its usage may imply Traditional Developer Productivity[²](#traditional-developer-productivity-definition), but may also imply zero to many developers, zero to many developer activities, and one to all factors in SPACE (including [DORA](https://dora.dev/research/), [DevEx](https://queue.acm.org/detail.cfm?id=3595878) and [Core 4](https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/) ).
 
 <a id="traditional-developer-productivity-definition">2.</a> Traditional Developer Productivity is an efficiency metric that quantifies a developer's input-to-output conversion efficiency on an activity (note: time is an input too). When used without specifying an activity, it implies efficiency on all of a developer's activities.
 
