@@ -1,5 +1,5 @@
 ---
-title: "How do Developer Experience and Engineering Outcomes relate?"
+title: "UX, DX, and Engineering Outcomes"
 comments: true
 layout: post
 tags: [Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
