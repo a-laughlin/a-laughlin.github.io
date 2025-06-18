@@ -7,17 +7,17 @@ tags: [Developer Experience, Developer Productivity, Engineering Optimization, D
 
 # UX, DX, and Engineering Outcomes
 
-User Experience (UX) defines "a user experience" and "the field of User Experience" separately. No such distinction exists for Developer Experience (DX, DevEx). The result is ambiguity between "a developer experience", improving experiences, and Engineering Outcomes.
+User Experience (UX) has separate definitions for "a user experience" and "the field of User Experience". Developer Experience (DX, DevEx) does not. The result is ambiguity between "a developer experience", improving experiences, and engineering outcomes.
 
-This post improves clarity by defining and providing context for: a developer experience, the field of Developer Experience (DX, DevEx), and DX's relation to Engineering Outcomes.
+This post improves clarifies the differences by defining and providing context for: a developer experience, the field of Developer Experience (DX, DevEx), and DX's relation to engineering outcomes.
 
-## Definitions
+## Definitions (TL;DR)
 
 **A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, physical environment).
 
 **The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing developers' context aspects (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments).
 
-**How does Developer Experience relate to Engineering Outcomes?** Developer Experience is an [Engineering Outcomes](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, yielding equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
+**How does Developer Experience Relate to Engineering Outcomes?** Developer Experience is an [Engineering Outcomes](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, yielding equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
 
 ## What is a Developer Experience?
 
