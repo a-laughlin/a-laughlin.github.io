@@ -9,15 +9,15 @@ tags: [draft, Developer Experience, Developer Productivity, Engineering Optimiza
 
 While User Experience (UX) defines the concept of "a user experience" and "the field of User Experience" separately, no such distinction exists in definitions of Developer Experience (DX, DevEx).
 
-In this post we'll synthesize clear definitions for Developer Experience, its field, and relate it to [Engineering Results](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) (aka developer productivity).
+In this post we'll synthesize clear definitions for Developer Experience, its field, and relate it to [Engineering Results](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) (aka Developer Productivity).
 
 ## TL;DR - Clarified Definitions
 
-**A developer experience (DX, DevEx)** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, physical environment).
+**A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, physical environment).
 
 **The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing developers' context aspects (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments).
 
-**How does the field of Developer Experience relate to Engineering Results (Developer Productivity)?** Developer Experience is an Engineering Results optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, producing equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
+**How does DevEx relate to Engineering Results (Developer Productivity)?** Developer Experience is an Engineering Results optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, producing equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
 
 ## What is Developer Experience (DX, DevEx)?
 
