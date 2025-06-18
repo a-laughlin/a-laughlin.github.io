@@ -7,9 +7,9 @@ tags: [Developer Experience, Developer Productivity, Engineering Optimization, D
 
 # UX, DX, and Engineering Outcomes
 
-While User Experience (UX) defines "a user experience" and "the field of User Experience" separately, no such distinction exists for Developer Experience (DX, DevEx).
+While User Experience (UX) defines "a user experience" and "the field of User Experience" separately, no such distinction exists for Developer Experience (DX, DevEx). The result is ambiguity between "a developer experience", improving experiences, and Engineering Outcomes.
 
-This post defines and provides context for: a developer experience, the field of Developer Experience (DX, DevEx), and DX's relation to [Engineering Outcomes](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) (a.k.a. Developer Productivity).
+This post improves clarity by defining and providing context for: a developer experience, the field of Developer Experience (DX, DevEx), and DX's relation to Engineering Outcomes.
 
 ## Definitions
 
@@ -17,9 +17,9 @@ This post defines and provides context for: a developer experience, the field of
 
 **The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing developers' context aspects (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments).
 
-**How does Developer Experience relate to Engineering Outcomes (Developer Productivity)?** Developer Experience is an Engineering Outcomes optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, yielding equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
+**How does Developer Experience relate to Engineering Outcomes?** Developer Experience is an [Engineering Outcomes](https://www.a-laughlin.com/replace-developer-productivity-time-impact/) optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, yielding equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
 
-## What is Developer Experience (DX, DevEx)?
+## What is a Developer Experience?
 
 For context, Neilsen/Norman Group's 2024 UX definition: "A user experience (UX) is the holistic relationship — encompassing perceptions, emotions, and interactions — between a person and a product, service, or company." - [Neilsen Norman Group](https://www.nngroup.com/articles/what-is-user-experience)
 
@@ -37,7 +37,7 @@ Similar to the UX and related definitions above, this definition focuses on deve
 
 For context, Neilsen/Norman Group's 2024 UX Field definition: "The field of user experience (UX) is a professional practice focused on designing and enhancing the interactions and overall experience for all users of a product, service, or brand." - [Neilsen Norman Group](https://www.nngroup.com/articles/what-is-user-experience)
 
-Four related Developer Experience definitions:
+Related Developer Experience definitions:
 - Developer experience (DevEx) refers to how developers perceive and interact with their work environment across four key dimensions: speed, effectiveness, quality, and business impact - [DX](https://getdx.com/blog/developer-experience/)
 - DevEx refers to the systems, technology, process, and culture that influence the effectiveness of software development. - [Github](https://github.blog/enterprise-software/collaboration/developer-experience-what-is-it-and-why-should-you-care/)
 - We define the developer experience as the skills, tools, frameworks, and methodologies aimed at creating, maintaining, and enhancing code throughout the entire software delivery lifecycle (from creation through production) and improving developer productivity, both individually and collectively. - Forrester
@@ -45,9 +45,12 @@ Four related Developer Experience definitions:
 
 Synthesized Definition: **The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing developers' context aspects (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, physical environments).
 
-Surprisingly, unlike the UX Field definition, all the relatedDeveloper Experience definitions omit improving developer experiences. Most even omit developer-specific outcomes like satisfaction. My guess is that such definitions evolved through DevEx pitches failing to gain traction with leaders. To be fair, each definition is taken out of its context. The origin articles usually mention improving some developer-specific outcomes. Regardless, it makes sense for a DX Field definition to include improving developer experiences since they're both outcomes and leading indicators.
+Surprisingly unlike the UX Field definition, related Developer Experience definitions omit improving developer experiences. Most even omit developer-specific outcomes like satisfaction. My guess is that such definitions evolved through DevEx pitches failing to gain traction with leaders. To be fair, each definition is taken out of its context. The origin articles usually mention improving some developer-specific outcomes. Regardless, it makes sense for a DX Field definition to include improving developer experiences since they are both outcomes and leading indicators (as increasingly [supported](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) by [research](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/)).
 
-Positive developer experiences are both developer-specific outcomes and leading indicators for other outcomes, as is increasingly [supported](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) by [research](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/). They appear in the definition as a leading indicator, but exist implicitly in its outcomes too.
+Developer experiences appear in the definition as a leading indicator, but they exist implicitly in its outcomes too.
 
-The Developer Experience Field definition explicitly optimizes developer context aspects, not developer experiences (perceptions, emotions, interactions). Directly manipulating experiences without understanding and consent is [unethical](https://doi.org/10.1145/3563657.3596013). Further, persuading developers to change their own experiences is often ineffective without accompanying context changes. Consider improving a team's PR response time to 24 hours. Asking developers to respond faster (an interaction) will work briefly but eventually regress above 24 hours. Context changes like PR review reminders help reach and maintain such targets. Optimizing context aspects is more ethical and effective than optimizing experiences (including including interactions/behaviors).
+A subtle but important point. The Developer Experience field definition explicitly optimizes developer context aspects, not developer experiences (perceptions, emotions, interactions). Directly manipulating experiences without understanding and consent is [unethical](https://doi.org/10.1145/3563657.3596013). Further, persuading developers to change their own experiences is often ineffective without accompanying context changes. Consider improving a team's PR response time to 24 hours. Asking developers to respond faster (an interaction) will work briefly but eventually regress above 24 hours. Context changes like PR review reminders help reach and maintain such targets. Optimizing context aspects is more ethical and effective than optimizing experiences (including including interactions/behaviors).
 
+## Wrapping Up
+
+Hopefully these definitions helped you understand the distinction between the a developer experience and the field of Developer Experience.
