@@ -2,7 +2,7 @@
 title: "How do Developer Experience and Engineering Outcomes relate?"
 comments: true
 layout: post
-tags: [draft, Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
+tags: [Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
 ---
 
 # UX, DX, and Engineering Outcomes
@@ -26,12 +26,12 @@ For context, Neilsen/Norman Group's 2024 UX definition: "A user experience (UX) 
 Related Developer Experience definitions:
 - Developer experience is how developers feel about the tools and processes they use to create software... - [Atlassian](https://www.atlassian.com/developer-experience)
 - Developer experience (DevEx, DX) is the overall experience of a developer when they are building software in a team. - [Swarmia](https://www.swarmia.com/blog/developer-experience-what-why-how/)
-- [Developer Experience is] How developers feel, think and value their work... - [Research Paper](https://doi.org/10.48550/arXiv.2205.06352)
-- Developer experience (DevEx) refers to how developers perceive and interact with their work environment (stakeholder)... - [DX](https://getdx.com/blog/developer-experience/)
+- Developer experience (DevEx) refers to how developers perceive and interact with their work environment... - [DX](https://getdx.com/blog/developer-experience/)
+- [Developer Experience is] How developers think about, feel about, and value their work. - [DX Research Paper](https://doi.org/10.48550/arXiv.2205.06352)
 
 Synthesized Definition: **A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, physical environment).
 
-Similar to the UX and related definitions above, this definition focuses on developers' personal aspects like thoughts, emotions, and behaviors/interactions. The field, by contrast, focuses on stakeholder outcomes and business impact.
+Similar to the UX and related definitions above, this definition focuses on developers' personal aspects like thoughts, emotions, and behaviors/interactions. The field, by contrast, focuses on stakeholder and business outcomes.
 
 ## What is the field of Developer Experience (DX, DevEx)?
 
