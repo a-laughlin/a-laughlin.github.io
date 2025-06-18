@@ -1,13 +1,13 @@
 ---
-title: Replace "Developer Productivity" with "Engineering Results" for Time and Impact
+title: Replace "Developer Productivity" for Time and Impact
 comments: true
 layout: post
-tags: [draft, Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Results]
+tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
 # Replace "Developer Productivity" for Time and Impact
 
-Developer Productivity's definition matters. Discussing unclear concepts and optimizing unclear metrics wastes time. Two problems stood out to me when defining Developer Productivity ([among](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [many](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)). First, the metric is ineffective for improving stakeholder and business outcomes. Second, the term's ambiguity causes more problems than it solves for anyone defining it, learning about it, or discussing engineering optimization. Below we'll explore the problems and offer solutions: current[¹](#developer-productivity-definition) and traditional[²](#traditional-developer-productivity-definition) Developer Productivity definitions for learners, more effective productivity metric uses for teams, and a replacement term for clearer optimization discussions.
+Developer Productivity's definition matters. Discussing unclear concepts and optimizing unclear metrics wastes time. Two problems stood out to me when defining Developer Productivity ([among](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [many](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)). First, the metric is ineffective for improving stakeholder and business outcomes. Second, the term's ambiguity causes more problems than it solves for anyone defining it, learning about it, or discussing engineering optimization. Below we'll offer solutions for some ot the problems: current[¹](#developer-productivity-definition) and traditional[²](#traditional-developer-productivity-definition) Developer Productivity definitions for learners, more effective productivity metric uses for teams, and an alternate term for clearer optimization discussions.
 
 ## Contents
 <!-- TOC -->
@@ -44,17 +44,17 @@ Platform teams can save time and focus more impactful metrics by replacing "Deve
 
 ## An Alternate Term
 
-"Engineering Results" (i.e. stakeholder and business outcomes) is one possible solution to Developer Productivity's inaccuracy and ambiguity.
+"Engineering Outcomes" (i.e. stakeholder and business outcomes) is one possible solution to Developer Productivity's inaccuracy and ambiguity.
 
-Other possible terms include "Engineering Outcomes", "Engineering Impacts", and "Engineering Thrive". Thrive is a delightful choice at Microsoft despite the term's grammatical awkwardness. I love the idea of all engineering stakeholders and the business thriving.
+Other possible terms include "Engineering Results", "Engineering Impacts", and "Engineering Thrive". Thrive is a delightful choice at Microsoft despite the term's grammatical awkwardness. I love the idea of all engineering stakeholders and the business thriving.
 
 If those terms are unsatisfying, the criteria behind them may help choose a different one.
 
 ## Criteria for Alternate Terms
 
-A common software idiom is "Naming things is hard". Here are a few criteria to help avoid current term's issues:
+Here are a few criteria to help avoid current terms' issues:
 
-- Stability: A term's words and implications should remain stable amidst engineering's evolving roles, metrics, outputs, strategies, and contributing factors. They shouldn't calcify a particular subset. One approach to stability is focusing on stakeholder and business outcomes instead of how they're achieved. "Engineering Results" is an example. Counterexamples include: "Developer Productivity" which combines a role, optimization metric, and implies improving an ineffective number. "Developer Experience" - combines a role, optimization strategy, and implies adopting that strategy. "Developer Tools" - combines a role, contributing factor, and implies optimizing only a subset of contributing factors.
+- Stability: A term's words and implications should remain stable amidst engineering's evolving roles, metrics, outputs, strategies, and contributing factors. They shouldn't calcify a particular subset. One approach to stability is focusing on stakeholder and business outcomes instead of how they're achieved. "Engineering Outcomes" is an example. Counterexamples include: "Developer Productivity" which combines a role, optimization metric, and implies improving an ineffective number. "Developer Experience" - combines a role, optimization strategy, and implies adopting that strategy. "Developer Tools" - combines a role, contributing factor, and implies optimizing only a subset of contributing factors.
 - Memorability: Accurate and stable terms like DORA's "Software Delivery and Operations (SDO)" aren't simple enough to be memorable.
 - Outcomes Focus: Improving outcomes focuses metrics on things that matter.
 - Low Abusability: Output metrics like efficiency enable negative consequences like micromanagement, low-value optimizations, and system-gaming temptations. Terms that instead focus on outcomes improve those outcomes while reducing likelihood of negative consequences.
@@ -63,7 +63,7 @@ A common software idiom is "Naming things is hard". Here are a few criteria to h
 
 ## Wrapping Up
 
-A "developer productivity" metric is ineffective and problematic for improving stakeholder and business outcomes. The term has become so ambiguous that it causes more problems than it solves for for anyone learning about it, defining it, or discussing engineering optimization. Choosing alternate metrics and a different term like "Engineering Results" saves time and facilitates greater impact.
+A "developer productivity" metric is ineffective and problematic for improving stakeholder and business outcomes. The term has become so ambiguous that it causes more problems than it solves for for anyone learning about it, defining it, or discussing engineering optimization. Choosing alternate metrics and a different term like "Engineering Outcomes" saves time and facilitates greater impact.
 
 ## Footnotes
 
