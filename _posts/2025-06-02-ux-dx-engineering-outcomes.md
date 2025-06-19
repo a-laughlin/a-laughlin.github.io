@@ -2,7 +2,7 @@
 title: "UX, DX, and Engineering Outcomes"
 comments: true
 layout: post
-tags: [Developer Experience, Developer Productivity, Engineering Optimization, DX, DevEx, DevProd]
+tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
 # UX, DX, and Engineering Outcomes

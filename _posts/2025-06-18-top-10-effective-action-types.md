@@ -2,7 +2,7 @@
 title: Replace "Developer Productivity" for Time and Impact
 comments: true
 layout: post
-tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
+tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
 # Replace "Developer Productivity" for Time and Impact
