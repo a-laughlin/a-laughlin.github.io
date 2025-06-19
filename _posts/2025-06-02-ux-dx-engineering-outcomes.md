@@ -19,7 +19,9 @@ User Experience (UX) has separate definitions for "a user experience" and "the f
 
 ## What is a Developer Experience?
 
-For context, Neilsen/Norman Group's 2024 UX definition: "A user experience (UX) is the holistic relationship — encompassing perceptions, emotions, and interactions — between a person and a product, service, or company." - [Neilsen Norman Group](https://www.nngroup.com/articles/what-is-user-experience)
+Neilsen/Norman Group's 2024 UX definition:
+
+- "A user experience (UX) is the holistic relationship — encompassing perceptions, emotions, and interactions — between a person and a product, service, or company." - [Neilsen Norman Group](https://www.nngroup.com/articles/what-is-user-experience)
 
 Related Developer Experience definitions:
 - Developer experience is how developers feel about the tools and processes they use to create software... - [Atlassian](https://www.atlassian.com/developer-experience)
@@ -29,11 +31,13 @@ Related Developer Experience definitions:
 
 Synthesized Definition: **A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, or physical environment).
 
-Similar to the UX and related definitions above, this definition focuses on developers' personal aspects like thoughts, emotions, and behaviors/interactions. The field, by contrast, focuses on stakeholder and business outcomes.
+Similar to the UX and related definitions above, this definition focuses on developers' personal aspects like thoughts, emotions, and behaviors/interactions. The field focuses on stakeholder and business outcomes instead.
 
 ## What is the field of Developer Experience (DX, DevEx)?
 
-For context, Neilsen/Norman Group's 2024 UX Field definition: "The field of user experience (UX) is a professional practice focused on designing and enhancing the interactions and overall experience for all users of a product, service, or brand." - [Neilsen Norman Group](https://www.nngroup.com/articles/what-is-user-experience)
+Neilsen/Norman Group's 2024 UX Field definition:
+
+- "The field of user experience (UX) is a professional practice focused on designing and enhancing the interactions and overall experience for all users of a product, service, or brand." - [Neilsen Norman Group](https://www.nngroup.com/articles/what-is-user-experience)
 
 Related Developer Experience definitions:
 - Developer experience (DevEx) refers to how developers perceive and interact with their work environment across four key dimensions: speed, effectiveness, quality, and business impact. - [DX](https://getdx.com/blog/developer-experience/)
@@ -48,7 +52,3 @@ Surprisingly unlike the UX Field definition, related Developer Experience defini
 Developer experiences appear in the definition as a leading indicator, but they exist implicitly in its outcomes too.
 
 The Developer Experience field definition explicitly optimizes developer context aspects, not developer experiences (perceptions, emotions, interactions). Directly manipulating experiences without understanding and consent is [unethical](https://doi.org/10.1145/3563657.3596013). Further, persuading developers to change their own experiences is often ineffective without accompanying context changes. Consider improving a team's PR response time to 24 hours. Asking developers to respond faster (an interaction) will work briefly but eventually regress above 24 hours. Context changes like PR review reminders help reach and maintain such targets. Optimizing context aspects is more ethical and effective than optimizing experiences (including interactions/behaviors).
-
-## Wrapping Up
-
-Hopefully these definitions helped you understand the distinction between the a developer experience and the field of Developer Experience.
