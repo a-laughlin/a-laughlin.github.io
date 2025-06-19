@@ -47,7 +47,7 @@ Surprisingly unlike the UX Field definition, related Developer Experience defini
 
 Developer experiences appear in the definition as a leading indicator, but they exist implicitly in its outcomes too.
 
-The Developer Experience field definition explicitly optimizes developer context aspects, not developer experiences (perceptions, emotions, interactions). Directly manipulating experiences without understanding and consent is [unethical](https://doi.org/10.1145/3563657.3596013). Further, persuading developers to change their own experiences is often ineffective without accompanying context changes. Consider improving a team's PR response time to 24 hours. Asking developers to respond faster (an interaction) will work briefly but eventually regress above 24 hours. Context changes like PR review reminders help reach and maintain such targets. Optimizing context aspects is more ethical and effective than optimizing experiences (including including interactions/behaviors).
+The Developer Experience field definition explicitly optimizes developer context aspects, not developer experiences (perceptions, emotions, interactions). Directly manipulating experiences without understanding and consent is [unethical](https://doi.org/10.1145/3563657.3596013). Further, persuading developers to change their own experiences is often ineffective without accompanying context changes. Consider improving a team's PR response time to 24 hours. Asking developers to respond faster (an interaction) will work briefly but eventually regress above 24 hours. Context changes like PR review reminders help reach and maintain such targets. Optimizing context aspects is more ethical and effective than optimizing experiences (including interactions/behaviors).
 
 ## Wrapping Up
 
