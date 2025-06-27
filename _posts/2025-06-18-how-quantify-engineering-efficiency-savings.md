@@ -53,17 +53,20 @@ maintenance_hours_1yr =
 maintenance_hours_1yr_solved =
   estimated developer hours to maintain the solution per year
 
----
-
-Leadership will find these calcs more useful for decision making
-if you go further to get ROI and payback period for a solution.
-
 gross_hours_saved_1yr =
     (hours_lost_1yr - hours_lost_1yr_solved)
   + (maintenance_hours_1yr - maintenance_hours_1yr_solved)
 
 implementation_hours =
-  estimated developer hours to implement and deploy a solution for test flakiness
+  estimated developer hours to implement and deploy a flakiness solution
+
+net_hours_saved_1yr =
+  gross_hours_saved_1yr - implementation_hours
+
+---
+
+Leadership will find these calcs more useful for decision making
+if you go further to get ROI and payback period for a solution.
 
 cost_per_year_per_dev =
   avg salary + benefits
