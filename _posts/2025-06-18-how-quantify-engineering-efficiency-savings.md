@@ -1,0 +1,108 @@
+---
+title: How to Quantify Engineering Efficiency Savings
+comments: true
+layout: post
+tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Efficiency]
+---
+
+# How to Quantify Engineering Efficiency Savings
+
+Estimating the value of an efficiency improvement is useful when deciding actions to take.
+
+This file contains one approach to estimate improvement value. While the example focuses on flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
+
+Note that it only calculates a minimum gain from hours saved. It excludes second+ order costs like attrition and rehiring due to platform pain points. Actual costs will be higher. Regardless, these calculations are usually sufficient to prioritize dev infrastructure improvements.
+
+```txt
+--- Estimating Local Flaky Test Cost (CI estimated separately) ---
+
+First we need to estimate the number of seconds spent on successful and flaky runs per day.
+Test times and frequencies usually vary across runs and devs' setups. To roughly accommodate that variance (statistical tests are outside this post's scope), we sit with 3 devs per test (test_x, test_y) and do 3 runs of each outcome (success, rerun, fix, manually test).
+
+3 devs * 2 tests * 4 outcomes * 3 runs = 72 measurements.
+
+We can then average the values for devs and runs, then sum them by flaky and non-flaky results.
+
+seconds_success_per_day =
+    test_x_devs_count * mean(test_x_devs_successes_per_day) * mean(test_x_devs_seconds_per_run)
+  + test_y_devs_count * mean(test_y_devs_successes_per_day) * mean(test_y_devs_seconds_per_run)
+
+seconds_resolving_flakes_per_day =
+    test_x_devs_count * mean(test_x_devs_reruns_per_day) * mean(test_x_devs_rerun_seconds_per_run)
+  + test_y_devs_count * mean(test_y_devs_reruns_per_day) * mean(test_y_devs_rerun_seconds_per_run)
+  + test_x_devs_count * mean(test_x_devs_fixes_per_day) * mean(test_x_devs_fix_seconds_per_run)
+  + test_y_devs_count * mean(test_y_devs_fixes_per_day) * mean(test_y_devs_fix_seconds_per_run)
+  + test_x_devs_count * mean(test_x_devs_manuals_per_day) * mean(test_x_devs_manual_seconds_per_run)
+  + test_y_devs_count * mean(test_y_devs_manuals_per_day) * mean(test_y_devs_manual_seconds_per_run)
+
+seconds_lost_per_day =
+    seconds_resolving_flakes_per_day
+  - seconds_success_per_day
+
+hours_lost_per_year =
+    seconds_lost_per_day
+  * 220ish workdays per year
+  / 60 for minutes
+  / 8 for hours
+
+---
+
+Leadership will find these calcs more useful for decision making
+if you go further to get ROI and payback period for a solution.
+
+implementation_hours =
+  estimated developer hours to implement and deploy a solution for test flakiness
+
+maintenance_hours_1yr =
+  estimated developer hours to maintain the solution per year
+
+cost_per_year_per_dev =
+  avg salary + benefits
+
+cost_per_dev_hour =
+    cost_per_year_per_dev
+  / 220 for working days
+  / 8 for hours
+
+gross_dollars_saved_1yr =
+  hours_lost_per_year * cost_per_dev_hour
+
+gross_dollars_saved_5yr =
+  gross_dollars_saved_1yr * 5
+
+net_hours_saved_1yr =
+    gross_dollars_saved_1yr
+  - implementation_hours
+  - maintenance_hours_1yr
+
+implementation_dollars =
+  cost_per_dev_hour * implementation_hours
+
+maintenance_dollars_1yr =
+  cost_per_dev_hour * maintenance_hours_1yr
+
+cost_1yr =
+  implementation_dollars + maintenance_dollars_1yr
+
+cost_5yr =
+  implementation_dollars + (maintenance_dollars_1yr * 5)
+
+net_dollars_saved_1yr =
+  gross_dollars_saved_1yr - cost_1yr
+
+net_dollars_saved_5yr =
+  gross_dollars_saved_5yr - cost_5yr
+
+ROI_1yr =
+  net_dollars_saved_1yr / cost_1yr * 100
+
+ROI_5yr =
+  net_dollars_saved_5yr / cost_5yr * 100
+
+# payback period is the fraction of a year needed for savings to outweigh the costs.
+payback_period =
+  cost_1yr  / net_dollars_saved_1yr
+
+payback_period_in_days =
+  payback_period * 365
+```
