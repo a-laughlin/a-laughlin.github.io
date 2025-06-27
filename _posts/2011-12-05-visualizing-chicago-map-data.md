@@ -5,8 +5,6 @@ layout: post
 tags: [datavis]
 ---
 
-# Visualizing Chicago Theft Data - An Experiment
-
 "What story do I want to tell?"
 
 That question lies at the heart of every visualization.

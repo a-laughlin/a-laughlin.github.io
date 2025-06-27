@@ -5,8 +5,6 @@ layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
-# Replace "Developer Productivity" for Time and Impact
-
 Developer Productivity's definition matters. Discussing unclear concepts and optimizing unclear metrics wastes time. Two problems stood out to me when defining Developer Productivity ([among](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [many](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)). First, the metric is ineffective for improving stakeholder and business outcomes. Second, the term's ambiguity causes more problems than it solves for anyone defining it, learning about it, or discussing engineering optimization. Below we'll offer solutions for some ot the problems: current[¹](#developer-productivity-definition) and traditional[²](#traditional-developer-productivity-definition) Developer Productivity definitions for learners, more effective productivity metric uses for teams, and an alternate term for clearer optimization discussions.
 
 ## Contents
