@@ -13,7 +13,7 @@ Note that it only calculates a minimum gain from hours saved. It excludes second
 
 ## Estimating Local Flaky Test Cost (CI estimated separately)
 
-First we need to estimate the net hours our solution will save per year. Test times and frequencies usually vary across runs and dev environments. To naively accommodate the variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 runs of each outcome (success, rerun, fix, manually test). Then we sum the average values across devs, tests, and runs. For example:
+First we need to estimate the net hours our solution will save per year. Test times and frequencies usually vary across runs and dev environments. To naively accommodate the variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 sample runs for each outcome (success, rerun, fix, manually test). Then we sum the average values across devs, tests, and runs. For example:
 
 ```txt
 3 sample devs * 2 sample tests * 4 outcomes * 3 sample runs = 72 sample measurements.
