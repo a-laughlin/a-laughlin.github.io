@@ -5,9 +5,9 @@ layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Efficiency]
 ---
 
-Estimating engineering efficiency savings can help prioritize efforts.
+Estimating engineering efficiency savings can help direct actions.
 
-This file contains one approach to estimate improvement value. While the example focuses on flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
+This file contains one approach to estimate the cost of a current problem or an alternate solution. While the example focuses on reducing flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
 
 Note that it only calculates a minimum gain from hours saved. It excludes second+ order costs like attrition and rehiring due to platform pain points. Actual costs will be higher. Regardless, these calculations are usually sufficient to prioritize dev infrastructure improvements.
 
@@ -37,22 +37,33 @@ seconds_lost_per_day =
     seconds_resolving_flakes_per_day
   - seconds_success_per_day
 
-hours_lost_per_year =
+hours_lost_1yr =
     seconds_lost_per_day
   * 220ish workdays per year
   / 60 for minutes
   / 8 for hours
+
+hours_lost_1yr_solved =
+  prototype the solution and repeat the calcs above
+  if prototyping needs justification, estimate the hours here
+
+maintenance_hours_1yr =
+  estimated developer hours to maintain the current implementation per year
+
+maintenance_hours_1yr_solved =
+  estimated developer hours to maintain the solution per year
 
 ---
 
 Leadership will find these calcs more useful for decision making
 if you go further to get ROI and payback period for a solution.
 
+gross_hours_saved_1yr =
+    (hours_lost_1yr - hours_lost_1yr_solved)
+  + (maintenance_hours_1yr - maintenance_hours_1yr_solved)
+
 implementation_hours =
   estimated developer hours to implement and deploy a solution for test flakiness
-
-maintenance_hours_1yr =
-  estimated developer hours to maintain the solution per year
 
 cost_per_year_per_dev =
   avg salary + benefits
@@ -60,42 +71,28 @@ cost_per_year_per_dev =
 cost_per_dev_hour =
     cost_per_year_per_dev
   / 220 for working days
-  / 8 for hours
+  / 8 for hours per day
 
 gross_dollars_saved_1yr =
-  hours_lost_per_year * cost_per_dev_hour
+  gross_hours_saved_1yr * cost_per_dev_hour
 
 gross_dollars_saved_5yr =
   gross_dollars_saved_1yr * 5
 
-net_hours_saved_1yr =
-    gross_dollars_saved_1yr
-  - implementation_hours
-  - maintenance_hours_1yr
-
 implementation_dollars =
   cost_per_dev_hour * implementation_hours
 
-maintenance_dollars_1yr =
-  cost_per_dev_hour * maintenance_hours_1yr
-
-cost_1yr =
-  implementation_dollars + maintenance_dollars_1yr
-
-cost_5yr =
-  implementation_dollars + (maintenance_dollars_1yr * 5)
-
 net_dollars_saved_1yr =
-  gross_dollars_saved_1yr - cost_1yr
+  gross_dollars_saved_1yr - implementation_dollars
 
 net_dollars_saved_5yr =
-  gross_dollars_saved_5yr - cost_5yr
+  gross_dollars_saved_5yr - implementation_dollars
 
 ROI_1yr =
-  net_dollars_saved_1yr / cost_1yr * 100
+  net_dollars_saved_1yr / implementation_dollars * 100
 
 ROI_5yr =
-  net_dollars_saved_5yr / cost_5yr * 100
+  net_dollars_saved_5yr / implementation_dollars * 100
 
 # payback period is the fraction of a year needed for savings to outweigh the costs.
 payback_period =
