@@ -11,21 +11,19 @@ This file contains one approach to estimate the cost of a current problem or an 
 
 Note that it only calculates a minimum gain from hours saved. It excludes second+ order costs like attrition and rehiring due to platform pain points. Actual costs will be higher. Regardless, these calculations are usually sufficient to prioritize dev infrastructure improvements.
 
+## Estimating Local Flaky Test Cost (CI estimated separately)
+
+First we need to estimate the number of seconds spent on successful and flaky runs per day. Test times and frequencies usually vary across runs and devs' setups. To naively accommodate the variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 runs of each outcome (success, rerun, fix, manually test).
+
 ```txt
---- Estimating Local Flaky Test Cost (CI estimated separately) ---
-
-First we need to estimate the number of seconds spent on successful and flaky runs per day.
-Test times and frequencies usually vary across runs and devs' setups.
-To roughly accommodate that variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 runs of each outcome (success, rerun, fix, manually test).
-
 3 devs * 2 tests * 4 outcomes * 3 runs = 72 measurements.
 
-We can then average the values for devs and runs, then sum them.
+Then we sum the average values across devs and runs.
 
 seconds_lost_resolving_flakes_per_day =
-    devs_count * mean_rerun_count_per_sample_dev_per_day * (mean_rerun_seconds - mean_success_seconds)
-  + devs_count * mean_fix_count_per_sample_dev_per_day * (mean_fix_seconds - mean_success_seconds)
-  + devs_count * mean_manual_count_per_sample_dev_per_day * (mean_manual_seconds - mean_success_seconds)
+    affected_devs_count * mean_rerun_count_per_sample_dev_per_day * (mean_rerun_seconds - mean_success_seconds)
+  + affected_devs_count * mean_fix_count_per_sample_dev_per_day * (mean_fix_seconds - mean_success_seconds)
+  + affected_devs_count * mean_manual_count_per_sample_dev_per_day * (mean_manual_seconds - mean_success_seconds)
 
 hours_lost_1yr =
     seconds_lost_resolving_flakes_per_day
