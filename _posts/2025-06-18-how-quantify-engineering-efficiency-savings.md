@@ -15,11 +15,12 @@ Note that it only calculates a minimum gain from hours saved. It excludes second
 --- Estimating Local Flaky Test Cost (CI estimated separately) ---
 
 First we need to estimate the number of seconds spent on successful and flaky runs per day.
-Test times and frequencies usually vary across runs and devs' setups. To roughly accommodate that variance (statistical tests are outside this post's scope), we sit with 3 devs per test (test_x, test_y) and do 3 runs of each outcome (success, rerun, fix, manually test).
+Test times and frequencies usually vary across runs and devs' setups.
+To roughly accommodate that variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 runs of each outcome (success, rerun, fix, manually test).
 
 3 devs * 2 tests * 4 outcomes * 3 runs = 72 measurements.
 
-We can then average the values for devs and runs, then sum them by flaky and non-flaky results.
+We can then average the values for devs and runs, then sum them.
 
 seconds_lost_resolving_flakes_per_day =
     devs_count * mean_rerun_count_per_sample_dev_per_day * (mean_rerun_seconds - mean_success_seconds)
