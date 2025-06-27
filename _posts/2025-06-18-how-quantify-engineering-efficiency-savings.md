@@ -7,13 +7,13 @@ tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Enginee
 
 Estimating engineering efficiency savings can help direct actions.
 
-This file contains one approach to estimate the cost of a current problem or an alternate solution. While the example focuses on reducing flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
+This file contains one approach to estimate the cost of a current problem vs an alternate solution. While the example focuses on reducing flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
 
 Note that it only calculates a minimum gain from hours saved. It excludes second+ order costs like attrition and rehiring due to platform pain points. Actual costs will be higher. Regardless, these calculations are usually sufficient to prioritize dev infrastructure improvements.
 
 ## Estimating Local Flaky Test Cost (CI estimated separately)
 
-First we need to estimate the number of seconds spent on successful and flaky runs per day. Test times and frequencies usually vary across runs and devs' setups. To naively accommodate the variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 runs of each outcome (success, rerun, fix, manually test). Then we sum the average values across devs and runs. For example:
+First we need to estimate the net hours our solution will save per year. Test times and frequencies usually vary across runs and dev environments. To naively accommodate the variance (statistical tests are outside this post's scope), we sit with 3 devs, choose some representative tests (e.g. 2), and time 3 runs of each outcome (success, rerun, fix, manually test). Then we sum the average values across devs, tests, and runs. For example:
 
 ```txt
 3 sample devs * 2 sample tests * 4 outcomes * 3 sample runs = 72 sample measurements.
@@ -34,7 +34,9 @@ hours_lost_1yr =
 
 hours_lost_1yr_solved =
   prototype the solution and repeat the calcs above
-  if prototyping needs justification, estimate the hours here
+  If you don't yet have a culture of experimentation
+  (i.e., even prototyping a solution needs justification),
+  estimate the hours here.
 
 maintenance_hours_1yr =
   estimated developer hours to maintain the current implementation per year
