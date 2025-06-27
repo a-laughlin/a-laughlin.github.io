@@ -51,11 +51,13 @@ implementation_hours =
 
 net_hours_saved_1yr =
   gross_hours_saved_1yr - implementation_hours
+```
 
----
+## Estimating ROI and Payback Period
 
-Leadership will find these calcs more useful for decision making
-if you go further to get ROI and payback period for a solution.
+Calculating to ROI and payback period is more useful for leadership. Here's how to get there from net hours saved.
+
+```
 
 cost_per_year_per_dev =
   avg salary + benefits
