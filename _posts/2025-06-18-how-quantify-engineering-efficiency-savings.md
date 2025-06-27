@@ -21,9 +21,12 @@ First we need to estimate the number of seconds spent on successful and flaky ru
 Then we sum the average values across devs and runs.
 
 seconds_lost_resolving_flakes_per_day =
-    affected_devs_count * mean_rerun_count_per_sample_dev_per_day * (mean_rerun_seconds - mean_success_seconds)
-  + affected_devs_count * mean_fix_count_per_sample_dev_per_day * (mean_fix_seconds - mean_success_seconds)
-  + affected_devs_count * mean_manual_count_per_sample_dev_per_day * (mean_manual_seconds - mean_success_seconds)
+    affected_devs_count * mean_rerun_count_per_sample_dev_per_day
+      * (mean_rerun_seconds - mean_success_seconds)
+  + affected_devs_count * mean_fix_count_per_sample_dev_per_day
+      * (mean_fix_seconds - mean_success_seconds)
+  + affected_devs_count * mean_manual_count_per_sample_dev_per_day
+      * (mean_manual_seconds - mean_success_seconds)
 
 hours_lost_1yr =
     seconds_lost_resolving_flakes_per_day
@@ -85,7 +88,7 @@ ROI_1yr =
 ROI_5yr =
   net_dollars_saved_5yr / implementation_dollars * 100
 
-# payback period is the fraction of a year needed for savings to outweigh the costs.
+# payback period is the fraction of the year before savings exceed costs.
 payback_period =
   cost_1yr  / net_dollars_saved_1yr
 
