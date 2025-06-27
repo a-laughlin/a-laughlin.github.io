@@ -22,16 +22,16 @@ Test times and frequencies usually vary across runs and devs' setups. To roughly
 We can then average the values for devs and runs, then sum them by flaky and non-flaky results.
 
 seconds_success_per_day =
-    test_x_devs_count * mean(test_x_devs_successes_per_day) * mean(test_x_devs_seconds_per_run)
-  + test_y_devs_count * mean(test_y_devs_successes_per_day) * mean(test_y_devs_seconds_per_run)
+    test_x_devs_count * mean(test_x_success_count_per_day_per_dev) * mean(test_x_success_seconds_per_run_per_dev)
+  + test_y_devs_count * mean(test_y_success_count_per_day_per_dev) * mean(test_y_success_seconds_per_run_per_dev)
 
 seconds_resolving_flakes_per_day =
-    test_x_devs_count * mean(test_x_devs_reruns_per_day) * mean(test_x_devs_rerun_seconds_per_run)
-  + test_y_devs_count * mean(test_y_devs_reruns_per_day) * mean(test_y_devs_rerun_seconds_per_run)
-  + test_x_devs_count * mean(test_x_devs_fixes_per_day) * mean(test_x_devs_fix_seconds_per_run)
-  + test_y_devs_count * mean(test_y_devs_fixes_per_day) * mean(test_y_devs_fix_seconds_per_run)
-  + test_x_devs_count * mean(test_x_devs_manuals_per_day) * mean(test_x_devs_manual_seconds_per_run)
-  + test_y_devs_count * mean(test_y_devs_manuals_per_day) * mean(test_y_devs_manual_seconds_per_run)
+    test_x_devs_count * mean(test_x_rerun_count_per_day_per_dev) * mean(test_x_rerun_seconds_per_run_per_dev)
+  + test_y_devs_count * mean(test_y_rerun_count_per_day_per_dev) * mean(test_y_rerun_seconds_per_run_per_dev)
+  + test_x_devs_count * mean(test_x_fix_count_per_day_per_dev) * mean(test_x_fix_seconds_per_run_per_dev)
+  + test_y_devs_count * mean(test_y_fix_count_per_day_per_dev) * mean(test_y_fix_seconds_per_run_per_dev)
+  + test_x_devs_count * mean(test_x_manual_count_per_day_per_dev) * mean(test_x_manual_seconds_per_run_per_dev)
+  + test_y_devs_count * mean(test_y_manual_count_per_day_per_dev) * mean(test_y_manual_seconds_per_run_per_dev)
 
 seconds_lost_per_day =
     seconds_resolving_flakes_per_day
