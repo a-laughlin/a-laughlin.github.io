@@ -5,7 +5,7 @@ layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Efficiency]
 ---
 
-Estimating the value of an efficiency improvement is useful when deciding actions to take.
+Estimating engineering efficiency savings can help prioritize efforts.
 
 This file contains one approach to estimate improvement value. While the example focuses on flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
 
