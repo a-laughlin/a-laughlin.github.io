@@ -21,24 +21,13 @@ Test times and frequencies usually vary across runs and devs' setups. To roughly
 
 We can then average the values for devs and runs, then sum them by flaky and non-flaky results.
 
-seconds_success_per_day =
-    test_x_devs_count * mean(test_x_success_count_per_day_per_dev) * mean(test_x_success_seconds_per_run_per_dev)
-  + test_y_devs_count * mean(test_y_success_count_per_day_per_dev) * mean(test_y_success_seconds_per_run_per_dev)
-
-seconds_resolving_flakes_per_day =
-    test_x_devs_count * mean(test_x_rerun_count_per_day_per_dev) * mean(test_x_rerun_seconds_per_run_per_dev)
-  + test_y_devs_count * mean(test_y_rerun_count_per_day_per_dev) * mean(test_y_rerun_seconds_per_run_per_dev)
-  + test_x_devs_count * mean(test_x_fix_count_per_day_per_dev) * mean(test_x_fix_seconds_per_run_per_dev)
-  + test_y_devs_count * mean(test_y_fix_count_per_day_per_dev) * mean(test_y_fix_seconds_per_run_per_dev)
-  + test_x_devs_count * mean(test_x_manual_count_per_day_per_dev) * mean(test_x_manual_seconds_per_run_per_dev)
-  + test_y_devs_count * mean(test_y_manual_count_per_day_per_dev) * mean(test_y_manual_seconds_per_run_per_dev)
-
-seconds_lost_per_day =
-    seconds_resolving_flakes_per_day
-  - seconds_success_per_day
+seconds_lost_resolving_flakes_per_day =
+    devs_count * mean_rerun_count_per_sample_dev_per_day * (mean_rerun_seconds - mean_success_seconds)
+  + devs_count * mean_fix_count_per_sample_dev_per_day * (mean_fix_seconds - mean_success_seconds)
+  + devs_count * mean_manual_count_per_sample_dev_per_day * (mean_manual_seconds - mean_success_seconds)
 
 hours_lost_1yr =
-    seconds_lost_per_day
+    seconds_lost_resolving_flakes_per_day
   * 220ish workdays per year
   / 60 for minutes
   / 8 for hours
