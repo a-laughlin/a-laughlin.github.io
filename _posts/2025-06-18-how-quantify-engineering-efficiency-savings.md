@@ -20,11 +20,11 @@ First we need to estimate the number of seconds spent on successful and flaky ru
 
 seconds_lost_resolving_flakes_per_day =
     affected_devs_count * mean_sample_devs_rerun_count_per_day
-      * (mean_rerun_seconds_per_run - mean_success_seconds_per_run)
+      * (mean_rerun_seconds - mean_success_seconds)
   + affected_devs_count * mean_sample_devs_fix_count_per_day
-      * (mean_fix_seconds_per_run - mean_success_seconds_per_run)
+      * (mean_fix_seconds - mean_success_seconds)
   + affected_devs_count * mean_sample_devs_manual_count_per_day
-      * (mean_manual_seconds_per_run - mean_success_seconds_per_run)
+      * (mean_manual_seconds - mean_success_seconds)
 
 hours_lost_1yr =
     seconds_lost_resolving_flakes_per_day
