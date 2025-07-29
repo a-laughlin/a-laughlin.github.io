@@ -1,11 +1,13 @@
 ---
-title: Replace "Developer Productivity" for Time and Impact
+title: Rename "Developer Productivity" for Time and Impact
 comments: true
 layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
-Developer Productivity's definition matters. Discussing unclear concepts and optimizing unclear metrics wastes time. Two problems stood out to me when defining Developer Productivity ([among](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [many](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)). First, the metric is ineffective for improving stakeholder and business outcomes. Second, the term's ambiguity causes more problems than it solves for anyone defining it, learning about it, or discussing engineering optimization. Below are potential solutions: current[¹](#developer-productivity-definition) and traditional[²](#traditional-developer-productivity-definition) Developer Productivity definitions for learners, more effective productivity metric uses for teams, and an alternate term for clearer optimization discussions.
+Developer Productivity's definition matters. Two problems stand out to me when defining it, ([among](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_2) [many](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity)): As a metric it is relatively ineffective for improving stakeholder and business outcomes. As a term its ambiguity causes more problems than it solves for anyone defining it, learning about it, or generally discussing engineering optimization.
+
+Let's look at potential solutions: current[¹](#developer-productivity-definition) and traditional[²](#traditional-developer-productivity-definition) Developer Productivity definitions for learners, more effective productivity metric uses for teams, and an alternate term for clearer optimization discussions.
 
 ## Contents
 <!-- TOC -->
