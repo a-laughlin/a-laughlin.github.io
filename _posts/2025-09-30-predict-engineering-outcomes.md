@@ -13,9 +13,6 @@ This article helps improve developer allocation decisions with an interactive "S
 
 Like any model, it is wrong but useful.
 
-<!-- omit from toc -->
-## Table of Contents
-
 - [Example Predictions](#example-predictions)
   - [How Will Features-only Prioritization Affect Engineering Outcomes?](#how-will-features-only-prioritization-affect-engineering-outcomes)
   - [How Should We Allocate Developers to Maximize Revenue?](#how-should-we-allocate-developers-to-maximize-revenue)
