@@ -2,12 +2,12 @@
 title: Predict Engineering Outcomes
 comments: true
 layout: post
-tags: [draft, Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
+tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Leadership, Engineering Effectiveness, Systems Thinking, Systems Modeling]
 ---
 
 ![header image showing speed and revenue increasing to 96% and 613% respectively](../images/outcomes-optimization-model-speed-increase-header.png)
 
-Allocating developers between Product and Platform teams is a challenging problem for many organizations. Optimizing one outcome (e.g., revenue, speed, quality, satisfaction) often affects others in unexpected ways. Dependencies may be cyclical like productivity <-> satisfaction, and transitive like quality -> productivity -> satisfaction. Predicting how Developer FTE allocation impacts each outcome is cognitively difficult, so we often shortcut with intuition and get sub-optimal allocation.
+Allocating developers between Product and Platform teams is a challenging problem for many organizations. Optimizing one outcome (e.g., revenue, speed, quality, satisfaction) often affects others in unexpected ways. Dependencies may be cyclical like Productivity <-> Satisfaction, and transitive like Quality -> Productivity -> Satisfaction. Predicting how Developer allocations impact every outcome is cognitively difficult, so we often shortcut with intuition and get sub-optimal allocation.
 
 This article helps improve developer allocation decisions with an interactive "Stock and Flow" model that predicts Speed, Satisfaction, Effectiveness, Quality, and Revenue. It also provides example predictions, explains how the model works, and explains the research it's based on so you don't have to trust it blindly.
 
