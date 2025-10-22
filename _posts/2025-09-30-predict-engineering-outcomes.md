@@ -5,7 +5,7 @@ layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Leadership, Engineering Effectiveness, Systems Thinking, Systems Modeling]
 ---
 
-![header image showing speed and revenue increasing to 96% and 613% respectively](../images/outcomes-optimization-model-speed-increase-header.png)
+![header image showing speed and revenue increasing to 75% and 477% respectively](../images/outcomes-optimization-model-speed-increase-header.png)
 
 Allocating developers between Product and Platform teams is a challenging problem for many organizations. Optimizing one outcome (e.g., revenue, speed, quality, satisfaction) often affects others in unexpected ways. Dependencies may be cyclical like Productivity <-> Satisfaction, and transitive like Quality -> Productivity -> Satisfaction. Predicting how Developer allocations impact every outcome is cognitively difficult, so we often shortcut with intuition and get sub-optimal allocation.
 
