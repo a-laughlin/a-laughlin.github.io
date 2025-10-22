@@ -6,7 +6,7 @@ tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Enginee
 ---
 The purpose of this article is to provide a straightforward way for engineering teams to quantify their impact, and to help developer experience teams build stakeholder trust through transparent and predictable prioritization.
 
-Its inputs are estimates that can be plugged into a prioritization framework like [RICE](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/). It is most useful for mature efforts with many quantified problems to solve and stakeholders who are comfortable making decisions with data. For teams getting started, low hanging fruit is usually present in common workflows. Prioritize by your DevEx Survey's biggest reported pain points, and focus instead on [quantifying workflow efficiency gains](https://www.a-laughlin.com/how-quantify-engineering-efficiency-savings/) to measure results.
+Its inputs are estimates that can be plugged into a prioritization framework like [RICE](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/). It is most useful for mature efforts with many quantified problems to solve and stakeholders who are comfortable making decisions with data. For teams getting started, it's easier to prioritize by your DevEx Survey's biggest reported pain points. They'll usually include workflow bottlenecks to start, which can be [quantified as efficiency gains](https://www.a-laughlin.com/how-quantify-engineering-efficiency-savings/).
 
 note: All numbers involved are estimates for prioritization.
 

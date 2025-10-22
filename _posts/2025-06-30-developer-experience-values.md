@@ -31,10 +31,11 @@ Product Mindset (AirBnB, Google[dora], IBM, Snowflake, LinkedIn)
     In a DevEx team, we have to consider many "users" needs. Company Leaders, Product and Engineering Leaders, Product managers, Platform and Product team leads, product managers, and engineers use our data, reports, dashboards, surveys, tools, and processes.
     Linkedin (Champions), AirBnB, and Snowflake (influencer volunteer). Champions, CAP, (AirBnB version). Why?  It doesn't directly reduce friction, increase flow, hasten feedback loops, or reduce cognitive load.
     Needs:
+      While stakeholders frame needs in many ways, keeping these four in mind avoids missing important ones.
       Predictability is the human need to optimally know the relationships among things and events in the world: what causes what, follows what, and belongs with what. It builds trust and a sense of control.
       Competence is the human need to gain skills that change outcomes in the world. Competence builds a sense of control and sense of worth.
       Acceptance is the human need for positive social interactions. It builds trust and a sense of worth.
-      Profit is a company need - profit for companies is like air for humans.
+      Profit is the company need for net revenue to sustain its operations. Profit to companies is like air to humans - its absence signals a quick end.
 
       Needing others makes us vulnerable.
       > Trust is choosing to make something important to you vulnerable to the actions of someone else. - Brené Brown
