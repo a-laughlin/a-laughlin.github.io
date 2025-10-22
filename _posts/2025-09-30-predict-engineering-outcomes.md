@@ -210,6 +210,8 @@ Initial value in simulation (Net Revenue % Change): 1, though can be less depend
 
 - Max-capped outcomes (all except revenue) increase more slowly as they approach their max, reflecting the reality that results become harder to achieve as low-hanging fruit disappears. e.g., achieving 99% uptime is much easier than achieving 99.9999% uptime.  Slowing changes that approach 0 would also make sense for some outcomes (e.g. speed), but defining the cases and math to support them is non-trivial, so leaving it out for now.
 
+- The model makes a number of assumptions for convenience. For example, Team sizes default to 7 members with 1 PM, 1 Designer, and 5 Developers. Costs for each type of headcount have default values, and Initial Yearly Revenue defaults to total yearly cost * 10.
+
 
 ## References
 
