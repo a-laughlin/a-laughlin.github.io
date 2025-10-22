@@ -5,14 +5,13 @@ layout: post
 tags: [draft, Developer Productivity, DevProd, Developer Experience, DX, DevEx, Developer Tools, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
+![header image showing speed and revenue increasing to 96% and 613% respectively](../images/outcomes-optimization-model-speed-increase-header.png)
 
 Allocating developers between Product and Platform teams is a challenging problem for many organizations. Optimizing one outcome (e.g., revenue, speed, quality, satisfaction) often affects others in unexpected ways. Dependencies may be cyclical like productivity <-> satisfaction, and transitive like quality -> productivity -> satisfaction. Predicting how Developer FTE allocation impacts each outcome is cognitively difficult, so we often use intuition as a shortcut and end up with sub-optimal allocations.
 
-This article helps improve developer allocation decisions with examples and an interactive model. It also dives into how that model works and the research it's based on so you don't have to trust it blindly.
+This article helps improve developer allocation decisions with an interactive "Stock and Flow" model that predicts Speed, Satisfaction, Effectiveness, Quality, and Revenue. It also provides example predictions, explains how the model works, and explains the research it's based on so you don't have to trust it blindly.
 
-The model itself is a System Dynamics "Stock and Flow" model. It currently predicts how FTE allocations to product/platform teams impact 5 Engineering Outcomes over time: Speed, Satisfaction, Effectiveness, Quality, and Revenue.
-
-As with any model, it is wrong but potentially useful. If you haven't read the Example Predictions yet, I recommend reviewing them before visiting [the model](https://insightmaker.com/insight/3mOyx2fKEkQ6SKMyenE7or/Software-Engineering-Optimization-Model).
+Like any model, it is wrong but useful.
 
 <!-- omit from toc -->
 ## Table of Contents
@@ -30,6 +29,7 @@ As with any model, it is wrong but potentially useful. If you haven't read the E
   - [Quality](#quality)
   - [Revenue](#revenue)
 - [Assumptions, Omissions, and Oversimplifications](#assumptions-omissions-and-oversimplifications)
+- [The](#the)
 - [References](#references)
 
 
@@ -41,7 +41,7 @@ It is primarily designed to answer questions involving product and platform team
 
 Code quality naturally decays with additional code, differing opinions, new approaches, and other causes. When product teams focus on features to the exclusion of other outcomes, decay progresses unchecked. Here's how that looks.
 
-![alt text](../images/outcomes-optimization-model-features-only.png)
+![outcomes after features-only prioritization](../images/outcomes-optimization-model-features-only.png)
 
 The model's ability to handle multiple interacting variables quickly stands out. Decaying code quality (an aspect of technical debt) impacts speed at roughly `quality^1.5` based on CodeScene's research [2][codescene]. The initial speed impacts are barely noticeable. Over time it outpaces quality, slowing down new feature development. Revenue quickly follows due to cross-impacts from both `speed*.8` and `quality^0.2` based on my own estimates. Finally we see satisfaction drop at `speed * 0.097` based on Microsoft's Research [1][microsoft].
 
@@ -58,14 +58,14 @@ Faced with quality decay's impacts, many companies scramble to increase speed (a
 <!-- omit from toc -->
 #### What happens when we when we create a platform team and allocate 2 FTEs to improve speed?
 
-![alt text](../images/outcomes-optimization-model-quality-vs-speed-speed.png)
+![outcomes dropping after quality decay overwhelms speed improvements](../images/outcomes-optimization-model-quality-vs-speed-speed.png)
 
 The results are initially great. Speed increases nearly 40%. Eventually, however, the `quality^1.5` cross-impact eventually dominates speed's linear growth. Cumulative Net Revenue comes out 140% better than features-only, but still loses 590% net revenue over 10 years.
 
 <!-- omit from toc -->
 #### What happens if we allocate 2 FTEs to quality instead?
 
-![alt text](../images/outcomes-optimization-model-quality-vs-speed-quality.png)
+![outcomes increasing after quality improved](../images/outcomes-optimization-model-quality-vs-speed-quality.png)
 
 Massive difference! Allocating 2 FTEs to quality cost two FTEs to gain over 1000% Cumulative Net Revenue in 10 years, from -592% to +477%. Speed also ended at 75%, meaning our remaining 48 engineers now function as 84 engineers. Spending 2 engineers to gain 36 is a win.
 
@@ -74,7 +74,7 @@ Notice that the gains start to max out as quality approaches 100% though.
 <!-- omit from toc -->
 #### What happens if we let the model dynamically allocate FTEs to speed and quality?
 
-![alt text](../images/outcomes-optimization-model-quality-vs-speed-optimized.png)
+![revenue maximized after increasing quality from 50%, and speed](../images/outcomes-optimization-model-quality-vs-speed-optimized.png)
 
 Achieving 99% Quality and Speed with a 763% revenue gain over 10 years is a great result. I wasn't sure whether the model would allocate realistically given unlimited flexibility, but it allocated roughly 13% FTEs spread over 2.2 quality and 4.5 speed. 13% lies comfortably between a common platform allocation of ~10% and Google's ~16%, so the model's allocation seems reasonable.
 
@@ -83,9 +83,9 @@ Should 2.2 percent always be the optimal quality allocation?
 Well... it depends.
 
 <!-- omit from toc -->
-#### What happens if the model optimizes revenue starting from 80% quality?
+#### What happens if the model optimizes revenue starting at 80% quality?
 
-![alt text](../images/outcomes-optimization-model-quality-vs-speed-optimized-quality_8.png)
+![revenue maximized after increasing quality from 80%, and speed](../images/outcomes-optimization-model-quality-vs-speed-optimized-quality_8.png)
 
 Starting at 80% quality, the model only allocates 0.5 FTEs to it. Just enough to stop decay.  Otherwise it focuses on speed. Why? The answer is interesting since it implies a threshold.
 
@@ -107,15 +107,13 @@ I have yet to meet a product team PM that relished allocating time to infrastruc
 
 The model doesn't include those effects, but it does include adoption differences between product and platform teams. For example, you have 50 engineers and want to achieve a 50% speed increase. Here's how that looks with product teams working on their own tools.
 
-![alt text](../images/outcomes-optimization-model-prod-vs-plat-prod.png)
+![outcomes increase due to product team infrastructure efforts](../images/outcomes-optimization-model-prod-vs-plat-prod.png)
 
 Due to each team's small self-adoption scale (default around 5 engineers), total of 3.5 FTEs across product teams is necessary to achieve the 50% improvement. Cross-impacts result in 190% cumulative revenue over 10 years.  That sounds great until we look at the equivalent platform investment.
 
-![alt text](../images/outcomes-optimization-model-prod-vs-plat-plat.png)
+![outcomes increase due to platform team infrastructure efforts](../images/outcomes-optimization-model-prod-vs-plat-plat.png)
 
-Platform teams' adoption scale for common processes and tools yields the same 50% speed increase and 70% greater cumulative net revenue over 10 years (262%) with just 0.3 FTEs (a ~4% compounding increase per year).
-
-Note that if you have processes in place to scale self-developed product team tools beyond the team that developed them, the model's adoption rates (in the Product Teams "Advanced" section) would need tweaking.
+Platform teams' adoption scale for common processes and tools yields the same 50% speed increase and 70% greater cumulative net revenue (262%), with just 0.3 FTEs.
 
 That's it for examples.  Check out the [the model](https://insightmaker.com/insight/3mOyx2fKEkQ6SKMyenE7or/Software-Engineering-Optimization-Model) for additional scenarios and to tweak team sizes, adoption rates, revenue contributors, and other variables.
 
@@ -156,7 +154,7 @@ power:  `Δy impactₒ = other_y₁^power/other_y₁ - 1`
 ### Speed
 While the model itself is agnostic to speed's definition, the default \[Outcome]->Speed cross-impact values assume a meaning of Perceived Productivity as defined in Microsoft's Research [¹](#microsoft).
 
-One quirk of the model here. In the examples the speed dropped to 0 as quality did. Given that the model's default meaning of speed is perceived productivity, and as humans we're unlikely to perceive ourselves as 0% productive, the model's speed dropping to 0% is an unlikely outcome.
+One quirk of the model here. In the examples the speed dropped to 0 as quality did. Given that the model's default meaning of speed is perceived productivity, and as humans we're unlikely to perceive ourselves as 0% productive, the model's speed dropping to 0% is an unlikely outcome. More likely it continuously slows as it approaches 0.
 
 A speed of 1 represents product engineers' current speed. A speed of 2 is twice that, or 100% greater. A speed of 0 is a complete stop.
 
@@ -173,7 +171,7 @@ Representation: `[0, 1]` decimal-formatted percent\
 Initial value: adjustable `(0,1]`. Default 0.8.
 
 ### Effectiveness
-While the model itself is agnostic to Effectiveness definition, the default Effectiveness->Speed cross-impact value assumes it represents the average of self-reported "can complete tasks" (developer effectiveness) and "impactful work" (product effectiveness) from Microsoft's Research [¹](#microsoft)
+While the model itself is agnostic to Effectiveness definition, the default Effectiveness->Speed cross-impact value assumes it represents the average of self-reported "can complete tasks" (developer effectiveness) and "impactful work" (product effectiveness) from Microsoft's Research [¹](#microsoft).
 
 0 means product engineers' complete ineffectiveness. 1 means product engineers' complete effectiveness.
 
@@ -181,7 +179,7 @@ Representation: `[0, 1]` decimal-formatted percent\
 Initial value: adjustable `(0,1]`. Default 0.8.
 
 ### Quality
-While the model itself is agnostic to quality definitions, the default Quality->Speed cross-impact value assumes quality as defined in CodeScene's research correlating their tool outcomes to business impact. "Code Red: The Business Impact of Code Quality" [²](#codescene)
+While the model itself is agnostic to quality definitions, the default Quality->Speed cross-impact value assumes quality as defined in CodeScene's research [²](#codescene) correlating their tool outcomes to business impact.
 
 Though the model's default Quality->Speed cross-impact value assumes a meaning of code quality, not everyone will be using the CodeScene tool to measure it. Many definitions of quality will likely exhibit similar power curves. A general definition of quality that may be useful is tech debt's complement; 1 quality is 0% tech debt. 0 quality is 100% tech debt.
 
@@ -200,6 +198,7 @@ Initial value in simulation (Net Revenue % Change): 1, though can be less depend
 
 
 
+
 ## Assumptions, Omissions, and Oversimplifications
 
 - Most things are oversimplified in an effort to keep the model simple. A more robust model based on e.g., [DX's DXI indicator](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) would be more accurate, but I don't have regression coefficients for its slopes and cross-impacts. And the model is useful enough as-is.
@@ -212,6 +211,7 @@ Initial value in simulation (Net Revenue % Change): 1, though can be less depend
 
 - The model makes a number of assumptions for convenience. For example, Team sizes default to 7 members with 1 PM, 1 Designer, and 5 Developers. Costs for each type of headcount have default values, and Initial Yearly Revenue defaults to total yearly cost * 10.
 
+## The
 
 ## References
 
