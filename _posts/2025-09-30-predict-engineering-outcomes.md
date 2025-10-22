@@ -87,7 +87,7 @@ Well... it depends.
 
 Starting at 80% quality, the model only allocates 0.5 FTEs to it. Just enough to stop decay.  Otherwise it focuses on speed. Why? The answer is interesting since it implies a threshold.
 
-Below the threshold, quality has a large effect on other outcomes. Above the threshold, quality's remaining cross-impact potential is less effective than other outcome improvements at maximizing revenue. Since the current model only allocates FTEs statically at the beginning, we can't see exactly where the threshold occurs. We could illuminate it by allocating FTEs dynamically each cycle, though that's out of scope for the current model.
+At some level quality improvements become ineffective. Below that threshold, quality has a large effect on other outcomes. Above the threshold, quality's remaining cross-impact potential is less effective than other outcome improvements at maximizing revenue. Since the current model only allocates FTEs statically at the beginning, we can't see exactly where the threshold occurs. We could illuminate it by allocating FTEs dynamically each cycle, though that's out of scope for the current model.
 
 Still, we can learn a couple things it: 1. FTEs should always maintain quality enough to prevent decay. 2. FTEs should only prioritize quality up to a threshold (somewhere <= 80% in this case), then switch to other priorities with a greater effect on desired outcomes.
 
