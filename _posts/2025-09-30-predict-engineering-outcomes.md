@@ -44,7 +44,7 @@ Code quality naturally decays with additional code, differing opinions, new appr
 
 ![outcomes after features-only prioritization](../images/outcomes-optimization-model-features-only.png)
 
-The model's ability to handle multiple interacting variables quickly stands out. Decaying code quality (an aspect of technical debt) impacts speed at roughly `quality^1.5` based on CodeScene's research [2][codescene]. The initial speed impacts are barely noticeable. Over time it outpaces quality, slowing down new feature development. Revenue quickly follows due to cross-impacts from both `speed*.8` and `quality^0.2` based on my own estimates. Finally we see satisfaction drop at `speed * 0.097` based on Microsoft's Research [1][microsoft].
+The model's ability to handle multiple interacting variables quickly stands out. Decaying code quality (an aspect of technical debt) impacts speed at roughly `quality^1.5` based on CodeScene's research [²](#codescene). The initial speed impacts are barely noticeable. Over time it outpaces quality, slowing down new feature development. Revenue quickly follows due to cross-impacts from both `speed*.8` and `quality^0.2` based on my own estimates. Finally we see satisfaction drop at `speed * 0.097` based on Microsoft's Research [¹](#microsoft).
 
 If speed dropping to 0 sounds odd to you, it does to me too. I touch on that in "How Each Outcome is Modeled". Regardless, even a 50% drop in this case would result in over 300% lost revenue over 10 years.
 
