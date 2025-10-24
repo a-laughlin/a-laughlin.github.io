@@ -54,7 +54,7 @@ Let's ask it a more powerful question.
 Faced with quality decay's impacts, many companies scramble to increase speed (also calling it productivity, efficiency, and other variants). It's a good idea in theory.
 
 <!-- omit from toc -->
-#### What happens when we when we create a platform team and allocate 2 FTEs to improve speed?
+#### What happens when we allocate 2 platform FTEs to improve speed?
 
 ![outcomes dropping after quality decay overwhelms speed improvements](../images/outcomes-optimization-model-quality-vs-speed-speed.png)
 

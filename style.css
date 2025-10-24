@@ -197,8 +197,14 @@ code,
 kbd,
 pre,
 samp {
-    font-family:"consolas","andale mono",monospace,sans-serif;
-    font-size: 1em;
+  font-family:"consolas","andale mono",monospace,sans-serif;
+  font-size: 1em;
+}
+code{
+  overflow: scroll;
+  white-space: nowrap;
+  background-color: #ddd;
+  border-radius: 5%;
 }
 
 /**
@@ -557,7 +563,6 @@ a:link, a:visited { color: #DDDDDD;}
 #content p {word-break:break-word;}
 #content ul > li{list-style-type: disc;margin-left: 20px}
 #content pre {white-space:pre-wrap;word-break:break-word;padding:1em 0 1em .2em}
-code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;font-size:90%;}
 
 /*link indicators*/
 #content a.ext-right{background:transparent url(/images/external-transp.gif) no-repeat right;padding-right:1em}
