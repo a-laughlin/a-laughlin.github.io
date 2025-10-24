@@ -197,7 +197,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, serif;
+    font-family:"consolas","andale mono",monospace,sans-serif;
     font-size: 1em;
 }
 
@@ -523,6 +523,7 @@ a:link, a:visited { color: #DDDDDD;}
   background-color: #fff;
   max-width:800px;
   line-height:2rem;
+  margin:0 auto;
 }
 #content img {width:100%;max-width:600px;}
 #content H1,H2,H3,H4,H5,H6 {line-height: 1.5em;}
@@ -538,8 +539,7 @@ a:link, a:visited { color: #DDDDDD;}
 /* #content H4 a{} */
 /* #content H5 a{} */
 /* #content H6 a{} */
-#content a{color: #999;text-decoration: none;}
-#content a {color: #46B;}
+#content a{color: #46B;text-decoration: none;width:100%;}
 #content a:link {color: #46B;}
 #content a:visited {color: #84B;}
 #content a:hover,
@@ -557,7 +557,7 @@ a:link, a:visited { color: #DDDDDD;}
 #content p {word-break:break-word;}
 #content ul > li{list-style-type: disc;margin-left: 20px}
 #content pre {white-space:pre-wrap;word-break:break-word;padding:1em 0 1em .2em}
-code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;font-size:90%;font-family:"consolas","andale mono",monospace}
+code.highlighter-rouge{overflow:scroll;white-space:nowrap;background-color:#ddd;font-size:90%;}
 
 /*link indicators*/
 #content a.ext-right{background:transparent url(/images/external-transp.gif) no-repeat right;padding-right:1em}
