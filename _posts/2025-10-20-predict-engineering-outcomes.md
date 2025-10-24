@@ -107,7 +107,7 @@ The model doesn't include those effects, but it does include adoption difference
 
 ![outcomes increase due to product team infrastructure efforts](../images/outcomes-optimization-model-prod-vs-plat-prod.png)
 
-Due to each team's small self-adoption scale (default around 5 engineers), total of 3.5 FTEs across product teams is necessary to achieve the 50% improvement. Cross-impacts result in 190% cumulative revenue over 10 years.  That sounds great until we look at the equivalent platform investment.
+Due to each team's small self-adoption scale (default around 5 engineers), 3.5 FTEs across product teams are necessary to achieve the 50% improvement. Cross-impacts result in 190% cumulative revenue over 10 years. That sounds great until we look at the equivalent platform investment.
 
 ![outcomes increase due to platform team infrastructure efforts](../images/outcomes-optimization-model-prod-vs-plat-plat.png)
 
