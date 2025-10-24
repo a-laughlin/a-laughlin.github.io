@@ -3,32 +3,33 @@ layout: default
 ---
 
 <div class="posts">
+  <h1 class="title">Recent Posts</h1>
   {% for post in site.posts %}
 
-    {% if post.tags contains 'project' %}
-      {% assign is_project = true %}
-      {% assign is_not_project = false %}
-    {% else %}
-      {% assign is_project = false %}
-      {% assign is_not_project = true %}
-    {% endif %}
-    {% if post.tags contains 'draft' %}
-      {% assign is_draft = true %}
-      {% assign is_not_draft = false %}
-    {% else %}
-      {% assign is_draft = false %}
-      {% assign is_not_draft = true %}
-    {% endif %}
+  {% if post.tags contains 'project' %}
+  {% assign is_project = true %}
+  {% assign is_not_project = false %}
+  {% else %}
+  {% assign is_project = false %}
+  {% assign is_not_project = true %}
+  {% endif %}
+  {% if post.tags contains 'draft' %}
+  {% assign is_draft = true %}
+  {% assign is_not_draft = false %}
+  {% else %}
+  {% assign is_draft = false %}
+  {% assign is_not_draft = true %}
+  {% endif %}
 
-    {% if is_not_draft and is_not_project %}
-      <article class="post">
-        <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-          <div class="entry">
-            {{ post.excerpt }}
-          </div>
+  {% if is_not_draft and is_not_project %}
+  <article class="post">
+    <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
 
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
-    {% endif %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
+  {% endif %}
   {% endfor %}
 </div>
