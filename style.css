@@ -202,9 +202,12 @@ samp {
 }
 code{
   overflow: scroll;
-  white-space: nowrap;
   background-color: #ddd;
   border-radius: 5%;
+}
+/* this style gets applied to inline code sections */
+.highlighter-rouge code {
+  white-space: nowrap;
 }
 
 /**
