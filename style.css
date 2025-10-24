@@ -561,13 +561,16 @@ a:link, a:visited { color: #DDDDDD;}
 #content pre {
   white-space:pre-wrap;
   word-break:break-word;
-  padding:1em 0 1em .2em
+  padding:.5em;
 }
-#content code{
+#content code {
   overflow: scroll;
   background-color: #ddd;
-  border-radius: 5%;
+  border-radius: 5px;
   white-space: nowrap;
+}
+#content pre > code{
+  white-space:pre-wrap;
 }
 
 /*link indicators*/
