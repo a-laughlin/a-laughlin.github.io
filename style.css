@@ -564,13 +564,18 @@ a:link, a:visited { color: #DDDDDD;}
   padding:.5em;
 }
 #content code {
+  /* white-space: nowrap; */
+  white-space:pre-wrap;
+}
+#content pre.highlight {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: scroll;
+}
+#content code.highlighter-rouge{
   overflow: scroll;
   background-color: #ddd;
   border-radius: 5px;
-  white-space: nowrap;
-}
-#content pre > code{
-  white-space:pre-wrap;
 }
 
 /*link indicators*/
