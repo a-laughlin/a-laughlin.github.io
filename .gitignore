@@ -6,5 +6,5 @@ release.zip
 .idea/
 dev/*
 *ignore*
-.vscode
-.code-workspace
+*.vscode
+*.code-workspace
