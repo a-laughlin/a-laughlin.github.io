@@ -563,18 +563,18 @@ a:link, a:visited { color: #DDDDDD;}
   word-break:break-word;
   padding:.5em;
 }
-#content code {
-  /* white-space: nowrap; */
-  white-space:pre-wrap;
-}
+/* multi-line code */
 #content pre.highlight {
-  background-color: #ddd;
+  background-color: #eee;
   border-radius: 5px;
-  overflow: scroll;
 }
+
+/* inline code */
 #content code.highlighter-rouge{
+  white-space: nowrap;
   overflow: scroll;
-  background-color: #ddd;
+  background-color: #eee;
+  padding:.2em;
   border-radius: 5px;
 }
 
