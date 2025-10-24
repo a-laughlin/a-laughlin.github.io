@@ -5,9 +5,9 @@ layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes, Engineering Efficiency]
 ---
 
-Estimating engineering efficiency savings can help direct actions.
+For engineers, estimating savings from engineering productivity improvements can aid effective prioritization of those improvements vs new features and other efforts.
 
-This file contains one approach to estimate the cost of a current problem vs an alternate solution. While the example focuses on reducing flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
+This article contains one approach to estimate solution savings vs. the status quo. While the example focuses on reducing flaky test cost, the approach is general enough to evaluate the cost savings of many developer infrastructure aspects.
 
 Note that it only calculates a minimum gain from hours saved. It excludes second+ order costs like attrition and rehiring due to platform pain points. Actual costs will be higher. Regardless, these calculations are usually sufficient to prioritize dev infrastructure improvements.
 
