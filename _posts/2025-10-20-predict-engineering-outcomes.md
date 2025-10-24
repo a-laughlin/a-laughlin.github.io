@@ -101,7 +101,7 @@ For those struggling to create an initial platform team, this final question may
 
 ### Should Product Engineering Teams Develop Their Own Tools and Processes?
 
-I have yet to meet a product team PM that relished allocating time to infrastructure work. Yet teams each working on their own infrastructure also create redundancy and inconsistency that slow down product development.
+I have yet to meet a product team PM that relished allocating time to infrastructure work. Teams each working on their own infrastructure also create redundancy and inconsistency that slow down product development.
 
 The model doesn't include those effects, but it does include adoption differences between product and platform teams. For example, you have 50 engineers and want to achieve a 50% speed increase. Here's how that looks with product teams working on their own tools.
 
