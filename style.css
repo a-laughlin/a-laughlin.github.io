@@ -531,7 +531,7 @@ a:link, a:visited { color: #DDDDDD;}
   line-height:2rem;
   margin:0 auto;
 }
-#content img {width:100%;max-width:600px;}
+#content img {width:90%;}
 #content H1,H2,H3,H4,H5,H6 {line-height: 1.5em;}
 #content H1 {font-size:180%;}
 #content H2 {font-size:160%;}
