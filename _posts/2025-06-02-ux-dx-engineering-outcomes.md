@@ -5,7 +5,7 @@ layout: post
 tags: [Developer Productivity, DevProd, Developer Experience, DX, DevEx, Engineering Productivity, Engineering Optimization, Engineering Outcomes]
 ---
 
-User Experience (UX) has separate definitions for "a user experience" and "the field of User Experience". Developer Experience (DX, DevEx) does not. The result is ambiguity between "a developer experience", experience optimization, and engineering outcomes. This post disambiguates them by defining and contextualizing a developer experience, the field of Developer Experience (DX, DevEx), and DX's relation to engineering outcomes.
+Developer Experience (DX, DevEx) lacks UX's [separate definitions](https://www.nngroup.com/articles/what-is-user-experience/) for "a user experience" and "the field of User Experience". The result is ambiguity and confusion when discussing Developer Experience. This post provides clear definitions for "a developer experience", "the field of Developer Experience" and defines how Developer Experience relates to Developer Productivity (often used as an umbrella term for Engineering Outcomes).
 
 ## Definitions (TL;DR)
 
