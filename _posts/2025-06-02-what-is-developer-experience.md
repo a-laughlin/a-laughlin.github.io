@@ -9,9 +9,9 @@ Developer Experience (DX, DevEx) lacks UX's [separate definitions](https://www.n
 
 ## Definitions (TL;DR)
 
-**A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, or physical environment).
+**A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, person, platform, portal, process, workflow, activity, document, system, culture, or physical environment).
 
-**The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing parts of developers' work context (e.g., tools, platforms, portals, processes, workflows, activities, documents, systems, cultures, or physical environments).
+**The field of Developer Experience (DX, DevEx)** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers' experiences, by optimizing parts of developers' work context (e.g., tools, persons, platforms, portals, processes, workflows, activities, documents, systems, cultures, or physical environments).
 
 **How Does Developer Experience Relate to Engineering Outcomes?** Developer Experience is an Engineering Outcomes optimization strategy that leverages qualitative data to discover and prioritize optimizations more effectively and efficiently than purely quantitative approaches, yielding equivalent or greater [business](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/) and [stakeholder](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) outcomes.
 
@@ -27,7 +27,7 @@ Related Developer Experience definitions:
 - Developer experience (DevEx) refers to how developers perceive and interact with their work environment... - [DX](https://getdx.com/blog/developer-experience/)
 - [Developer Experience is] How developers think about, feel about, and value their work. - [DX Research Paper](https://doi.org/10.48550/arXiv.2205.06352)
 
-Synthesized Definition: **A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, process, workflow, activity, document, system, culture, or physical environment).
+Synthesized Definition: **A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, platform, portal, person, process, workflow, activity, document, system, culture, or physical environment).
 
 Similar to the UX and related definitions above, this definition focuses on developers' personal aspects like thoughts, emotions, and behaviors/interactions. The field focuses on stakeholder and business outcomes instead.
 
