@@ -13,7 +13,7 @@ The User Experience community reduces variance and includes experience improveme
 
 This post brings the same clarity to Developer Experience definitions, while also connecting the pieces of what improves and who benefits. It defines "A developer experience", "The Field of Developer Experience", and how the field of Developer Experience relates to Developer Productivity. It also provides previous definitions and sources that led to them.
 
-## What is a developer experience?
+## What is A Developer Experience?
 
 **A developer experience** is the holistic relationship — encompassing perceptions, emotions, and interactions — between a software developer and a part of their work context (e.g., a tool, person, platform, feedback loop, portal, process, workflow, activity, document, system, culture, or physical environment).
 
@@ -21,7 +21,7 @@ This post brings the same clarity to Developer Experience definitions, while als
 
 **The Field of Developer Experience** is a professional practice focused on continuously improving stakeholder and business outcomes, by improving developers experiences, by optimizing the non-human factors in developers' work context (e.g., tools, platforms, feedback loops, portals, processes, workflows, activities, documents, systems, cultures, or physical environments). It assumes that good experiences correlate positively with improved business and stakeholder outcomes (an assumption [supported](https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/) by [research](https://getdx.com/research/the-one-number-you-need-to-increase-roi-per-engineer/)), and that asking developers is the most efficient and effective way to surface problems with those experiences.
 
-## How does Developer Experience relate to Developer Productivity?
+## How Does Developer Experience Relate to Developer Productivity?
 
 Developer Productivity is a highly ambiguous term today. It may mean the same thing as the Field of Developer Experience, but it may also mean simple efficiency metrics like PRs/day, or even strategies like telling developers to work faster. That ambiguity can make it harder to build trust and gain adoption for improvement initiatives, so I highly recommend [renaming Developer Productivity](https://www.a-laughlin.com/rename-developer-productivity-time-impact/).
 
