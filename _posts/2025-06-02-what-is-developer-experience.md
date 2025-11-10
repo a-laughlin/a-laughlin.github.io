@@ -7,9 +7,9 @@ tags: [Developer Experience, DX, DevEx, Developer Productivity, DevProd, Enginee
 
 ![stick figure person shrugging. Thought bubble contains "DX?"](../images/dx-question.png)
 
-While answers to that question exist, they surprisingly omit explicitly improving developers' experiences. There is often ambiguity around what does improve and who benefits.
+While answers to that question exist, there is often variance and vagueness around what improves and who benefits. All existing definitions surprisingly omit explicitly improving developers' experiences.
 
-The User Experience community reduces the ambiguity by defining "a user experience" and "the field of User Experience" [separately](https://www.nngroup.com/articles/what-is-user-experience/).
+The User Experience community reduces variance and includes experience improvement by defining "a user experience" and "the field of User Experience" [separately](https://www.nngroup.com/articles/what-is-user-experience/).
 
 This post brings the same clarity to Developer Experience definitions, while also connecting the pieces of what improves and who benefits. It defines "A developer experience", "The Field of Developer Experience", and how the field of Developer Experience relates to Developer Productivity. It also provides previous definitions and sources that led to them.
 
